@@ -1,0 +1,16 @@
+proveedores:
+  locales:
+    - nombre: "Promart"
+      region: "Puno / Juliaca"
+    - nombre: "Sodimac"
+      region: "Arequipa / Mercado Libre"
+    - nombre: "Maestro"
+      region: "Nacional"
+    - nombre: "Ferreterías locales"
+      region: "Capachica / Puno"
+  marcas_recomendadas:
+    conductores: ["Indeco", "Promel", "Prysmian"]
+    canalizaciones: ["Tuboplast", "Pavco", "Selva"]
+    protecciones: ["Bticino", "Schneider Electric", "Legrand"]
+    accesorios: ["Bticino (Modus Plus / Quinziño)", "Ticino"]
+    luminarias: ["Philips", "Osram", "Sylvania"]

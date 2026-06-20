@@ -1,0 +1,51 @@
+{
+  "version": 1,
+  "reglas": {
+    "cables": {
+      "tipo": "secuencia",
+      "parametro": "seccion_mm2",
+      "secuencia": [1.5, 2.5, 4.0, 6.0, 10.0, 16.0],
+      "permitir_superior_automatico": true,
+      "tipo_coincidencia": "equivalente_superior",
+      "observacion": "Seccion superior inmediata sugerida por falta de stock exacto. Requiere revision tecnica."
+    },
+    "ductos/tuberias": {
+      "tipo": "secuencia",
+      "parametro": "diametro_mm",
+      "secuencia": [16.0, 20.0, 25.0, 32.0, 40.0],
+      "permitir_superior_automatico": true,
+      "tipo_coincidencia": "equivalente_superior",
+      "observacion": "Diametro superior inmediato sugerido. Requiere revision."
+    },
+    "interruptores termomagneticos": {
+      "tipo": "estricto",
+      "parametro_amperaje": "amperaje_a",
+      "parametro_polos": "polos",
+      "permitir_superior_automatico": false,
+      "tipo_coincidencia_superior": "similar_pendiente_revision",
+      "observacion_superior": "Amperaje superior detectado, requiere revision manual por seguridad. No admitir automatico."
+    },
+    "interruptores diferenciales": {
+      "tipo": "diferencial_flex",
+      "parametro_sensibilidad": "sensibilidad_ma",
+      "sensibilidad_estricta": 30,
+      "permitir_amperaje_superior": true,
+      "tipo_coincidencia": "similar_pendiente_revision",
+      "observacion": "Diferencial de corriente nominal superior pero misma sensibilidad 30mA. Requiere revision."
+    },
+    "tableros electricos": {
+      "tipo": "secuencia",
+      "parametro": "capacidad_polos",
+      "secuencia": [4, 6, 8, 12, 18, 24, 36],
+      "permitir_superior_automatico": true,
+      "tipo_coincidencia": "equivalente_superior",
+      "observacion": "Tablero con mayor capacidad de polos. Superior inmediato aceptable, revisar dimensiones."
+    },
+    "puesta a tierra": {
+      "tipo": "estricto",
+      "permitir_superior_automatico": false,
+      "tipo_coincidencia": "similar_pendiente_revision",
+      "observacion": "Variacion en marca o material del electrodo de puesta a tierra. Requiere revision."
+    }
+  }
+}

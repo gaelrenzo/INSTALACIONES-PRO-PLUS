@@ -1,0 +1,201 @@
+{
+  "version": 1,
+  "categorias": {
+    "cables": {
+      "unidad_diseno": "m",
+      "unidades_comerciales_posibles": ["m", "metro", "metros", "rollo", "carrete", "bobina"],
+      "longitudes_comunes": [10, 25, 50, 100],
+      "patrones_extraccion": [
+        "x\\s*(\\d+(?:\\.\\d+)?)\\s*m\\b",
+        "rollo\\s+(?:de\\s+)?(\\d+(?:\\.\\d+)?)\\s*m",
+        "carrete\\s+(?:de\\s+)?(\\d+(?:\\.\\d+)?)\\s*m",
+        "bobina\\s+(?:de\\s+)?(\\d+(?:\\.\\d+)?)\\s*m",
+        "(\\d+(?:\\.\\d+)?)\\s*m\\s*x",
+        "\\(\\s*(\\d+(?:\\.\\d+)?)\\s*m\\s*\\)",
+        "(\\d+(?:\\.\\d+)?)\\s*(?:m|metros?)\\b"
+      ],
+      "requiere_longitud_explicita": true,
+      "asumir_si_no_encontrado": false,
+      "observacion_asumida": "longitud comercial no detectada en titulo, revisar"
+    },
+    "ductos/tuberias": {
+      "unidad_diseno": "m",
+      "unidades_comerciales_posibles": ["tubo", "unidad", "und", "barra", "tramo", "m", "metro", "metros"],
+      "longitudes_comunes": [3],
+      "patrones_extraccion": [
+        "(\\d+(?:\\.\\d+)?)\\s*m(?:etros?)?\\b",
+        "tubo\\s+(?:de\\s+)?(\\d+(?:\\.\\d+)?)\\s*m",
+        "barra\\s+(?:de\\s+)?(\\d+(?:\\.\\d+)?)\\s*m",
+        "tramo\\s+(?:de\\s+)?(\\d+(?:\\.\\d+)?)\\s*m"
+      ],
+      "requiere_longitud_explicita": false,
+      "asumir_si_no_encontrado": true,
+      "longitud_asumida": 3,
+      "observacion_asumida": "longitud comercial asumida 3 m (estandar tubo PVC electrico), revisar"
+    },
+    "canaletas": {
+      "unidad_diseno": "m",
+      "unidades_comerciales_posibles": ["tubo", "unidad", "und", "barra", "tramo", "m", "metro", "metros"],
+      "longitudes_comunes": [2, 3],
+      "patrones_extraccion": [
+        "(\\d+(?:\\.\\d+)?)\\s*m(?:etros?)?\\b",
+        "(\\d+(?:\\.\\d+)?)\\s*m\\s*x"
+      ],
+      "requiere_longitud_explicita": true,
+      "asumir_si_no_encontrado": false,
+      "observacion_asumida": "longitud comercial no detectada, revisar"
+    },
+    "cinta aislante": {
+      "unidad_diseno": "unidad",
+      "unidades_comerciales_posibles": ["unidad", "und", "rollo", "rollos", "cinta"],
+      "longitudes_comunes": [1],
+      "patrones_extraccion": [
+        "(\\d+(?:\\.\\d+)?)\\s*m(?:etros?)?\\b"
+      ],
+      "requiere_longitud_explicita": false,
+      "asumir_si_no_encontrado": true,
+      "longitud_asumida": 1,
+      "observacion_asumida": "se vende por rollo/unidad, conversion 1:1"
+    },
+    "cajas electricas": {
+      "unidad_diseno": "unidad",
+      "unidades_comerciales_posibles": ["unidad", "und", "caja", "cajas", "paquete", "pack"],
+      "longitudes_comunes": [1],
+      "patrones_extraccion": [
+        "paquete\\s+(?:de\\s+)?(\\d+(?:\\.\\d+)?)\\s*(?:unid|und|piez)",
+        "pack\\s+(?:de\\s+)?(\\d+(?:\\.\\d+)?)\\s*(?:unid|und|piez)",
+        "(?:pack|paquete|bolsa|caja)\\s*x\\s*(\\d+(?:\\.\\d+)?)",
+        "x\\s*(\\d+(?:\\.\\d+)?)\\s*(?:unid|und|piez)",
+        "(\\d+(?:\\.\\d+)?)\\s*unid\\s*(?:por|x)\\s*paquete",
+        "caja\\s+(?:de\\s+)?(\\d+(?:\\.\\d+)?)\\s*unid"
+      ],
+      "requiere_longitud_explicita": false,
+      "asumir_si_no_encontrado": true,
+      "contenido_asumido": 1,
+      "observacion_asumida": "se vende por unidad, conversion 1:1"
+    },
+    "interruptores termomagneticos": {
+      "unidad_diseno": "unidad",
+      "unidades_comerciales_posibles": ["unidad", "und"],
+      "longitudes_comunes": [1],
+      "patrones_extraccion": [],
+      "requiere_longitud_explicita": false,
+      "asumir_si_no_encontrado": true,
+      "contenido_asumido": 1,
+      "observacion_asumida": "se vende por unidad, sin conversion por metros"
+    },
+    "interruptores diferenciales": {
+      "unidad_diseno": "unidad",
+      "unidades_comerciales_posibles": ["unidad", "und"],
+      "longitudes_comunes": [1],
+      "patrones_extraccion": [],
+      "requiere_longitud_explicita": false,
+      "asumir_si_no_encontrado": true,
+      "contenido_asumido": 1,
+      "observacion_asumida": "se vende por unidad, sin conversion por metros"
+    },
+    "tableros electricos": {
+      "unidad_diseno": "unidad",
+      "unidades_comerciales_posibles": ["unidad", "und"],
+      "longitudes_comunes": [1],
+      "patrones_extraccion": [],
+      "requiere_longitud_explicita": false,
+      "asumir_si_no_encontrado": true,
+      "contenido_asumido": 1,
+      "observacion_asumida": "se vende por unidad, sin conversion por metros"
+    },
+    "tomacorrientes": {
+      "unidad_diseno": "unidad",
+      "unidades_comerciales_posibles": ["unidad", "und"],
+      "longitudes_comunes": [1],
+      "patrones_extraccion": [],
+      "requiere_longitud_explicita": false,
+      "asumir_si_no_encontrado": true,
+      "contenido_asumido": 1,
+      "observacion_asumida": "se vende por unidad, sin conversion por metros"
+    },
+    "interruptores simples/dobles/conmutados": {
+      "unidad_diseno": "unidad",
+      "unidades_comerciales_posibles": ["unidad", "und"],
+      "longitudes_comunes": [1],
+      "patrones_extraccion": [],
+      "requiere_longitud_explicita": false,
+      "asumir_si_no_encontrado": true,
+      "contenido_asumido": 1,
+      "observacion_asumida": "se vende por unidad, sin conversion por metros"
+    },
+    "luminarias": {
+      "unidad_diseno": "unidad",
+      "unidades_comerciales_posibles": ["unidad", "und"],
+      "longitudes_comunes": [1],
+      "patrones_extraccion": [],
+      "requiere_longitud_explicita": false,
+      "asumir_si_no_encontrado": true,
+      "contenido_asumido": 1,
+      "observacion_asumida": "se vende por unidad, sin conversion por metros"
+    },
+    "puesta a tierra": {
+      "unidad_diseno": "unidad",
+      "subcategorias": {
+        "varilla": {
+          "unidad_diseno": "unidad",
+          "unidades_comerciales_posibles": ["unidad", "und", "varilla", "electrodo"],
+          "longitudes_comunes": [1],
+          "patrones_extraccion": [],
+          "requiere_longitud_explicita": false,
+          "asumir_si_no_encontrado": true,
+          "contenido_asumido": 1,
+          "observacion_asumida": "se vende por unidad (varilla/electrodo)"
+        },
+        "conductor": {
+          "unidad_diseno": "m",
+          "unidades_comerciales_posibles": ["m", "metro", "metros", "rollo", "carrete"],
+          "longitudes_comunes": [10, 25, 50, 100],
+          "patrones_extraccion": [
+            "(\\d+(?:\\.\\d+)?)\\s*m(?:etros?)?\\b",
+            "x\\s*(\\d+(?:\\.\\d+)?)\\s*m\\b",
+            "rollo\\s+(?:de\\s+)?(\\d+(?:\\.\\d+)?)\\s*m"
+          ],
+          "requiere_longitud_explicita": true,
+          "asumir_si_no_encontrado": false,
+          "observacion_asumida": "longitud comercial no detectada en titulo, revisar"
+        },
+        "caja registro": {
+          "unidad_diseno": "unidad",
+          "unidades_comerciales_posibles": ["unidad", "und", "caja"],
+          "longitudes_comunes": [1],
+          "patrones_extraccion": [],
+          "requiere_longitud_explicita": false,
+          "asumir_si_no_encontrado": true,
+          "contenido_asumido": 1,
+          "observacion_asumida": "se vende por unidad"
+        },
+        "conector": {
+          "unidad_diseno": "unidad",
+          "unidades_comerciales_posibles": ["unidad", "und", "abrazadera", "conector"],
+          "longitudes_comunes": [1],
+          "patrones_extraccion": [],
+          "requiere_longitud_explicita": false,
+          "asumir_si_no_encontrado": true,
+          "contenido_asumido": 1,
+          "observacion_asumida": "se vende por unidad"
+        }
+      }
+    },
+    "accesorios": {
+      "unidad_diseno": "unidad",
+      "unidades_comerciales_posibles": ["unidad", "und", "bolsa", "paquete", "pack", "caja"],
+      "longitudes_comunes": [1],
+      "patrones_extraccion": [
+        "(\\d+(?:\\.\\d+)?)\\s*(?:unid|und|piez)\\s*(?:por|x)\\s*(?:bolsa|paquete|pack|caja)",
+        "(?:paquete|pack|bolsa|caja)\\s+(?:de\\s+)?(\\d+(?:\\.\\d+)?)\\s*(?:unid|und|piez)",
+        "(?:paquete|pack|bolsa|caja)\\s*x\\s*(\\d+(?:\\.\\d+)?)",
+        "x\\s*(\\d+(?:\\.\\d+)?)\\s*(?:unid|und|piez)"
+      ],
+      "requiere_longitud_explicita": false,
+      "asumir_si_no_encontrado": true,
+      "contenido_asumido": 1,
+      "observacion_asumida": "se vende por unidad o paquete, conversion 1:1 salvo que indique cantidad por paquete"
+    }
+  }
+}

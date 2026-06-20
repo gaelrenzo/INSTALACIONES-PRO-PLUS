@@ -1,0 +1,56 @@
+# Resultados reproducibles
+/build/
+**/build/
+**/dist/
+**/output/
+**/salidas/
+**/temp/
+**/tmp/
+
+# Fuentes pesadas o privadas disponibles solo en la maquina de trabajo
+/referencias/local/
+/proyectos/*/fuentes/local/
+
+# LaTeX
+*.aux
+*.fdb_latexmk
+*.fls
+*.lof
+*.log
+*.lot
+*.out
+*.synctex.gz
+*.toc
+
+# Python
+.venv/
+venv/
+__pycache__/
+.pytest_cache/
+*.py[cod]
+
+# Cache y evidencias de consultas web
+**/.cache/
+**/cache/
+**/evidencias/*.json
+!proyectos/*/presupuesto/evidencias/manifest.json
+
+# Temporales de Office y CAD
+~$*
+*.bak
+*.dwl
+*.dwl2
+plot.log
+\#*
+*~
+
+# Sistemas operativos y editores
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Configuracion local de asistentes y agentes
+.gemini/
+.claude/
+.codex/

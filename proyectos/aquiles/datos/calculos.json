@@ -1,0 +1,182 @@
+{
+  "proyecto": "Instalaciones Electricas Interiores - Vivienda Unifamiliar de 2 Pisos",
+  "propietario": "Aquiles Taylor Ramos Yapo",
+  "ubicacion": {
+    "distrito": "San Miguel",
+    "provincia": "San Roman",
+    "departamento": "Puno",
+    "direccion": "Avenida Horacio con Jr. Marineros, Mz F7, Lotes 11 y 12",
+    "estado": "preliminar",
+    "fuente": "respuestas-cuestionario-aquiles.md"
+  },
+  "areas": {
+    "terreno_m2": {
+      "valor": 134.18,
+      "estado": "preliminar",
+      "fuente": "respuestas-cuestionario-aquiles.md"
+    },
+    "techada_primer_piso_m2": {
+      "valor": null,
+      "estado": "por confirmar",
+      "fuente": "croquis y planos CAD aun no acotados"
+    },
+    "techada_segundo_piso_m2": {
+      "valor": 42.56,
+      "estado": "preliminar",
+      "fuente": "respuestas-cuestionario-aquiles.md"
+    },
+    "techada_total_calculo_m2": {
+      "valor": 120.0,
+      "estado": "preliminar",
+      "fuente": "escenario provisional de calculo; debe validarse con Aquiles"
+    }
+  },
+  "parametros_electricos": {
+    "tension_v": 220,
+    "fases": 1,
+    "frecuencia_hz": 60,
+    "factor_potencia_cosphi": 0.90,
+    "factor_diseno_conductor": 1.25,
+    "factor_diseno_estado": "criterio preliminar conservador; REVISAR sustento normativo especifico para vivienda",
+    "resistividad_cobre_rho": 0.0178,
+    "resistividad_cobre_fuente": "valor usado en auditoria y motor; mantener uniforme en el expediente",
+    "caida_tension_max_alimentador_porc": 1.5,
+    "caida_tension_max_alimentador_estado": "criterio conservador del proyecto; CNE-U 050-102 verificado permite 2.5% y total 4%",
+    "caida_tension_max_derivados_porc": 2.5,
+    "caida_tension_total_max_cne_porc": 4.0
+  },
+  "alimentacion_principal": {
+    "origen": "Medidor Concesionaria (Electro Puno S.A.A.)",
+    "destino": "Tablero General (TG)",
+    "longitud_m": 12.0,
+    "estado": "preliminar",
+    "fuente": "estimacion de auditoria; confirmar ubicacion de medidor y TG"
+  },
+  "escenario_dimensionamiento_id": "cocina_electrica_preliminar",
+  "circuitos_base": [
+    {
+      "id": "C1",
+      "descripcion": "Alumbrado 1er Piso",
+      "potencia_instalada_w": 80,
+      "factor_demanda": 1.0,
+      "longitud_m": 15.0,
+      "seccion_conductor_mm2": 2.5,
+      "diametro_tubo_mm": 20,
+      "estado": "preliminar",
+      "fuente": "4 luminarias (v4) * 20W/punto; seccion corregida por CNE-U 030-002"
+    },
+    {
+      "id": "C2",
+      "descripcion": "Tomacorrientes 1er Piso",
+      "potencia_instalada_w": 1260,
+      "factor_demanda": 0.70,
+      "longitud_m": 18.0,
+      "seccion_conductor_mm2": 2.5,
+      "diametro_tubo_mm": 20,
+      "estado": "preliminar",
+      "fuente": "7 tomacorrientes (v4) * 180W/punto"
+    },
+    {
+      "id": "C3",
+      "descripcion": "Cocina 1er Piso (Auxiliar)",
+      "potencia_instalada_w": 300,
+      "factor_demanda": 0.80,
+      "longitud_m": 10.0,
+      "seccion_conductor_mm2": 2.5,
+      "diametro_tubo_mm": 20,
+      "estado": "preliminar",
+      "fuente": "cuestionario Aquiles"
+    },
+    {
+      "id": "C4",
+      "descripcion": "Alumbrado 2do Piso",
+      "potencia_instalada_w": 132,
+      "factor_demanda": 1.0,
+      "longitud_m": 22.0,
+      "seccion_conductor_mm2": 2.5,
+      "diametro_tubo_mm": 20,
+      "estado": "preliminar",
+      "fuente": "cuestionario Aquiles; seccion corregida por CNE-U 030-002"
+    },
+    {
+      "id": "C5",
+      "descripcion": "Tomacorrientes 2do Piso",
+      "potencia_instalada_w": 2340,
+      "factor_demanda": 0.70,
+      "longitud_m": 25.0,
+      "seccion_conductor_mm2": 2.5,
+      "diametro_tubo_mm": 20,
+      "estado": "preliminar",
+      "fuente": "tomacorrientes del segundo piso por confirmar"
+    },
+    {
+      "id": "C6",
+      "descripcion": "Cocina 2do Piso - tomacorrientes de servicio",
+      "potencia_instalada_w": 3400,
+      "factor_demanda": 0.80,
+      "longitud_m": 20.0,
+      "seccion_conductor_mm2": 4.0,
+      "diametro_tubo_mm": 25,
+      "estado": "preliminar",
+      "fuente": "microondas, waflera y tomacorrientes de servicio; cocina electrica por confirmar"
+    },
+    {
+      "id": "C7",
+      "descripcion": "Lavadora 2do Piso",
+      "potencia_instalada_w": 800,
+      "factor_demanda": 0.80,
+      "longitud_m": 15.0,
+      "seccion_conductor_mm2": 2.5,
+      "diametro_tubo_mm": 20,
+      "estado": "preliminar",
+      "fuente": "potencia de placa por confirmar"
+    },
+    {
+      "id": "C8",
+      "descripcion": "Bomba de Agua Exterior",
+      "potencia_instalada_w": 746,
+      "factor_demanda": 1.0,
+      "longitud_m": 14.0,
+      "seccion_conductor_mm2": 2.5,
+      "diametro_tubo_mm": 20,
+      "estado": "preliminar",
+      "fuente": "1 HP asumido; potencia de placa por confirmar"
+    }
+  ],
+  "escenarios": [
+    {
+      "id": "cocina_gas",
+      "nombre": "Escenario 1 - cocina a gas o sin cocina electrica de alta potencia",
+      "estado": "preliminar",
+      "descripcion": "Mantiene C6 como circuito de tomacorrientes de servicio de cocina y artefactos menores/medios.",
+      "cocina_electrica": false,
+      "circuito_overrides": {},
+      "cne_050_200": {
+        "aplicar": true,
+        "cocina_electrica_normativa_w": 0
+      }
+    },
+    {
+      "id": "cocina_electrica_preliminar",
+      "nombre": "Escenario 2 - cocina electrica considerada",
+      "estado": "comparativo conservador por confirmar",
+      "descripcion": "Usa 6000 W para la primera cocina electrica conforme CNE-U 050-200; no confirma que Aquiles instalara cocina electrica.",
+      "cocina_electrica": true,
+      "circuito_overrides": {
+        "C6": {
+          "descripcion": "Cocina electrica 2do Piso (escenario por confirmar)",
+          "potencia_instalada_w": 6000,
+          "factor_demanda": 1.0,
+          "seccion_conductor_mm2": 10.0,
+          "diametro_tubo_mm": 32,
+          "estado": "escenario por confirmar",
+          "fuente": "CNE-U 050-200: primera cocina electrica hasta 12 kW"
+        }
+      },
+      "cne_050_200": {
+        "aplicar": true,
+        "cocina_electrica_normativa_w": 6000
+      }
+    }
+  ]
+}

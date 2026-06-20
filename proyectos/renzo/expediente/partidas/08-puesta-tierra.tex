@@ -1,0 +1,391 @@
+%==============================================================================
+% PARTIDA 08: SISTEMA DE PUESTA A TIERRA
+% Codigo: OE.5.4.1.1
+%==============================================================================
+\subsection{OE.5.4.1.1 Puesta a Tierra PAT-1}
+
+\subsubsection{Especificaciones Tecnicas}
+
+Sistema de puesta a tierra tipo vertical (PAT-1) para la vivienda. Debe cumplir con CNE-U Seccion 6 (Puesta a tierra), RNE EM.010 Articulo 15, NTP 370.053, NTP 370.304 y NTP-IEC 60364-5-54.
+
+\begin{itemize}[nosep]
+  \item \textbf{Tipo de electrodo:} Varilla vertical de copperweld (acero recubierto de cobre).
+  \item \textbf{Diametro:} 5/8'' (15.88 mm) segun NTP 370.053.
+  \item \textbf{Longitud:} 2.40 m (segun CNE-U Articulo 600.4, longitud minima 2.40 m).
+  \item \textbf{Recubrimiento de cobre:} 254 micras minimo (aplicado por proceso electrolitico).
+  \item \textbf{Conexion:} Conector split-bolt de bronce (aleacion Cu-Sn-Zn) para union varilla-conductor.
+  \item \textbf{Conductor de tierra:} Cobre electrolitico temple blando, 6 mm2 de seccion (CNE-U Tabla 600.1).
+  \item \textbf{Resistencia objetivo:} $R_g < 15\ \Omega$ (valor recomendado para instalaciones residenciales peruanas).
+  \item \textbf{Caja de registro:} Concreto prefabricado, 0.30 m x 0.30 m x 0.30 m, con tapa removible y orificio para inspeccion.
+  \item \textbf{Gel conductor:} Compuesto electroconductivo a base de carburo de silicio, para relleno del pozo alrededor de la varilla.
+\end{itemize}
+
+\paragraph{Calculo de la resistencia de puesta a tierra (metodo de Dwight):}
+Para una varilla vertical de longitud $L$ = 2.40 m y diametro $d$ = 0.016 m, en suelo de resistividad $\rho$ = 100 $\Omega$m (valor tipico para suelos arcillosos de Puno):
+
+\begin{equation}
+R_g = \frac{\rho}{2\pi L} \ln\left(\frac{4L}{d}\right) = \frac{100}{2\pi \times 2.40} \ln\left(\frac{4 \times 2.40}{0.016}\right) = 6.63 \times \ln(600) = 6.63 \times 6.40 = 42.4\ \Omega
+\end{equation}
+
+Este valor supera los 15 $\Omega$ objetivo. Se recomienda:
+\begin{itemize}
+  \item Utilizar gel conductor (bentonita) para reducir la resistividad efectiva del suelo alrededor de la varilla.
+  \item Si es necesario, instalar una segunda varilla paralela separada 2.40 m (la longitud de una varilla) para reducir la resistencia total.
+  \item El gel conductor puede reducir la resistividad aparente del suelo en un 40-60\%.
+\end{itemize}
+
+\subsubsection{Requisitos de Materiales}
+
+\begin{longtable}{L{5.5cm} L{2.0cm} L{7.0cm}}
+\toprule
+\textbf{Material} & \textbf{Cant.} & \textbf{Especificacion tecnica} \\
+\midrule
+Varilla copperweld 5/8'' x 2.40 m & 1 pza | Acero recubierto cobre 254 $\mu$m, con extremo biselado \\
+Conector split-bolt bronce 6-10 mm2 & 1 pza | Bronce estañado, para union varilla-conductor \\
+Conductor cobre temple blando 6 mm2 desnudo & 25 m | Cobre electrolitico 99.9\%, clase 2 \\
+Caja de registro concreto 0.30x0.30x0.30 m & 1 pza | Con tapa removible, con orificio de inspeccion \\
+Gel conductor (bentonita o carbon vegetal activado) & 25 kg | Para relleno del pozo alrededor de la varilla \\
+Tuberia PVC 3/4'' (proteccion conductor) & 5 m | Para proteger conductor de tierra en tramos expuestos \\
+Terminal de compression tipo ojo 6 mm2 & 2 pza | Para conexion a barra de tierra del tablero \\
+Pegamento PVC & 1/8 gln | Para sellado de tuberia de proteccion \\
+\bottomrule
+\end{longtable}
+
+\subsubsection{Metodo de Ejecucion}
+
+\begin{enumerate}
+  \item \textbf{Ubicacion:} Seleccionar el punto de instalacion segun plano IE-06, a no menos de 1.00 m de la cimentacion de la vivienda, en zona accesible para inspeccion y mantenimiento.
+  \item \textbf{Excavacion del pozo:}
+  \begin{enumerate}
+    \item Excavar pozo de 0.60 m x 0.60 m de seccion y 2.60 m de profundidad.
+    \item En suelos rocosos, la profundidad minima puede reducirse a 1.50 m, pero se debe compensar con mayor uso de gel conductor.
+    \item El fondo del pozo debe estar libre de piedras y materiales organicos.
+  \end{enumerate}
+  \item \textbf{Instalacion de la varilla:}
+  \begin{enumerate}
+    \item Colocar la varilla en el centro del pozo, con el extremo biselado hacia abajo.
+    \item Hincar la varilla mediante golpes con combo de 8 lb, utilizando un protector de varilla (dado de hincado) para no danar el recubrimiento de cobre.
+    \item La varilla debe penetrar completamente (2.40 m), dejando 0.10 m sobresaliendo del fondo del pozo para conexiones.
+  \end{enumerate}
+  \item \textbf{Conexion del conductor:}
+  \begin{enumerate}
+    \item Pelar 5 cm del conductor de cobre de 6 mm2 (si tiene aislamiento).
+    \item Insertar el conductor en el conector split-bolt.
+    \item Colocar el conector split-bolt sobre la varilla, a 5 cm del extremo superior.
+    \item Apretar el conector con llave de torque a 15 Nm.
+    \item Aplicar gel conductor en toda la conexion para evitar corrosion.
+  \end{enumerate}
+  \item \textbf{Relleno del pozo:}
+  \begin{enumerate}
+    \item Rellenar el pozo con tierra cernida (sin piedras) mezclada con gel conductor (bentonita) en proporcion 3:1.
+    \item Compactar en capas de 0.15 m, humedeciendo ligeramente cada capa.
+    \item Los ultimos 0.30 m se rellenan con tierra natural compactada.
+  \end{enumerate}
+  \item \textbf{Instalacion de caja de registro:}
+  \begin{enumerate}
+    \item Colocar la caja de registro de concreto sobre el pozo, centrada sobre la varilla.
+    \item La tapa debe quedar al ras con el nivel del terreno.
+    \item Pasar el conductor de tierra a traves del orificio lateral de la caja.
+  \end{enumerate}
+  \item \textbf{Tendido del conductor hasta TG-01:}
+  \begin{enumerate}
+    \item Tender el conductor de 6 mm2 desde la caja de registro hasta la barra de tierra del TG-01.
+    \item En tramos expuestos (sobre piso, en muros), proteger con tuberia PVC de 3/4''.
+    \item Fijar la tuberia de proteccion con abrazaderas cada 1.00 m.
+    \item Conectar a la barra de tierra del TG-01 mediante terminal de compression tipo ojo, con torque de 5 Nm.
+  \end{enumerate}
+\end{enumerate}
+
+\subsubsection{Control de Calidad}
+
+\begin{longtable}{L{4.5cm} L{4.5cm} L{4.5cm}}
+\toprule
+\textbf{Parametro} & \textbf{Metodo de verificacion} & \textbf{Criterio de aceptacion} \\
+\midrule
+Resistencia de puesta a tierra ($R_g$) & Telurómetro (metodo 3 varillas auxiliares, metodo de Wenner) & $R_g < 15\ \Omega$ \\
+Continuidad & Multimetro digital entre barra de tierra TG-01 y varilla & < 0.5 $\Omega$ \\
+Profundidad de varilla & Inspeccion visual y cinta metrica & 2.40 m ± 0.10 m \\
+Conexion split-bolt & Inspeccion visual y prueba de traccion (5 kg) & Firme, sin juego, con gel conductor \\
+Caja de registro & Inspeccion visual & Nivelada, tapa accesible, identificada \\
+Proteccion de conductor & Inspeccion visual de tuberia PVC en tramos expuestos & Correctamente instalada \\
+\bottomrule
+\end{longtable}
+
+\paragraph{Protocolo de medicion de resistencia de puesta a tierra:}
+\begin{enumerate}
+  \item Utilizar telurómetro digital con frecuencia de medicion de 128 Hz.
+  \item Metodo de las 3 varillas auxiliares (metodo de caida de potencial, NTP 370.304).
+  \item Distancia entre electrodo auxiliar (C2) y electrodo de tension (P2): 62\% de la distancia total.
+  \item Distancia total: 20 m (separacion entre varilla PAT-1 y varilla auxiliar C1).
+  \item Realizar 3 mediciones y promediar.
+  \item Registrar en protocolo: fecha, condiciones climaticas, valor de resistencia, metodo utilizado, operador.
+\end{enumerate}
+
+\subsubsection{Metodo de Medicion}
+
+Se medira por juego (jgo) de puesta a tierra completamente instalado, incluyendo varilla, conductor de 6 mm2, caja de registro, conector split-bolt, gel conductor, pozo de tierra, proteccion de conductor y medicion de resistencia verificada.
+
+\subsubsection{Unidad de Medida}
+
+jgo (juego).
+
+\subsubsection{Forma de Pago}
+
+Pago por juego completamente instalado, con medicion de resistencia menor a 15 $\Omega$ verificada por supervision mediante telurómetro calibrado. El protocolo de medicion debe ser entregado como parte de la recepcion de la partida.
+
+%==============================================================================
+% PARTIDA 09: ARTEFACTOS DE ALUMBRADO
+% Codigo: OE.5.5.1
+%==============================================================================
+\subsection{OE.5.5.1 Luminaria LED Interior de Adosar 12 W}
+
+\subsubsection{Especificaciones Tecnicas}
+
+Luminaria LED de 12 W para iluminacion general interior, tipo adosar a techo. Debe cumplir con NTP-IEC 60598-1 (Luminarias), NTP 370.304 y EM.010.
+
+\begin{itemize}[nosep]
+  \item \textbf{Tipo:} Adosar a techo (surface mounted).
+  \item \textbf{Potencia nominal:} 12 W ± 1 W.
+  \item \textbf{Flujo luminoso:} Minimo 1200 lm (eficiencia: 100 lm/W).
+  \item \textbf{Temperatura de color:} 3000 K -- 4000 K (blanco calido a neutro).
+  \item \textbf{Indice de Rendimiento Cromatico (CRI):} > 80.
+  \item \textbf{Factor de potencia:} > 0.90.
+  \item \textbf{Vida util:} 25000 horas (L70 segun LM-80).
+  \item \textbf{Grado de proteccion:} IP-20 minimo (interiores).
+  \item \textbf{Material:} Cuerpo de aluminio extrusionado, difusor de policarbonato opal.
+  \item \textbf{Driver LED:} Incorporado, con proteccion contra sobrevoltaje (2 kV) y cortocircuito.
+  \item \textbf{Tension de entrada:} 220 V AC, 50/60 Hz.
+  \item \textbf{Normas:} NTP-IEC 60598-1, NTP-IEC 62031 (Modulos LED), UL 1598.
+\end{itemize}
+
+\subsubsection{Requisitos de Materiales}
+
+\begin{longtable}{L{5.0cm} L{2.0cm} L{7.5cm}}
+\toprule
+\textbf{Material} & \textbf{Cant.} & \textbf{Especificacion tecnica} \\
+\midrule
+Luminaria LED adosar 12 W & 19 pza | 1200 lm, 3000-4000 K, CRI > 80, FP > 0.90 \\
+Tornillo de fijacion 1/4'' x 1'' & 38 pza | Para fijacion a caja octogonal (2 por luminaria) \\
+Conector rapido tipo "wago" 3 bornes & 19 pza | Para conexion fase/neutro/tierra (1 por luminaria) \\
+Cinta aislante vinilica & 1 pza | Para proteccion de conexiones \\
+\bottomrule
+\end{longtable}
+
+\subsubsection{Metodo de Ejecucion}
+
+\begin{enumerate}
+  \item Verificar la existencia y correcta instalacion de la caja octogonal de salida.
+  \item Retirar la tapa ciega de la caja octogonal.
+  \item Identificar los conductores: fase (rojo), neutro (blanco), tierra (verde/verde-amarillo).
+  \item Fijar la luminaria LED a la caja octogonal mediante los tornillos de fijacion en las orejas de la luminaria.
+  \item Conectar los conductores:
+  \begin{itemize}
+    \item Fase (rojo) al borne L del driver LED.
+    \item Neutro (blanco) al borne N del driver LED.
+    \item Tierra (verde) al borne de tierra de la luminaria (si aplica).
+  \end{itemize}
+  \item Colocar el difusor de policarbonato.
+  \item Energizar el circuito y verificar el funcionamiento.
+\end{enumerate}
+
+\subsubsection{Control de Calidad}
+
+\begin{itemize}
+  \item Verificar que la luminaria opere sin parpadeos.
+  \item Medir tension en bornes de la luminaria (220 V ± 10\%).
+  \item Medir corriente de consumo (debe ser < 0.07 A para 12 W a 220 V).
+  \item Verificar correcta fijacion mecanica (sin juego).
+\end{itemize}
+
+\subsubsection{Metodo de Medicion}
+
+Se medira por pieza (pza) de luminaria LED instalada y probada.
+
+\subsubsection{Unidad de Medida}
+
+pza (pieza).
+
+\subsubsection{Forma de Pago}
+
+Pago por pieza instalada, probada (encendido verificado) y aprobada por supervision.
+
+%==============================================================================
+% PARTIDA 10: EQUIPOS ELECTRICOS Y MECANICOS
+% Codigo: OE.5.6.1
+%==============================================================================
+\subsection{OE.5.6.1 Electrobomba Monofasica de Agua 1 HP, 220V, 60Hz}
+
+\subsubsection{Especificaciones Tecnicas}
+
+Electrobomba centrifuga monofasica de 1 HP para sistema de presurizacion de agua de la vivienda.
+
+\begin{itemize}[nosep]
+  \item \textbf{Potencia:} 1 HP (745 W).
+  \item \textbf{Tension:} 220 V monofasico, 60 Hz.
+  \item \textbf{Corriente nominal:} Aprox. 5.0 A a plena carga (verificar en placa).
+  \item \textbf{Proteccion termica:} Incorporada (protector termico de sobrecarga).
+  \item \textbf{Caudal:} 40-60 L/min segun altura dinamica total.
+  \item \textbf{Altura dinamica total maxima:} 25-35 mca.
+  \item \textbf{Conexion:} 1'' de succion y 1'' de descarga (rosca NPT).
+  \item \textbf{Control:} Interruptor de nivel automatico (control de nivel por boya electrica o presostato).
+  \item \textbf{Proteccion electrica:} Interruptor termomagnetico 2P-16A y tomacorriente servicio pesado 20 A.
+\end{itemize}
+
+\subsubsection{Requisitos de Materiales}
+
+\begin{longtable}{L{5.0cm} L{2.0cm} L{7.5cm}}
+\toprule
+\textbf{Material} & \textbf{Cant.} & \textbf{Especificacion tecnica} \\
+\midrule
+Electrobomba monofasica 1 HP, 220 V & 1 UND | Centrifuga, con protector termico, 40-60 L/min \\
+Interruptor de nivel automatico (boya) & 1 pza | Para control automatico de llenado de tanque \\
+Valvula de compuerta 1'' & 2 pza | Para succion y descarga \\
+Valvula de retencion 1'' & 1 pza | Para evitar retroceso de agua \\
+Nipple galvanizado 1'' x 4'' & 2 pza | Conexion a succion y descarga \\
+Union universal galvanizada 1'' & 2 pza | Para desmontaje de la bomba \\
+Cinta teflon (sellador de roscas) & 2 pza | Para sellado de conexiones hidraulicas \\
+Perno de anclaje 1/2'' x 4'' con tarugo & 4 pza | Para fijacion de la bomba a base de concreto \\
+\bottomrule
+\end{longtable}
+
+\subsubsection{Metodo de Ejecucion}
+
+\begin{enumerate}
+  \item Ubicar la electrobomba en el area tecnica designada (tercer piso), sobre base de concreto de 0.40 m x 0.40 m x 0.15 m.
+  \item Fijar la bomba a la base mediante pernos de anclaje de 1/2''.
+  \item Conectar tuberia de succion (1'') desde el tanque de agua hasta la entrada de la bomba.
+  \item Conectar tuberia de descarga (1'') desde la salida de la bomba hasta la red de distribucion.
+  \item Instalar valvula de compuerta en la succion y descarga (para mantenimiento).
+  \item Instalar valvula de retencion en la tuberia de descarga (despues de la valvula de compuerta).
+  \item Conectar el interruptor de nivel automatico segun instrucciones del fabricante.
+  \item Conectar la bomba al tomacorriente de servicio pesado 20 A (circuito dedicado C5).
+  \item Verificar que el interruptor termomagnetico asociado sea de 16 A.
+\end{enumerate}
+
+\subsubsection{Control de Calidad}
+
+\begin{itemize}
+  \item Verificar que la bomba arranque y pare correctamente con el control de nivel.
+  \item Medir corriente de operacion con pinza amperimetrica (debe ser menor a la corriente nominal de placa).
+  \item Medir tension en bornes: 220 V ± 10\%.
+  \item Verificar que no existan fugas de agua en las conexiones hidraulicas.
+  \item Verificar que la valvula de retencion funcione correctamente.
+\end{itemize}
+
+\subsubsection{Metodo de Medicion}
+
+Se medira por unidad (UND) de electrobomba completamente instalada, incluyendo conexiones electricas, hidraulicas, control de nivel y pruebas de funcionamiento.
+
+\subsubsection{Unidad de Medida}
+
+UND (unidad).
+
+\subsubsection{Forma de Pago}
+
+Pago por unidad instalada, probada en operacion (arranque/parada automatica), sin fugas, y aprobada por supervision.
+
+%==============================================================================
+% PARTIDA 11: PRUEBAS ELECTRICAS
+% Codigo: OE.5.7.1
+%==============================================================================
+\subsection{OE.5.7.1 Pruebas de Aislamiento, Continuidad y Resistencia de Puesta a Tierra}
+
+\subsubsection{Especificaciones Tecnicas}
+
+Conjunto de pruebas electricas para verificacion final de la instalacion antes de la puesta en servicio. Deben realizarse segun NTP-IEC 60364-6 (Verificacion de instalaciones electricas), NTP 370.304 y CNE-U Articulo 800.1.
+
+\paragraph{Pruebas obligatorias:}
+
+\begin{longtable}{L{5.0cm} L{5.0cm} L{4.5cm}}
+\toprule
+\textbf{Prueba} & \textbf{Equipo requerido} & \textbf{Criterio de aceptacion} \\
+\midrule
+Continuidad de conductores de proteccion & Multimetro digital & Resistencia < 1 $\Omega$ \\
+Resistencia de aislamiento & Megohmetro 500 V (hasta 50 V) o 1000 V (> 50 V) & > 1 M$\Omega$ (recomendado > 10 M$\Omega$) \\
+Polaridad de tomacorrientes & Comprobador de tomacorrientes (tester) & Correcta L/N/PE \\
+Resistencia de puesta a tierra & Telurómetro digital & $R_g < 15\ \Omega$ \\
+Funcionamiento de diferenciales & RCD tester o boton TEST de cada ID & Disparo < 40 ms a 30 mA \\
+Tension de alimentacion & Multimetro digital true RMS & 220 V ± 10\% (198 V -- 242 V) \\
+Corriente de circuito & Pinza amperimetrica & < corriente nominal del interruptor \\
+Secuencia de fases & Medidor de secuencia de fases & Correcta (solo para trifasico) \\
+\bottomrule
+\end{longtable}
+
+\subsubsection{Requisitos de Materiales y Equipos}
+
+\begin{longtable}{L{5.0cm} L{2.0cm} L{7.5cm}}
+\toprule
+\textbf{Equipo} & \textbf{Cant.} & \textbf{Especificacion tecnica} \\
+\midrule
+Megohmetro digital 500 / 1000 V & 1 pza | Rango 0-1000 M$\Omega$, precision ±3\% \\
+Telurómetro digital & 1 pza | Metodo 3 varillas, rango 0-2000 $\Omega$, frecuencia 128 Hz \\
+Multimetro digital true RMS & 1 pza | CAT III 600 V, precision 0.5\% \\
+Comprobador de tomacorrientes & 1 pza | Indicacion LED de polaridad L/N/PE \\
+RCD tester & 1 pza | Para medicion de tiempo de disparo y corriente de fuga \\
+Pinza amperimetrica & 1 pza | Rango 0-200 A AC, CAT III 600 V \\
+Protocolo de pruebas & 3 juegos | Formato impreso para registro de resultados \\
+\bottomrule
+\end{longtable}
+
+\subsubsection{Metodo de Ejecucion}
+
+\begin{enumerate}
+  \item \textbf{Antes de energizar:}
+  \begin{enumerate}
+    \item Verificar que todos los circuitos esten completos y correctamente conectados.
+    \item Inspeccion visual general de tableros, cajas, conexiones y canalizaciones.
+    \item Prueba de continuidad de todos los conductores de proteccion (tierra).
+    \item Medicion de resistencia de aislamiento (F-N, F-T, N-T) con megohmetro de 1000 V.
+    \item Verificar que no existan cortocircuitos entre fases, fase-neutro y fase-tierra.
+  \end{enumerate}
+  \item \textbf{Energizacion:}
+  \begin{enumerate}
+    \item Conectar el suministro electrico.
+    \item Medir tension en la entrada del interruptor general (220 V ± 10\%).
+    \item Cerrar el interruptor general.
+    \item Medir tension en la barra de distribucion de cada tablero.
+  \end{enumerate}
+  \item \textbf{Pruebas por circuito:}
+  \begin{enumerate}
+    \item Cerrar cada interruptor termomagnetico uno por uno.
+    \item Verificar polaridad en cada tomacorriente con el comprobador.
+    \item Probar cada interruptor de luz (S1 y S3).
+    \item Verificar funcionamiento de cada luminaria.
+    \item Medir tension en cada tomacorriente.
+  \end{enumerate}
+  \item \textbf{Pruebas de proteccion diferencial:}
+  \begin{enumerate}
+    \item Presionar boton TEST de cada interruptor diferencial.
+    \item Verificar que dispare inmediatamente (debe cortar el suministro en menos de 40 ms).
+    \item Presionar RESET para restablecer.
+    \item Si se dispone de RCD tester, medir el tiempo de disparo real.
+  \end{enumerate}
+  \item \textbf{Medicion de puesta a tierra:}
+  \begin{enumerate}
+    \item Realizar medicion con telurómetro (metodo de 3 varillas).
+    \item Registrar el valor de resistencia.
+    \item Si $R_g > 15\ \Omega$, evaluar medidas correctivas (segunda varilla, tratamiento del suelo).
+  \end{enumerate}
+  \item \textbf{Registro:} Completar el protocolo de pruebas con todos los resultados, fechas, y firma del responsable.
+\end{enumerate}
+
+\subsubsection{Control de Calidad}
+
+\begin{itemize}
+  \item Todos los equipos de medicion deben tener certificado de calibracion vigente (maximo 1 ano de antiguedad).
+  \item Los resultados deben registrarse en el protocolo de pruebas y ser firmados por el supervisor.
+  \item Cualquier valor fuera de tolerancia debe ser reportado y corregido antes de la puesta en servicio.
+  \item Se debe entregar copia del protocolo de pruebas al propietario.
+\end{itemize}
+
+\subsubsection{Metodo de Medicion}
+
+Se medira como un global (glb) que comprende la ejecucion de todas las pruebas descritas para la instalacion completa, incluyendo el uso de equipos de medicion, la elaboracion y entrega del protocolo de pruebas.
+
+\subsubsection{Unidad de Medida}
+
+glb (global).
+
+\subsubsection{Forma de Pago}
+
+Pago por global de pruebas ejecutadas, con protocolo de pruebas presentado, completo, firmado y aprobado por supervision.

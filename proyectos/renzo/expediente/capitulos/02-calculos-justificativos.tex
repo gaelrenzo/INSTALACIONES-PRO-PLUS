@@ -1,0 +1,157 @@
+\chapter{CALCULOS JUSTIFICATIVOS}
+
+\section{Alcance del calculo}
+
+El calculo se desarrolla para una vivienda unifamiliar de tres niveles con suministro monofasico de 220 V, 60 Hz. La propuesta se basa en los layouts arquitectonicos canonicos y en el modelo electrico vigente representado en las laminas IE-02, IE-03 e IE-04.
+
+Por requerimiento de diseno, la sectorizacion se organiza en 7 circuitos independientes (alumbrado y tomacorrientes por nivel, mas un circuito de tomacorrientes especiales de cocina en el primer piso). Se han eliminado motores o bombas especiales para simplificar la instalacion y ajustarse exclusivamente al levantamiento real de puntos.
+
+\section{Premisas de calculo}
+
+\begin{itemize}
+  \item Tension nominal: 220 V monofasico.
+  \item Factor de potencia (cos $\phi$) adoptado: 0.90.
+  \item Potencia unitaria de luminaria LED: 125 W por punto (adoptado para proporcionar un margen de reserva y seguridad superior al mínimo normativo de 50 W).
+  \item Potencia unitaria de tomacorriente general: Entre 187.5 W y 250 W por punto doble (adoptado para prever demandas futuras y superar el mínimo de 180 W del CNE-U).
+  \item Factor de demanda para circuitos de Alumbrado: 1.00.
+  \item Factor de demanda para circuitos de Tomacorrientes: 0.70 (excepto en el primer piso donde se aplica 1.00 por consideraciones de uso en tienda/comercial).
+  \item Proteccion diferencial de 30 mA para todos los circuitos de tomacorrientes.
+\end{itemize}
+
+\section{Formulas empleadas}
+
+\begin{equation}
+P_{inst} = \sum P_i
+\end{equation}
+
+\begin{equation}
+P_{dem} = \sum (P_i \times f_{d,i})
+\end{equation}
+
+\begin{equation}
+I_{dem} = \frac{P_{dem}}{V \times fp}
+\end{equation}
+
+Donde $P_{inst}$ es la potencia instalada, $P_{dem}$ es la potencia demandada, $f_{d,i}$ es el factor de demanda del circuito $i$, $V$ es la tension nominal (220 V) y $fp$ es el factor de potencia (0.90).
+
+\section{Cuadro de cargas por circuito}
+
+\begin{table}[H]
+\centering
+\small
+\setlength{\tabcolsep}{3pt}
+\caption{Cuadro de cargas por circuito (7 Circuitos)}
+\label{tab:cuadro-cargas-circuito}
+\begin{tabularx}{\textwidth}{l Y c r c r Y Y}
+\toprule
+\textbf{Cto.} & \textbf{Uso} & \textbf{Ptos.} & \textbf{P. Inst. (W)} & \textbf{F.D.} & \textbf{P. Dem. (W)} & \textbf{Protección} & \textbf{Conductor} \\
+\midrule
+C1 & Alumbrado primer piso & 4 & 500 & 1.00 & 500 & 2P-10A & 3 x 1.5 mm2 Cu \\
+C2 & Tomacorrientes generales 1er piso & 5 & 1000 & 1.00 & 1000 & 2P-16A & 3 x 2.5 mm2 Cu \\
+C3 & Tomacorrientes especiales cocina & 3 & 1500 & 1.00 & 1500 & 2P-20A & 3 x 2.5 mm2 Cu \\
+C4 & Alumbrado segundo piso & 4 & 500 & 1.00 & 500 & 2P-10A & 3 x 1.5 mm2 Cu \\
+C5 & Tomacorrientes del segundo piso & 8 & 1500 & 0.70 & 1050 & 2P-16A & 3 x 2.5 mm2 Cu \\
+C6 & Alumbrado tercer piso & 4 & 500 & 1.00 & 500 & 2P-10A & 3 x 1.5 mm2 Cu \\
+C7 & Tomacorrientes del tercer piso & 6 & 1500 & 0.70 & 1050 & 2P-16A & 3 x 2.5 mm2 Cu \\
+\textbf{Total} &  & \textbf{34} & \textbf{7000} &  & \textbf{6100} &  &  \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\section{Levantamiento de cargas por ambiente}
+
+\begin{table}[H]
+\centering
+\small
+\setlength{\tabcolsep}{3pt}
+\caption{Levantamiento de cargas por ambiente}
+\label{tab:levantamiento-cargas}
+\begin{tabularx}{\textwidth}{c c Y c c r r c Y}
+\toprule
+\textbf{Item} & \textbf{Ambiente} & \textbf{Equipo o punto} & \textbf{Tipo} & \textbf{Cant.} & \textbf{W unit.} & \textbf{W total} & \textbf{Cto.} & \textbf{Observación} \\
+\midrule
+1 & Primer piso & Luminaria LED & Alumbrado & 4 & 125 & 500 & C1 & Tienda (2), Cocina (1), Pasadizo/Escalera (1) \\
+2 & Primer piso & Tomacorriente doble con tierra & Tomacorrientes & 5 & 200 & 1000 & C2 & Tienda (3), Pasadizo (2) \\
+3 & Primer piso & Tomacorriente especial cocina & Cocina & 3 & 500 & 1500 & C3 & Cocina (3) \\
+4 & Segundo piso & Luminaria LED & Alumbrado & 4 & 125 & 500 & C4 & Dormitorios (2), Hall (1), Baño/Escalera (1) \\
+5 & Segundo piso & Tomacorriente doble con tierra & Tomacorrientes & 8 & 187.5 & 1500 & C5 & Dormitorios (5), Sala (2), Baño (1) \\
+6 & Tercer piso & Luminaria LED & Alumbrado & 4 & 125 & 500 & C6 & Dormitorios (2), Pasadizo (1), Baño/Escalera (1) \\
+7 & Tercer piso & Tomacorriente doble con tierra & Tomacorrientes & 6 & 250 & 1500 & C7 & Dormitorios (5), Baño (1) \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\section{Interpretacion de la demanda maxima}
+
+La potencia instalada total es 7000 W. Aplicando factores de demanda por tipo de carga se obtiene una demanda maxima estimada de 6100 W. Con tension de 220 V y factor de potencia 0.90:
+
+\begin{equation}
+I_{dem} = \frac{6100}{220 \times 0.90} = 30.81\text{ A}
+\end{equation}
+
+Con este valor de corriente de demanda se dimensiona el alimentador general con conductor de cobre de 10 mm2 y un interruptor termomagnetico principal de 2P-40A.
+
+\section{Tablero general y tableros de distribucion}
+
+\begin{table}[H]
+\centering
+\small
+\caption{Propuesta de tableros}
+\label{tab:tableros-distribucion}
+\begin{tabularx}{\textwidth}{L{1.8cm}L{4.0cm}L{4.2cm}Y}
+\toprule
+\textbf{Elemento} & \textbf{Ubicacion propuesta} & \textbf{Circuitos asociados} & \textbf{Criterio} \\
+\midrule
+TG-01 & Primer piso, pasadizo longitudinal & C1, C2 y C3 & Tablero principal accesible y rotulado \\
+TD-01 & Segundo piso, zona central/hall & C4 y C5 & Subtablero para el control del 2do nivel \\
+TD-02 & Tercer piso, pasadizo longitudinal & C6 y C7 & Subtablero para el control del 3er nivel \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\section{Protecciones preliminares}
+
+\begin{table}[H]
+\centering
+\small
+\setlength{\tabcolsep}{3pt}
+\caption{Protecciones preliminares por circuito}
+\label{tab:protecciones-preliminares}
+\begin{tabularx}{\textwidth}{l Y Y Y Y}
+\toprule
+\textbf{Cto.} & \textbf{Uso} & \textbf{Interruptor} & \textbf{Conductor} & \textbf{Observación} \\
+\midrule
+General & Alimentacion principal & 2P-40A & 3 x 10 mm2 Cu + PE & Llave general termomagnetica \\
+- & ID General & 2P-40A / 30mA & - & Interruptor diferencial general TG \\
+C1 & Alumbrado primer piso & 2P-10A & 3 x 1.5 mm2 Cu & Llave termomagnetica \\
+C2 & Tomacorrientes generales 1er piso & 2P-16A / ID-25A & 3 x 2.5 mm2 Cu & Con protector diferencial \\
+C3 & Tomacorrientes de cocina 1er piso & 2P-20A / ID-25A & 3 x 2.5 mm2 Cu & Con protector diferencial \\
+C4 & Alumbrado segundo piso & 2P-10A & 3 x 1.5 mm2 Cu & Llave termomagnetica \\
+C5 & Tomacorrientes del segundo piso & 2P-16A / ID-25A & 3 x 2.5 mm2 Cu & Con protector diferencial \\
+C6 & Alumbrado tercer piso & 2P-10A & 3 x 1.5 mm2 Cu & Llave termomagnetica \\
+C7 & Tomacorrientes del tercer piso & 2P-16A / ID-25A & 3 x 2.5 mm2 Cu & Con protector diferencial \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\section{Coordinacion conductor-proteccion}
+
+La seleccion preliminar mantiene el criterio basico:
+
+\begin{equation}
+I_b \leq I_n \leq I_z
+\end{equation}
+
+Donde $I_b$ es la corriente de diseno, $I_n$ es la corriente nominal del interruptor e $I_z$ es la capacidad admisible del conductor. Con calibres de 1.5 mm2 ($I_z \approx 15\text{ A}$ en canalizacion empotrada) y de 2.5 mm2 ($I_z \approx 20\text{ A}$), las llaves de 10A, 16A y 20A garantizan la adecuada coordinacion y proteccion termica.
+
+\section{Sistema de puesta a tierra}
+
+La propuesta incluye conductor de proteccion de tierra en todos los tomacorrientes (de color verde o verde-amarillo) y barra de conexion a tierra en cada tablero. La conexion final se realiza a un pozo de tierra vertical con electrodo de cobre de 5/8" x 2.40m y aditivo de conductividad gel, disenado para una resistencia de puesta a tierra menor a 15 Ohms.
+
+\section{Observaciones de auditoria}
+
+\begin{itemize}
+  \item \textbf{Cargas especiales eliminadas:} electrobombas o motores especiales que no corresponden a la solicitud final del diseno de puntos, simplificando la instalacion.
+  \item \textbf{Circuitos resultantes:} 7 circuitos generales (C1 a C7) que cubren de manera integral la distribucion de alumbrado y tomacorrientes por nivel, mas la cocina independiente.
+  \item \textbf{Impacto:} se reajustan los planos de diseño, la memoria de calculo, la maxima demanda (de 4.30 kW a 6.10 kW) y las especificaciones unificadas.
+\end{itemize}

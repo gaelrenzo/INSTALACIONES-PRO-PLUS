@@ -1,0 +1,43 @@
+\newcommand{\PortadaFondo}{%
+\IfFileExists{capitulos/fondo-portada.pdf}{%
+  \AddToShipoutPictureBG*{%
+    \AtPageLowerLeft{%
+      \includegraphics[width=\paperwidth,height=\paperheight]{capitulos/fondo-portada.pdf}%
+    }%
+  }%
+}{}%
+}
+
+\PortadaFondo
+
+\begin{titlepage}
+\centering
+
+{\Large \textbf{UNIVERSIDAD NACIONAL DEL ALTIPLANO}\\[0.3cm]}
+{\large \textbf{FACULTAD DE INGENIERIA MECANICA ELECTRICA, ELECTRONICA Y SISTEMAS}\\[0.3cm]}
+{\large \textbf{CARRERA PROFESIONAL DE INGENIERIA MECANICA ELECTRICA}\\[1.2cm]}
+
+{\Large \textbf{CURSO: INSTALACIONES ELÉCTRICAS I}\\[1.2cm]}
+
+{\LARGE \textbf{INFORME ACADEMICO DE INSTALACIONES ELÉCTRICAS RESIDENCIALES}\\[0.4cm]}
+{\large \textbf{Vivienda unifamiliar de 3 pisos}\\[1.2cm]}
+
+\begin{tabular}{>{\bfseries}p{5cm}p{8cm}}
+Docente: & Docente del curso \\
+Integrante: & Renzo Gabriel Mamani Galindo \\
+Ubicación: & Jr. Lima S/N, Capachica, Puno \\
+& (15°38'32.7''S 69°49'51.8''W) \\
+Zona: & Urbana \\
+Tipo de vivienda: & Unifamiliar \\
+Número de pisos: & 3 pisos \\
+Área construida: & 40 m2 por piso \\
+Material predominante: & Ladrillo, hormigón y cemento \\
+Fecha: & 03 de junio \\
+\end{tabular}
+
+\vfill
+
+{\large Puno -- Perú\\}
+{\large 2026}
+
+\end{titlepage}

@@ -1,0 +1,234 @@
+\documentclass[12pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish,es-tabla]{babel}
+\usepackage{geometry}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{booktabs}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{enumitem}
+
+\geometry{left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt}
+\setlist[itemize]{leftmargin=1.2cm}
+\setlist[enumerate]{leftmargin=1.2cm}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=black,
+  urlcolor=blue
+}
+
+\newcommand{\linea}{\rule{0.92\linewidth}{0.4pt}}
+\newcommand{\pendiente}{\textcolor{red}{Pendiente}}
+\newcommand{\ok}{\textcolor{green!50!black}{Definido}}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+
+\begin{document}
+
+\begin{center}
+{\Large \textbf{Cuestionario de levantamiento de datos}}\\
+{\large Capitulo I: Memoria descriptiva}\\
+{\normalsize Proyecto de instalacion electrica domiciliaria - vivienda propia de 2 pisos}
+\end{center}
+
+\section*{1. Objetivo del cuestionario}
+
+Este cuestionario sirve para reunir la informacion minima necesaria antes de redactar el Capitulo I y preparar los datos de entrada del Capitulo II. El proyecto se desarrollara sobre una vivienda unifamiliar propia de 2 pisos, no sobre la vivienda anterior de referencia.
+
+El cuestionario tambien deja indicado que norma sustenta cada bloque de informacion. Para el arranque se usaran como base la Norma EM.010 Instalaciones Electricas Interiores y el Codigo Nacional de Electricidad - Utilizacion.
+
+\section*{2. Normativa base revisada}
+
+\begin{longtable}{L{3.2cm}L{4.6cm}L{5.8cm}}
+\toprule
+\textbf{Fuente} & \textbf{Referencia inicial} & \textbf{Uso en el proyecto} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{Fuente} & \textbf{Referencia inicial} & \textbf{Uso en el proyecto} \\
+\midrule
+\endhead
+RNE EM.010 & Articulos 1 y 2, paginas 1--2 extraidas & Define que la instalacion electrica interior va desde la acometida hasta los puntos de utilizacion y aplica a viviendas. \\
+CNE-U & Seccion 010, pagina 6 extraida & Sustenta el uso obligatorio del Codigo Nacional de Electricidad - Utilizacion. \\
+CNE-U & Pagina 13 extraida & Sirve para revisar el concepto de unidad de vivienda. \\
+CNE-U & Seccion 050, pagina 62 extraida & Sirve para iniciar criterios de demanda en viviendas unifamiliares. \\
+CNE-U & Seccion 050, pagina 69 extraida & Sirve para revisar circuitos derivados en unidades de vivienda. \\
+\bottomrule
+\end{longtable}
+
+\textbf{Evidencias guardadas:} \texttt{avance-capitulos-1-2/normativa-extraida/}
+
+\section*{3. Datos generales del estudiante y del proyecto}
+
+\begin{longtable}{L{6cm}L{8cm}}
+\toprule
+\textbf{Pregunta} & \textbf{Respuesta} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{Pregunta} & \textbf{Respuesta} \\
+\midrule
+\endhead
+Nombre del estudiante & \linea \\
+Curso & Instalaciones Electricas I \\
+Docente / ingeniero & \linea \\
+Fecha de avance & \linea \\
+Titulo tentativo del proyecto & Instalacion electrica interior de vivienda unifamiliar de 2 pisos \\
+Tipo de trabajo & Academico, no expediente ejecutivo \\
+\bottomrule
+\end{longtable}
+
+\section*{4. Ubicacion y datos de la vivienda}
+
+\begin{longtable}{L{6cm}L{8cm}}
+\toprule
+\textbf{Pregunta} & \textbf{Respuesta} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{Pregunta} & \textbf{Respuesta} \\
+\midrule
+\endhead
+Direccion o referencia de la vivienda & \linea \\
+Distrito & \linea \\
+Provincia & \linea \\
+Departamento & \linea \\
+Zona & Urbana / periurbana / rural: \linea \\
+Tipo de vivienda & Vivienda unifamiliar \\
+Numero de pisos & 2 pisos \\
+Material predominante & Ladrillo / concreto / adobe / otro: \linea \\
+Area aproximada del primer piso & \linea \\
+Area aproximada del segundo piso & \linea \\
+Area total aproximada & \linea \\
+Empresa distribuidora local & \linea \\
+Tension de suministro asumida & 220 V, 60 Hz, monofasico \\
+\bottomrule
+\end{longtable}
+
+\section*{5. Distribucion arquitectonica preliminar}
+
+\subsection*{5.1 Primer piso}
+
+\begin{longtable}{L{3.4cm}L{2.4cm}L{3.8cm}L{4cm}}
+\toprule
+\textbf{Ambiente} & \textbf{Focos} & \textbf{Tomacorrientes} & \textbf{Observacion} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{Ambiente} & \textbf{Focos} & \textbf{Tomacorrientes} & \textbf{Observacion} \\
+\midrule
+\endhead
+Cuarto 1 grande & 2 & 4 & Un tomacorriente por pared \\
+Cuarto 2 grande & 2 & 4 & Un tomacorriente por pared \\
+Cocina & 2 & 1 & Para licuadora y pequenos artefactos \\
+Bano & \pendiente & \pendiente & Confirmar si se incluye \\
+Escalera / pasadizo & \pendiente & \pendiente & Confirmar si se incluye \\
+\bottomrule
+\end{longtable}
+
+\subsection*{5.2 Segundo piso}
+
+\begin{longtable}{L{3.4cm}L{2.4cm}L{3.8cm}L{4cm}}
+\toprule
+\textbf{Ambiente} & \textbf{Focos} & \textbf{Tomacorrientes} & \textbf{Decision pendiente} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{Ambiente} & \textbf{Focos} & \textbf{Tomacorrientes} & \textbf{Decision pendiente} \\
+\midrule
+\endhead
+Habitacion 1 & 1 o 2 & 3 o 4 & Definir segun tamano \\
+Habitacion 2 & 1 o 2 & 3 o 4 & Definir segun tamano \\
+Habitacion 3 & 1 o 2 & 3 o 4 & Definir segun tamano \\
+Habitacion 4 & 1 o 2 & 3 o 4 & Definir segun tamano \\
+Bano & \pendiente & \pendiente & Confirmar si existe \\
+Escalera / pasadizo & \pendiente & \pendiente & Confirmar puntos de paso \\
+\bottomrule
+\end{longtable}
+
+\section*{6. Preguntas tecnicas para cerrar el Capitulo I}
+
+\begin{enumerate}
+  \item ¿La vivienda tendra solo los ambientes indicados o se agregara bano, lavanderia, sala, comedor o patio?
+  \item ¿La cocina solo usara un tomacorriente para licuadora y pequenos artefactos, o tambien se incluira refrigeradora?
+  \item ¿Habra ducha electrica, terma, bomba de agua, lavadora, horno electrico u otra carga especial?
+  \item ¿El tablero general estara en el primer piso cerca del ingreso principal?
+  \item ¿La instalacion sera empotrada, superficial o mixta?
+  \item ¿Se dibujara un croquis propio por piso o se usara un plano arquitectonico existente?
+  \item ¿El ingeniero exige medidas exactas de ambientes o basta un plano/croquis con dimensiones aproximadas?
+  \item ¿Se considerara sistema de puesta a tierra desde este avance o se dejara para el desarrollo tecnico del Capitulo II?
+\end{enumerate}
+
+\section*{7. Circuitos preliminares para guiar el Capitulo II}
+
+\begin{longtable}{L{2.2cm}L{4.5cm}L{6.8cm}}
+\toprule
+\textbf{Circuito} & \textbf{Uso} & \textbf{Ambientes atendidos} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{Circuito} & \textbf{Uso} & \textbf{Ambientes atendidos} \\
+\midrule
+\endhead
+C1 & Alumbrado primer piso & Cuarto 1, cuarto 2 y cocina \\
+C2 & Tomacorrientes primer piso & Cuarto 1 y cuarto 2 \\
+C3 & Cocina & Tomacorriente de cocina para licuadora y artefactos menores \\
+C4 & Alumbrado segundo piso & Cuatro habitaciones y posibles circulaciones \\
+C5 & Tomacorrientes segundo piso & Cuatro habitaciones \\
+\bottomrule
+\end{longtable}
+
+\section*{8. Datos que deben quedar listos antes de redactar}
+
+\begin{itemize}
+  \item Ubicacion real o referencia de la vivienda.
+  \item Area aproximada por piso.
+  \item Croquis simple del primer y segundo piso.
+  \item Numero final de focos por ambiente.
+  \item Numero final de tomacorrientes por ambiente.
+  \item Lista de cargas especiales, si existen.
+  \item Ubicacion tentativa del tablero general.
+  \item Tipo de canalizacion: empotrada, superficial o mixta.
+  \item Normas y paginas usadas como sustento.
+\end{itemize}
+
+\section*{9. Primeras decisiones recomendadas}
+
+Para avanzar sin complicar el proyecto se recomienda iniciar con una vivienda modelo simple:
+
+\begin{itemize}
+  \item Primer piso: dos cuartos grandes y una cocina.
+  \item Segundo piso: cuatro habitaciones.
+  \item Circuitos separados para alumbrado, tomacorrientes y cocina.
+  \item Sin cargas especiales en la primera version.
+  \item Agregar bano, lavanderia o bomba solo si el ingeniero lo solicita o si se quiere hacer un diseno mas completo.
+\end{itemize}
+
+\section*{10. Checklist de avance}
+
+\begin{longtable}{L{9cm}L{3.8cm}}
+\toprule
+\textbf{Actividad} & \textbf{Estado} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{Actividad} & \textbf{Estado} \\
+\midrule
+\endhead
+Definir vivienda de 2 pisos como caso del proyecto & \ok \\
+Registrar distribucion preliminar del primer piso & \ok \\
+Registrar distribucion preliminar del segundo piso & \pendiente \\
+Confirmar area aproximada por piso & \pendiente \\
+Confirmar cargas especiales & \pendiente \\
+Extraer evidencia normativa inicial & \ok \\
+Redactar Capitulo I completo & \pendiente \\
+Pasar datos al Capitulo II & \pendiente \\
+\bottomrule
+\end{longtable}
+
+\end{document}

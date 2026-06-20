@@ -1,0 +1,278 @@
+\documentclass[12pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish,es-tabla]{babel}
+\usepackage{geometry}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{booktabs}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{amsmath}
+
+\geometry{left=2.4cm,right=2.4cm,top=2.4cm,bottom=2.4cm}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt}
+\setlength{\tabcolsep}{3pt}
+\emergencystretch=2em
+\setlist[itemize]{leftmargin=1.2cm}
+\setlist[enumerate]{leftmargin=1.2cm}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=black,
+  urlcolor=blue
+}
+
+\newcommand{\pendiente}{\textcolor{red}{Pendiente}}
+\newcommand{\obs}{\textcolor{orange!70!black}{Observacion}}
+\newcommand{\ok}{\textcolor{green!50!black}{Definido}}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\arraybackslash}p{#1}}
+
+\begin{document}
+
+\begin{center}
+{\Large \textbf{Planificacion inicial del proyecto}}\\
+{\large Capitulos I y II - Instalacion electrica domiciliaria}\\
+{\normalsize Vivienda propia de 2 pisos}
+\end{center}
+
+\section*{1. Datos generales registrados}
+
+\begin{longtable}{L{5.2cm}L{7.8cm}L{2.2cm}}
+\toprule
+\textbf{Dato} & \textbf{Respuesta} & \textbf{Estado} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{Dato} & \textbf{Respuesta} & \textbf{Estado} \\
+\midrule
+\endhead
+Estudiante & Aquiles Taylor Ramos Yapo & \ok \\
+Docente / ingeniero & Por completar & \pendiente \\
+Fecha de avance & 01 de junio de 2026 & \ok \\
+Direccion o referencia & Avenida Horacio con Jr. Marineros, manzana F7, lotes 11 y 12 & \ok \\
+Distrito & San Miguel & \ok \\
+Provincia & San Román & \ok \\
+Departamento & Puno & \ok \\
+Zona & Urbana & \ok \\
+Tipo de vivienda real & Vivienda unifamiliar (casa grande) & \ok \\
+Alcance academico & Vivienda unifamiliar para 7 miembros & \ok \\
+Material predominante & Ladrillo y concreto & \ok \\
+Area por piso & Primer piso con menor área construida que el segundo. Terreno: 134.18 m² & \obs \\
+Empresa distribuidora & Electro Puno & \ok \\
+Sistema asumido & Monofasico, 220 V, 60 Hz & \ok \\
+\bottomrule
+\end{longtable}
+
+\section*{2. Criterio de alcance}
+
+Aunque la vivienda real puede ser usada por mas de una familia, para fines academicos se delimitara el proyecto a una vivienda unifamiliar de dos pisos y 7 miembros. El trabajo se concentrara en la instalacion electrica interior: alumbrado, tomacorrientes, cocina, cargas de servicio, bomba de agua, tablero, protecciones y puesta a tierra propuesta.
+
+No se tomara como definitivo ningun metrado ni longitud de circuito hasta contar con croquis y dimensiones aproximadas. Las areas quedan en observacion.
+
+\section*{3. Distribucion arquitectonica preliminar}
+
+\subsection*{3.1 Primer piso}
+
+\begin{longtable}{L{4cm}R{2cm}R{3cm}L{5.2cm}}
+\toprule
+\textbf{Ambiente / zona} & \textbf{Focos} & \textbf{T.C.} & \textbf{Observacion} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{Ambiente / zona} & \textbf{Focos} & \textbf{T.C.} & \textbf{Observacion} \\
+\midrule
+\endhead
+Cuarto 1 grande & 2 & 3 & Division de drywall sin tomacorriente \\
+Cuarto 2 grande & 2 & 3 & Division de drywall sin tomacorriente \\
+Cocina pequena & 2 & 1 & Licuadora y artefactos pequenos \\
+Pasadizo & 3 & 0 & Alumbrado de circulacion \\
+Escalera / plataforma intermedia & 1 & 0 & Foco entre primer y segundo piso \\
+Bano & 0 & 0 & El bano esta en segundo piso \\
+Bomba exterior & 0 & circuito dedicado & Bomba de agua en pozo exterior \\
+\bottomrule
+\end{longtable}
+
+\subsection*{3.2 Segundo piso}
+
+\begin{longtable}{L{4cm}R{2cm}L{3cm}L{5.2cm}}
+\toprule
+\textbf{Ambiente / zona} & \textbf{Focos} & \textbf{T.C. / carga} & \textbf{Observacion} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{Ambiente / zona} & \textbf{Focos} & \textbf{T.C. / carga} & \textbf{Observacion} \\
+\midrule
+\endhead
+Sala & 2 & por definir & Computador y parlantes \\
+Cuarto con cama 1 & 2 & por definir & Pantalla plana de 50 pulgadas \\
+Cuarto con cama 2 & 2 & por definir & Pantalla plana de 50 pulgadas \\
+Cocina amplia / zona de servicio & 2 & 4 & Microondas, lavadora, waflera y cargas de consumo mayor \\
+Cuarto de uso varios & 2 & por definir & Actualmente en desuso \\
+Bano & 1 & 1 & Tomacorriente protegido para usos varios \\
+\bottomrule
+\end{longtable}
+
+\section*{4. Respuestas tecnicas relevantes}
+
+\begin{longtable}{L{5cm}L{9.2cm}}
+\toprule
+\textbf{Tema} & \textbf{Respuesta registrada} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{Tema} & \textbf{Respuesta registrada} \\
+\midrule
+\endhead
+Cocina del primer piso & Solo licuadora y artefactos pequenos o manejables. \\
+Ducha electrica & No se considera. \\
+Terma & Se usa terma solar. \\
+Bomba de agua & Existe bomba exterior en el primer piso, asociada a pozo. \\
+Lavadora & Prevista en el segundo piso. \\
+Horno / microondas & Previsto en cocina amplia del segundo piso. \\
+Waflera y equipos similares & Considerar como carga de consumo medio/alto en segundo piso. \\
+Croquis & Pendiente; se dibujara en hoja y luego se digitalizara. \\
+Dimensiones & Aproximadas, por no encontrarse actualmente en la vivienda. \\
+Puesta a tierra actual & La vivienda no cuenta actualmente con puesta a tierra. \\
+Puesta a tierra propuesta & Se recomienda proponerla desde el avance. \\
+\bottomrule
+\end{longtable}
+
+\section*{5. Normativa base para sostener el avance}
+
+\begin{longtable}{L{3.4cm}L{4.8cm}L{6cm}}
+\toprule
+\textbf{Norma} & \textbf{Referencia extraida} & \textbf{Uso en el proyecto} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{Norma} & \textbf{Referencia extraida} & \textbf{Uso en el proyecto} \\
+\midrule
+\endhead
+RNE EM.010 & Articulos 1 y 2, paginas 1--2 & Sustenta que la instalacion electrica interior comprende acometida, alimentadores, tableros, circuitos derivados, sistemas de proteccion, medicion y puesta a tierra; aplica a viviendas. \\
+CNE-U & Seccion 010, pagina 6 & Sustenta la obligatoriedad y alcance general del Codigo Nacional de Electricidad - Utilizacion. \\
+CNE-U & Pagina 13 & Apoya la definicion de unidad de vivienda. \\
+CNE-U & Seccion 050, pagina 62 & Apoya el criterio de demanda para viviendas unifamiliares cuando no se dispone de informacion completa. \\
+CNE-U & Seccion 050, pagina 69 & Apoya la revision de circuitos derivados en unidades de vivienda. \\
+\bottomrule
+\end{longtable}
+
+Las evidencias normativas estan guardadas en la carpeta de normativa extraida del avance. Si alguna pagina no permite extraccion de texto, se revisara visualmente como imagen.
+
+\section*{6. Supuestos de potencia para el primer avance}
+
+\begin{longtable}{L{7cm}R{4cm}L{3cm}}
+\toprule
+\textbf{Elemento} & \textbf{Potencia referencial} & \textbf{Estado} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{Elemento} & \textbf{Potencia referencial} & \textbf{Estado} \\
+\midrule
+\endhead
+Foco LED & 12 W & Preliminar \\
+Tomacorriente general & 180 W & Preliminar \\
+Tomacorriente de cocina o servicio & 300 W & Preliminar \\
+Microondas / horno electrico & 1200 W & Referencial \\
+Lavadora & 800 W & Referencial \\
+Waflera & 1000 W & Referencial \\
+Bomba de agua & 750 W & Referencial \\
+\bottomrule
+\end{longtable}
+
+\section*{7. Levantamiento preliminar de cargas}
+
+\begin{longtable}{L{4.2cm}L{4.2cm}R{1.6cm}R{2.2cm}R{2.2cm}}
+\toprule
+\textbf{Ambiente / zona} & \textbf{Carga} & \textbf{Cant.} & \textbf{W unit.} & \textbf{W total} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{Ambiente / zona} & \textbf{Carga} & \textbf{Cant.} & \textbf{W unit.} & \textbf{W total} \\
+\midrule
+\endhead
+Primer piso & Focos LED & 10 & 12 & 120 \\
+Cuartos primer piso & Tomacorrientes generales & 6 & 180 & 1080 \\
+Cocina primer piso & Tomacorriente cocina & 1 & 300 & 300 \\
+Segundo piso & Focos LED & 11 & 12 & 132 \\
+Sala, cuartos y bano segundo piso & Tomacorrientes generales asumidos & 13 & 180 & 2340 \\
+Cocina amplia segundo piso & Tomacorrientes cocina/servicio & 4 & 300 & 1200 \\
+Cocina amplia segundo piso & Microondas / horno electrico & 1 & 1200 & 1200 \\
+Cocina amplia segundo piso & Lavadora & 1 & 800 & 800 \\
+Cocina amplia segundo piso & Waflera & 1 & 1000 & 1000 \\
+Exterior primer piso & Bomba de agua & 1 & 750 & 750 \\
+\midrule
+\textbf{Total preliminar} &  &  &  & \textbf{8922} \\
+\bottomrule
+\end{longtable}
+
+La tabla anterior es solo una base de trabajo. Los tomacorrientes generales del segundo piso se han asumido para poder preparar el calculo inicial; se ajustaran cuando se defina el croquis.
+
+\section*{8. Circuitos preliminares recomendados}
+
+\begin{longtable}{L{1.2cm}L{3.7cm}L{7.2cm}L{1.7cm}}
+\toprule
+\textbf{Cto.} & \textbf{Uso} & \textbf{Ambientes / cargas} & \textbf{Prior.} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{Cto.} & \textbf{Uso} & \textbf{Ambientes / cargas} & \textbf{Prior.} \\
+\midrule
+\endhead
+C1 & Alumbrado primer piso & Cuartos, cocina pequena, pasadizo y escalera/plataforma & Alta \\
+C2 & Tomacorrientes primer piso & Cuarto 1 y cuarto 2 & Alta \\
+C3 & Cocina primer piso & Tomacorriente para licuadora y artefactos pequenos & Alta \\
+C4 & Alumbrado segundo piso & Sala, cuartos, cocina amplia y bano & Alta \\
+C5 & Tomacorrientes generales segundo piso & Sala, cuartos, cuarto de uso varios y bano & Alta \\
+C6 & Cocina amplia segundo piso & Tomacorrientes de cocina, microondas/horno y waflera & Alta \\
+C7 & Lavadora segundo piso & Carga de servicio dedicada & Media \\
+C8 & Bomba de agua exterior & Bomba del pozo & Alta \\
+\bottomrule
+\end{longtable}
+
+\section*{9. Resumen preliminar de demanda}
+
+Para un primer avance se agrupan las cargas por tipo y se aplican factores academicos preliminares. Estos factores deben corregirse si el docente exige usar una tabla especifica del CNE-U.
+
+\begin{longtable}{L{4.5cm}R{3cm}R{2.8cm}R{3cm}}
+\toprule
+\textbf{Tipo de carga} & \textbf{Potencia W} & \textbf{Factor} & \textbf{Demanda W} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{Tipo de carga} & \textbf{Potencia W} & \textbf{Factor} & \textbf{Demanda W} \\
+\midrule
+\endhead
+Alumbrado & 252 & 1.00 & 252 \\
+Tomacorrientes generales & 3420 & 0.70 & 2394 \\
+Cocina y servicio & 4500 & 0.80 & 3600 \\
+Bomba de agua & 750 & 1.00 & 750 \\
+\midrule
+\textbf{Total} & \textbf{8922} &  & \textbf{6996} \\
+\bottomrule
+\end{longtable}
+
+\[
+I = \frac{P}{V \times fp} = \frac{6996}{220 \times 0.90} \approx 35.33\ A
+\]
+
+Por el resultado preliminar, el interruptor general podria evaluarse en el orden de 40 A o 50 A, sujeto a correccion por potencia real de equipos, longitud de alimentador, criterio del docente y tabla normativa aplicable.
+
+\section*{10. Pendientes para cerrar el Capitulo I}
+
+\begin{itemize}
+  \item Confirmar nombre del docente.
+  \item Confirmar provincia y distrito exactos.
+  \item Dibujar croquis del primer y segundo piso.
+  \item Estimar dimensiones aproximadas de ambientes.
+  \item Definir ubicacion del tablero general.
+  \item Confirmar cantidad final de tomacorrientes en sala, cuartos y cuarto de uso varios.
+  \item Confirmar potencias reales o comerciales de bomba, lavadora, microondas/horno y waflera.
+  \item Decidir si la canalizacion sera empotrada, superficial o mixta.
+\end{itemize}
+
+\end{document}

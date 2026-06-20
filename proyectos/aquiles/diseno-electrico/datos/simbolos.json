@@ -1,0 +1,61 @@
+{
+  "project": "Biblioteca simple de simbolos electricos 2D",
+  "version": "v1",
+  "units": "meters",
+  "symbols": [
+    {
+      "id": "luminaria_techo",
+      "layer": "ELEC_LUMINARIAS",
+      "description": "Circulo con cruz central para luminaria de techo"
+    },
+    {
+      "id": "interruptor_simple",
+      "layer": "ELEC_INTERRUPTORES",
+      "description": "Circulo pequeno con trazo oblicuo y texto S"
+    },
+    {
+      "id": "interruptor_conmutado",
+      "layer": "ELEC_INTERRUPTORES",
+      "description": "Interruptor marcado S3 para escalera o conmutacion preliminar"
+    },
+    {
+      "id": "tomacorriente_doble",
+      "layer": "ELEC_TOMACORRIENTES",
+      "description": "Circulo con dos lineas paralelas interiores"
+    },
+    {
+      "id": "tomacorriente_tierra",
+      "layer": "ELEC_TOMACORRIENTES",
+      "description": "Tomacorriente doble con linea de tierra"
+    },
+    {
+      "id": "tomacorriente_especial",
+      "layer": "ELEC_TOMACORRIENTES",
+      "description": "Rombo para carga especial o dedicada"
+    },
+    {
+      "id": "tablero_general",
+      "layer": "ELEC_TABLERO",
+      "description": "Rectangulo con texto TG"
+    },
+    {
+      "id": "medidor",
+      "layer": "ELEC_MEDIDOR",
+      "description": "Circulo con texto M"
+    },
+    {
+      "id": "bomba",
+      "layer": "ELEC_TOMACORRIENTES",
+      "description": "Punto circular dedicado a bomba exterior"
+    },
+    {
+      "id": "ducto_vertical",
+      "layer": "ELEC_CANALIZACION",
+      "description": "Circulo con cruz para bajante/subida de circuitos"
+    }
+  ],
+  "notes": [
+    "Simbologia preliminar para plano editable en QCAD/LibreCAD.",
+    "No reemplaza la simbologia oficial DGE; debe normalizarse antes de entrega final."
+  ]
+}

@@ -1,0 +1,5 @@
+{
+  "version": 1,
+  "regla": "No se admite un precio manual sin URL verificable y precio mayor que cero.",
+  "precios": []
+}

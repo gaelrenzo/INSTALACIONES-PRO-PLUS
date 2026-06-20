@@ -1,0 +1,22 @@
+normativa:
+  nombre: "Código Nacional de Electricidad - Utilización (CNE-U)"
+  edicion: "RM 0037-2006-MEM/DM"
+  reglamento: "Reglamento Nacional de Edificaciones (RNE) - Norma EM.010"
+  cargas_unitarias:
+    luminaria_led_w: 50
+    tomacorriente_general_w: 180
+    tomacorriente_cocina_w: 500
+  factores_demanda:
+    alumbrado: 1.00
+    tomacorrientes_general: 0.70
+    tomacorrientes_cocina: 1.00
+  conductores_capacidad_a:
+    1.5mm2: 15
+    2.5mm2: 20
+    10.0mm2: 40
+  protecciones_standard_a:
+    alumbrado: 10
+    tomacorrientes_general: 16
+    tomacorrientes_cocina: 20
+    general: 40
+  diferencial_sensibilidad_ma: 30

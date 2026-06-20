@@ -1,0 +1,650 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Calculadora de instalacion electrica domiciliaria</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f4f6f8;
+      --panel: #ffffff;
+      --ink: #17212b;
+      --muted: #5c6670;
+      --line: #d9e0e7;
+      --accent: #0f766e;
+      --accent-2: #1d4ed8;
+      --warn: #b45309;
+      --bad: #b91c1c;
+      --good: #047857;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+    }
+
+    header {
+      background: #1f2937;
+      color: #fff;
+      padding: 18px 24px;
+    }
+
+    header h1 {
+      margin: 0 0 6px;
+      font-size: 24px;
+      letter-spacing: 0;
+    }
+
+    header p {
+      margin: 0;
+      color: #d1d5db;
+      max-width: 980px;
+      line-height: 1.45;
+    }
+
+    main {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    section {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 16px;
+      margin-bottom: 16px;
+    }
+
+    h2 {
+      margin: 0 0 12px;
+      font-size: 18px;
+    }
+
+    label {
+      display: grid;
+      gap: 6px;
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    input, select {
+      width: 100%;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      padding: 9px 10px;
+      font: inherit;
+      background: #fff;
+      color: var(--ink);
+    }
+
+    button {
+      border: 0;
+      border-radius: 6px;
+      padding: 10px 12px;
+      font: inherit;
+      font-weight: 700;
+      cursor: pointer;
+      background: var(--accent);
+      color: #fff;
+    }
+
+    button.secondary { background: var(--accent-2); }
+    button.ghost {
+      background: #eef2f7;
+      color: var(--ink);
+      border: 1px solid var(--line);
+    }
+    button.danger { background: var(--bad); }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      align-items: end;
+    }
+
+    .table-wrap {
+      overflow-x: auto;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 920px;
+      background: #fff;
+    }
+
+    th, td {
+      border-bottom: 1px solid var(--line);
+      padding: 9px;
+      text-align: left;
+      vertical-align: middle;
+      font-size: 13px;
+    }
+
+    th {
+      background: #eef2f7;
+      color: #334155;
+      font-weight: 800;
+    }
+
+    td.num, th.num { text-align: right; }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    .metric {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 12px;
+      background: #fbfcfe;
+    }
+
+    .metric span {
+      display: block;
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 700;
+      margin-bottom: 5px;
+    }
+
+    .metric strong {
+      display: block;
+      font-size: 20px;
+    }
+
+    .note {
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.45;
+      margin: 10px 0 0;
+    }
+
+    .status-ok { color: var(--good); font-weight: 800; }
+    .status-warn { color: var(--warn); font-weight: 800; }
+
+    textarea {
+      width: 100%;
+      min-height: 220px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 12px;
+      font-family: Consolas, monospace;
+      font-size: 13px;
+      resize: vertical;
+    }
+
+    @media (max-width: 900px) {
+      .grid, .cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      main { padding: 12px; }
+    }
+
+    @media (max-width: 560px) {
+      .grid, .cards { grid-template-columns: 1fr; }
+      header { padding: 16px; }
+      header h1 { font-size: 20px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Calculadora de instalacion electrica domiciliaria</h1>
+    <p>Herramienta academica para cuadro de cargas, maxima demanda, corriente, conductor preliminar, proteccion y caida de tension. Verifica el resultado final con el CNE-Utilizacion, EM.010 y el criterio del docente.</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Datos generales</h2>
+      <div class="grid">
+        <label>Tension nominal V
+          <input id="voltage" type="number" value="220" min="1" step="1">
+        </label>
+        <label>Factor de potencia
+          <input id="pf" type="number" value="0.90" min="0.1" max="1" step="0.01">
+        </label>
+        <label>Resistividad cobre
+          <input id="rho" type="number" value="0.0175" min="0.001" step="0.0001">
+        </label>
+        <label>Limite caida tension %
+          <input id="vdLimit" type="number" value="3" min="1" step="0.1">
+        </label>
+      </div>
+      <p class="note">Los factores y secciones son preliminares. Ajusta los valores si el docente entrega una tabla especifica.</p>
+    </section>
+
+    <section>
+      <h2>Agregar carga</h2>
+      <div class="grid">
+        <label>Ambiente
+          <input id="room" value="Sala">
+        </label>
+        <label>Equipo o punto
+          <input id="item" value="Luminaria LED">
+        </label>
+        <label>Tipo
+          <select id="type">
+            <option value="Alumbrado">Alumbrado</option>
+            <option value="Tomacorrientes">Tomacorrientes</option>
+            <option value="Cocina/lavanderia">Cocina/lavanderia</option>
+            <option value="Especial">Especial</option>
+          </select>
+        </label>
+        <label>Circuito
+          <select id="circuit">
+            <option>C1</option>
+            <option>C2</option>
+            <option>C3</option>
+            <option>C4</option>
+            <option>C5</option>
+            <option>C6</option>
+          </select>
+        </label>
+        <label>Cantidad
+          <input id="qty" type="number" value="1" min="1" step="1">
+        </label>
+        <label>Potencia unitaria W
+          <input id="watts" type="number" value="18" min="0" step="1">
+        </label>
+        <label>Longitud circuito m
+          <input id="length" type="number" value="12" min="0" step="0.5">
+        </label>
+        <div class="actions">
+          <button id="addBtn" type="button">Agregar</button>
+          <button class="ghost" id="sampleBtn" type="button">Cargar ejemplo</button>
+          <button class="danger" id="clearBtn" type="button">Limpiar</button>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Levantamiento de cargas</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Ambiente</th>
+              <th>Equipo</th>
+              <th>Tipo</th>
+              <th>Circuito</th>
+              <th class="num">Cant.</th>
+              <th class="num">W unit.</th>
+              <th class="num">W total</th>
+              <th class="num">Long. m</th>
+              <th>Accion</th>
+            </tr>
+          </thead>
+          <tbody id="loadsBody"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section>
+      <h2>Resumen general</h2>
+      <div class="cards">
+        <div class="metric"><span>Potencia instalada</span><strong id="totalW">0 W</strong></div>
+        <div class="metric"><span>Maxima demanda</span><strong id="demandW">0 W</strong></div>
+        <div class="metric"><span>Demanda kW</span><strong id="demandKw">0.00 kW</strong></div>
+        <div class="metric"><span>Corriente total</span><strong id="totalA">0.00 A</strong></div>
+        <div class="metric"><span>Circuitos</span><strong id="circuitCount">0</strong></div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Resumen por circuito</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Circuito</th>
+              <th>Uso dominante</th>
+              <th class="num">Potencia W</th>
+              <th class="num">Factor</th>
+              <th class="num">Demanda W</th>
+              <th class="num">Corriente A</th>
+              <th class="num">Long. max m</th>
+              <th>Conductor</th>
+              <th>Proteccion</th>
+              <th class="num">Caida %</th>
+              <th>Estado</th>
+            </tr>
+          </thead>
+          <tbody id="summaryBody"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section>
+      <h2>Exportar</h2>
+      <div class="actions" style="margin-bottom:10px">
+        <button class="secondary" id="copyBtn" type="button">Copiar Markdown</button>
+        <button class="ghost" id="exportJsonBtn" type="button">Exportar JSON</button>
+        <button class="ghost" id="exportLatexBtn" type="button">Exportar LaTeX</button>
+      </div>
+      <textarea id="markdownOut" readonly></textarea>
+      <textarea id="latexOut" readonly style="display:none"></textarea>
+    </section>
+  </main>
+
+  <script>
+    const demandFactor = {
+      "Alumbrado": 1.00,
+      "Tomacorrientes": 0.70,
+      "Cocina/lavanderia": 0.80,
+      "Especial": 1.00
+    };
+
+    const loads = [];
+
+    const $ = (id) => document.getElementById(id);
+    const money = (n) => Number(n || 0).toFixed(2);
+
+    function conductorFor(current) {
+      if (current <= 10) return { section: 1.5, label: "Cu 1.5 mm2", breaker: "10 A" };
+      if (current <= 16) return { section: 2.5, label: "Cu 2.5 mm2", breaker: "16 A" };
+      if (current <= 25) return { section: 4, label: "Cu 4 mm2", breaker: "25 A" };
+      if (current <= 32) return { section: 6, label: "Cu 6 mm2", breaker: "32 A" };
+      return { section: 10, label: "Cu 10 mm2 o verificar", breaker: "40 A o verificar" };
+    }
+
+    function dominantType(items) {
+      const totals = {};
+      items.forEach((x) => totals[x.type] = (totals[x.type] || 0) + x.total);
+      return Object.entries(totals).sort((a, b) => b[1] - a[1])[0]?.[0] || "Sin cargas";
+    }
+
+    function addLoad(data) {
+      loads.push({
+        room: data.room,
+        item: data.item,
+        type: data.type,
+        circuit: data.circuit,
+        qty: Number(data.qty),
+        watts: Number(data.watts),
+        length: Number(data.length),
+        total: Number(data.qty) * Number(data.watts)
+      });
+      render();
+    }
+
+    function removeLoad(index) {
+      loads.splice(index, 1);
+      render();
+    }
+
+    function grouped() {
+      const groups = {};
+      loads.forEach((load) => {
+        if (!groups[load.circuit]) groups[load.circuit] = [];
+        groups[load.circuit].push(load);
+      });
+      return groups;
+    }
+
+    function render() {
+      $("loadsBody").innerHTML = loads.map((load, i) => `
+        <tr>
+          <td>${i + 1}</td>
+          <td>${load.room}</td>
+          <td>${load.item}</td>
+          <td>${load.type}</td>
+          <td>${load.circuit}</td>
+          <td class="num">${load.qty}</td>
+          <td class="num">${money(load.watts)}</td>
+          <td class="num">${money(load.total)}</td>
+          <td class="num">${money(load.length)}</td>
+          <td><button class="ghost" type="button" onclick="removeLoad(${i})">Quitar</button></td>
+        </tr>
+      `).join("");
+
+      const voltage = Number($("voltage").value);
+      const pf = Number($("pf").value);
+      const rho = Number($("rho").value);
+      const vdLimit = Number($("vdLimit").value);
+      const groups = grouped();
+      let totalInstalled = 0;
+      let totalDemand = 0;
+      const rows = [];
+
+      Object.keys(groups).sort().forEach((circuit) => {
+        const items = groups[circuit];
+        const installed = items.reduce((sum, x) => sum + x.total, 0);
+        const type = dominantType(items);
+        const factor = demandFactor[type] ?? 1;
+        const demand = installed * factor;
+        const current = demand / (voltage * pf);
+        const maxLength = Math.max(...items.map((x) => x.length));
+        const cable = conductorFor(current);
+        const vd = (2 * maxLength * current * rho / cable.section) / voltage * 100;
+        totalInstalled += installed;
+        totalDemand += demand;
+        rows.push({ circuit, type, installed, factor, demand, current, maxLength, cable, vd });
+      });
+
+      $("summaryBody").innerHTML = rows.map((row) => `
+        <tr>
+          <td>${row.circuit}</td>
+          <td>${row.type}</td>
+          <td class="num">${money(row.installed)}</td>
+          <td class="num">${money(row.factor)}</td>
+          <td class="num">${money(row.demand)}</td>
+          <td class="num">${money(row.current)}</td>
+          <td class="num">${money(row.maxLength)}</td>
+          <td>${row.cable.label}</td>
+          <td>${row.cable.breaker}</td>
+          <td class="num">${money(row.vd)}</td>
+          <td class="${row.vd <= vdLimit ? "status-ok" : "status-warn"}">${row.vd <= vdLimit ? "Cumple preliminar" : "Verificar caida"}</td>
+        </tr>
+      `).join("");
+
+      $("totalW").textContent = `${money(totalInstalled)} W`;
+      $("demandW").textContent = `${money(totalDemand)} W`;
+      $("demandKw").textContent = `${money(totalDemand / 1000)} kW`;
+      $("totalA").textContent = `${money(totalDemand / (voltage * pf))} A`;
+      $("circuitCount").textContent = String(rows.length);
+      $("markdownOut").value = markdown(rows, totalInstalled, totalDemand, voltage, pf);
+    }
+
+    function exportJson() {
+      const data = [];
+      loads.forEach((load) => {
+        data.push({
+          room: load.room,
+          item: load.item,
+          type: load.type,
+          circuit: load.circuit,
+          qty: load.qty,
+          watts: load.watts,
+          length: load.length,
+          total: load.total
+        });
+      });
+      const json = JSON.stringify({
+        proyecto: "Calculadora interactiva",
+        pisos: [{
+          nombre: "Unico",
+          circuitos: [],
+          luminarias: [],
+          interruptores: [],
+          tomacorrientes: []
+        }],
+        tension_v: Number($("voltage").value),
+        factor_potencia: Number($("pf").value)
+      }, null, 2);
+      $("markdownOut").value = json;
+    }
+
+    function exportLatex() {
+      const voltage = Number($("voltage").value);
+      const pf = Number($("pf").value);
+      const rho = Number($("rho").value);
+      const groups = grouped();
+      let totalInstalled = 0;
+      let totalDemand = 0;
+      const rows = [];
+
+      Object.keys(groups).sort().forEach((circuit) => {
+        const items = groups[circuit];
+        const installed = items.reduce((sum, x) => sum + x.total, 0);
+        const type = dominantType(items);
+        const factor = demandFactor[type] ?? 1;
+        const demand = installed * factor;
+        const current = demand / (voltage * pf);
+        const maxLength = Math.max(...items.map((x) => x.length));
+        const cable = conductorFor(current);
+        const vd = (2 * maxLength * current * rho / cable.section) / voltage * 100;
+        totalInstalled += installed;
+        totalDemand += demand;
+        rows.push({ circuit, type, installed, factor, demand, current, maxLength, cable, vd });
+      });
+
+      let tex = "\\begin{table}[H]\n";
+      tex += "\\centering\n";
+      tex += "\\caption{Cuadro de cargas - Calculadora interactiva}\n";
+      tex += "\\label{tab:cargas-calculadora}\n";
+      tex += "\\begin{tabular}{l l c c c}\n";
+      tex += "\\toprule\n";
+      tex += "\\textbf{Circuito} & \\textbf{Uso} & \\textbf{P.I. (W)} & \\textbf{F.D.} & \\textbf{M.D. (W)} \\\\\n";
+      tex += "\\midrule\n";
+
+      rows.forEach((row) => {
+        tex += `${row.circuit} & ${row.type} & ${money(row.installed)} & ${money(row.factor)} & ${money(row.demand)} \\\\\n`;
+      });
+
+      tex += "\\midrule\n";
+      tex += `\\multicolumn{2}{l}{\\textbf{Total}} & \\textbf{${money(totalInstalled)}} & & \\textbf{${money(totalDemand)}} \\\\\n`;
+      tex += "\\bottomrule\n";
+      tex += "\\end{tabular}\n";
+      tex += "\\end{table}\n\n";
+
+      tex += "\\begin{table}[H]\n";
+      tex += "\\centering\n";
+      tex += "\\caption{Conductores y protecciones}\n";
+      tex += "\\label{tab:conductores-calculadora}\n";
+      tex += "\\begin{tabular}{l c c c l c c c}\n";
+      tex += "\\toprule\n";
+      tex += "\\textbf{Circuito} & \\textbf{P.I. (W)} & \\textbf{M.D. (W)} & \\textbf{Ib (A)} & \\textbf{Cond.} & \\textbf{ITM} & \\textbf{dV (\\%)} & \\textbf{Estado} \\\\\n";
+      tex += "\\midrule\n";
+
+      rows.forEach((row) => {
+        const estado = row.vd <= Number($("vdLimit").value) ? "CUMPLE" : "VERIFICAR";
+        tex += `${row.circuit} & ${money(row.installed)} & ${money(row.demand)} & ${money(row.current)} & ${row.cable.label} & ${row.cable.breaker} & ${money(row.vd)} & ${estado} \\\\\n`;
+      });
+
+      tex += "\\bottomrule\n";
+      tex += "\\end{tabular}\n";
+      tex += "\\end{table}\n";
+
+      const lo = $("latexOut");
+      lo.value = tex;
+      lo.style.display = "block";
+      lo.select();
+      navigator.clipboard.writeText(tex).then(() => {
+        $("exportLatexBtn").textContent = "Copiado LaTeX";
+        setTimeout(() => $("exportLatexBtn").textContent = "Exportar LaTeX", 1500);
+      });
+    }
+
+    function markdown(rows, totalInstalled, totalDemand, voltage, pf) {
+      const loadLines = loads.map((x, i) =>
+        `| ${i + 1} | ${x.room} | ${x.item} | ${x.type} | ${x.qty} | ${money(x.watts)} | ${money(x.total)} | ${x.circuit} | |`
+      ).join("\n");
+
+      const summaryLines = rows.map((x) =>
+        `| ${x.circuit} | ${x.type} | ${money(x.installed)} | ${money(x.factor)} | ${money(x.demand)} | ${money(x.current)} | ${money(x.maxLength)} | ${x.cable.label} | ${money(x.vd)} | ${x.cable.breaker} | CNE-U / EM.010 |`
+      ).join("\n");
+
+      return `## Levantamiento por ambiente
+
+| Item | Ambiente | Equipo / punto | Tipo | Cantidad | Potencia unitaria W | Potencia total W | Circuito propuesto | Observacion |
+|---|---|---|---|---:|---:|---:|---|---|
+${loadLines || "| | | | | | | | | |"}
+
+## Resumen por circuito
+
+| Circuito | Uso | Potencia instalada W | Factor demanda | Demanda W | Corriente estimada A | Longitud m | Conductor propuesto | Caida % | Proteccion propuesta | Norma que sustenta |
+|---|---|---:|---:|---:|---:|---:|---|---:|---|---|
+${summaryLines || "| | | | | | | | | | | |"}
+
+## Resultado general
+
+| Concepto | Valor |
+|---|---:|
+| Tension V | ${voltage} |
+| Factor de potencia | ${pf} |
+| Potencia instalada total W | ${money(totalInstalled)} |
+| Maxima demanda total W | ${money(totalDemand)} |
+| Maxima demanda total kW | ${money(totalDemand / 1000)} |
+| Corriente total estimada A | ${money(totalDemand / (voltage * pf))} |
+`;
+    }
+
+    $("addBtn").addEventListener("click", () => {
+      addLoad({
+        room: $("room").value.trim() || "Sin ambiente",
+        item: $("item").value.trim() || "Carga",
+        type: $("type").value,
+        circuit: $("circuit").value,
+        qty: $("qty").value,
+        watts: $("watts").value,
+        length: $("length").value
+      });
+    });
+
+    $("sampleBtn").addEventListener("click", () => {
+      loads.length = 0;
+      [
+        ["Sala", "Luminaria LED", "Alumbrado", "C1", 2, 18, 12],
+        ["Dormitorio 1", "Luminaria LED", "Alumbrado", "C1", 1, 18, 15],
+        ["Cocina", "Luminaria LED", "Alumbrado", "C1", 1, 18, 18],
+        ["Sala", "Tomacorriente doble", "Tomacorrientes", "C2", 3, 180, 18],
+        ["Dormitorio 1", "Tomacorriente doble", "Tomacorrientes", "C2", 3, 180, 22],
+        ["Cocina", "Tomacorrientes cocina", "Cocina/lavanderia", "C3", 4, 250, 20],
+        ["Lavanderia", "Lavadora", "Cocina/lavanderia", "C4", 1, 600, 25],
+        ["Bano", "Ducha electrica", "Especial", "C5", 1, 4500, 18]
+      ].forEach(([room, item, type, circuit, qty, watts, length]) => addLoad({ room, item, type, circuit, qty, watts, length }));
+    });
+
+    $("clearBtn").addEventListener("click", () => {
+      loads.length = 0;
+      render();
+    });
+
+    $("copyBtn").addEventListener("click", async () => {
+      await navigator.clipboard.writeText($("markdownOut").value);
+      $("copyBtn").textContent = "Copiado";
+      setTimeout(() => $("copyBtn").textContent = "Copiar Markdown", 1200);
+    });
+
+    $("exportJsonBtn").addEventListener("click", () => {
+      exportJson();
+      $("exportJsonBtn").textContent = "JSON generado";
+      setTimeout(() => $("exportJsonBtn").textContent = "Exportar JSON", 1500);
+    });
+
+    $("exportLatexBtn").addEventListener("click", exportLatex);
+
+    ["voltage", "pf", "rho", "vdLimit"].forEach((id) => $(id).addEventListener("input", render));
+
+    render();
+  </script>
+</body>
+</html>

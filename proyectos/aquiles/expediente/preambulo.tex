@@ -1,0 +1,165 @@
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish,es-tabla]{babel}
+\usepackage{geometry}
+\usepackage{amsmath}
+\usepackage[scaled]{helvet}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{tocloft}
+\usepackage[normalem]{ulem}
+\usepackage{tikz}
+\usepackage{colortbl}
+\usepackage{pdflscape}
+
+\renewcommand{\familydefault}{\sfdefault}
+
+\definecolor{modelblue}{RGB}{91,155,213}
+\definecolor{headingred}{RGB}{220,0,0}
+
+\geometry{
+  letterpaper,
+  left=1.08in,
+  right=0.92in,
+  top=1.55in,
+  bottom=0.92in,
+  headheight=78pt,
+  headsep=18pt,
+  footskip=36pt
+}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=black,
+  citecolor=black,
+  urlcolor=blue,
+  pdfauthor={Aquiles Taylor Ramos Yapo},
+  pdftitle={Instalaciones Electricas Interiores de Vivienda}
+}
+
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{3}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.62em}
+\setlength{\headwidth}{\textwidth}
+\hfuzz=12pt
+\setlist[itemize]{leftmargin=1.05cm, itemsep=0.05em, topsep=0.2em, label=\(\triangleright\)}
+\setlist[enumerate]{leftmargin=1.05cm, itemsep=0.05em, topsep=0.2em}
+
+\addto\captionsspanish{\renewcommand{\contentsname}{CONTENIDO}}
+\renewcommand{\contentsname}{CONTENIDO}
+\renewcommand{\cfttoctitlefont}{\color{modelblue}\Large}
+\renewcommand{\cftaftertoctitle}{\par\vspace{0.4em}}
+\setlength{\cftbeforetoctitleskip}{0pt}
+\setlength{\cftaftertoctitleskip}{0.75em}
+\renewcommand{\cftchapfont}{\bfseries}
+\renewcommand{\cftchappagefont}{\bfseries}
+\renewcommand{\cftchapleader}{\cftdotfill{\cftdotsep}}
+\renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
+\renewcommand{\cftsubsecleader}{\cftdotfill{\cftdotsep}}
+\renewcommand{\cftsubsubsecleader}{\cftdotfill{\cftdotsep}}
+\setlength{\cftsecindent}{0.40in}
+\setlength{\cftsubsecindent}{0.78in}
+\setlength{\cftsubsubsecindent}{1.15in}
+\setlength{\cftbeforechapskip}{0.30em}
+\setlength{\cftbeforesecskip}{0.16em}
+
+\renewcommand{\thesection}{\arabic{section}.}
+\renewcommand{\thesubsection}{\arabic{section}.\arabic{subsection}.}
+\renewcommand{\thesubsubsection}{\arabic{section}.\arabic{subsection}.\arabic{subsubsection}.}
+
+\titleformat{name=\chapter,numberless}
+  {\normalfont\bfseries\Large\centering\color{headingred}}
+  {}
+  {0pt}
+  {\uline}
+
+\titleformat{\section}
+  {\normalfont\bfseries\Large\color{headingred}}
+  {\thesection}
+  {1.0em}
+  {\uline}
+
+\titleformat{\subsection}
+  {\normalfont\bfseries\normalsize\color{headingred}}
+  {\thesubsection}
+  {1.0em}
+  {}
+
+\titleformat{\subsubsection}
+  {\normalfont\bfseries\normalsize\color{headingred}}
+  {\thesubsubsection}
+  {1.0em}
+  {}
+
+\titlespacing*{\chapter}{0pt}{0pt}{0.95em}
+\titlespacing*{\section}{0pt}{1.00em}{0.55em}
+\titlespacing*{\subsection}{0pt}{0.85em}{0.35em}
+\titlespacing*{\subsubsection}{0pt}{0.65em}{0.25em}
+
+\renewcommand{\bibname}{Referencias}
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}
+\newcommand{\documentfootertext}{MEMORIA DESCRIPTIVA - INSTALACIONES ELECTRICAS}
+
+\newcommand{\memoriaheader}{%
+  \begingroup
+  \arrayrulecolor{modelblue}%
+  \setlength{\arrayrulewidth}{1.1pt}%
+  \setlength{\tabcolsep}{4pt}%
+  \renewcommand{\arraystretch}{1.18}%
+  \makebox[0.90\headwidth][c]{%
+  \begin{minipage}{0.90\headwidth}
+  \centering
+  \resizebox{\linewidth}{!}{%
+    \begin{tabular}{|>{\centering\arraybackslash}m{3.95in}|>{\centering\arraybackslash}m{0.65in}|>{\centering\arraybackslash}m{0.55in}|}
+      \hline
+      \scriptsize PROYECTO: INSTALACIONES ELECTRICAS INTERIORES DE VIVIENDA UNIFAMILIAR, DISTRITO DE SAN MIGUEL -- PROVINCIA DE SAN ROMAN -- DEPARTAMENTO DE PUNO &
+      \scriptsize\shortstack{UNIDAD\\EJECUTORA DE\\INVERSIONES} &
+      \includegraphics[height=0.50in]{figuras/escudo-unap.png} \\
+      \hline
+    \end{tabular}%
+  }%
+  \par\vspace{0.13in}%
+  \textcolor{modelblue}{\rule{\linewidth}{0.45pt}}%
+  \end{minipage}%
+  }%
+  \endgroup
+}
+
+\newcommand{\memoriafooter}{%
+  \makebox[0.90\headwidth][c]{%
+  \begin{minipage}{0.90\headwidth}
+    \textcolor{modelblue}{\rule{\linewidth}{0.45pt}}%
+    \par\vspace{0.08in}%
+    {\small \documentfootertext\hfill\thepage}%
+  \end{minipage}%
+  }%
+}
+
+\fancypagestyle{memoria}{%
+  \fancyhf{}%
+  \fancyhead[C]{\makebox[0pt][c]{\memoriaheader}}%
+  \fancyfoot[C]{\makebox[0pt][c]{\memoriafooter}}%
+  \renewcommand{\headrulewidth}{0pt}%
+  \renewcommand{\footrulewidth}{0pt}%
+}
+
+\fancypagestyle{plain}{%
+  \fancyhf{}%
+  \fancyhead[C]{\makebox[0pt][c]{\memoriaheader}}%
+  \fancyfoot[C]{\makebox[0pt][c]{\memoriafooter}}%
+  \renewcommand{\headrulewidth}{0pt}%
+  \renewcommand{\footrulewidth}{0pt}%
+}
+
+\pagestyle{memoria}
+\sloppy

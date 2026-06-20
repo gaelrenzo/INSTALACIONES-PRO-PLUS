@@ -1,0 +1,26 @@
+{
+  "pesos": {
+    "precio": 0.50,
+    "tecnico": 0.30,
+    "proveedor": 0.10,
+    "disponibilidad": 0.10
+  },
+  "confianza_minima_recomendada": 0.45,
+  "penalizaciones": {
+    "sin_precio": 1.0,
+    "sin_url": 0.20,
+    "sin_marca": 0.05,
+    "categoria_dudosa": 0.15,
+    "precio_sospechoso": 0.25
+  },
+  "rangos_precio_referenciales": {
+    "cables": [0.5, 80],
+    "ductos/tuberias": [0.5, 100],
+    "cajas electricas": [0.5, 80],
+    "interruptores termomagneticos": [10, 500],
+    "interruptores diferenciales": [30, 900],
+    "tableros electricos": [20, 1200],
+    "puesta a tierra": [5, 900],
+    "accesorios": [0.5, 600]
+  }
+}

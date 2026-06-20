@@ -1,0 +1,16 @@
+proyecto:
+  nombre: "Vivienda Unifamiliar de 3 Pisos"
+  autor: "Renzo Gabriel Mamani Galindo"
+  curso: "Instalaciones Eléctricas I"
+  universidad: "Universidad Nacional del Altiplano (UNAP)"
+  ubicacion:
+    direccion: "Jr. Lima S/N"
+    distrito: "Capachica"
+    provincia: "Puno"
+    departamento: "Puno"
+    coordenadas: "15°38'32.7''S 69°49'51.8''W"
+  parametros_electricos:
+    tension_v: 220
+    sistema: "Monofásico"
+    frecuencia_hz: 60
+    factor_potencia: 0.90

@@ -1,0 +1,31 @@
+\documentclass[12pt,letterpaper]{report}
+
+\input{preambulo}
+
+\hypersetup{
+  pdftitle={Especificaciones tecnicas y ejecucion de partidas - Proyecto Aquiles},
+  pdfsubject={Especificaciones, medicion, valorizacion y analisis de costos unitarios}
+}
+
+\begin{document}
+
+\hypersetup{pageanchor=false}
+\pagenumbering{gobble}
+\input{capitulos/00-portada-especificaciones-acu}
+\clearpage
+\hypersetup{pageanchor=true}
+
+\pagestyle{memoria}
+\pagenumbering{arabic}
+\renewcommand{\documentfootertext}{ESPECIFICACIONES TECNICAS Y ACU - INSTALACIONES ELECTRICAS}
+\tableofcontents
+\clearpage
+
+\renewcommand{\documentfootertext}{ESPECIFICACIONES TECNICAS - INSTALACIONES ELECTRICAS}
+\input{capitulos/03-especificaciones-materiales}
+\clearpage
+
+\renewcommand{\documentfootertext}{EJECUCION DE PARTIDAS Y ACU - INSTALACIONES ELECTRICAS}
+\input{capitulos/04-especificaciones-montaje}
+
+\end{document}

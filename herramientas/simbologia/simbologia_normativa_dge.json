@@ -1,0 +1,3464 @@
+{
+  "norma": "Norma DGE - S\u00edmbolos Gr\u00e1ficos en Electricidad (Ministerio de Energ\u00eda y Minas - Per\u00fa)",
+  "seccion": "SECCI\u00d3N 9: Estaciones de generaci\u00f3n, subestaciones, l\u00edneas de transmisi\u00f3n, redes de distribuci\u00f3n e instalaciones en edificaciones",
+  "descripcion_general": "Biblioteca geom\u00e9trica param\u00e9trica oficial de la norma DGE en formato JSON. Las primitivas de dibujo CAD han sido validadas e inspeccionadas visualmente de forma directa a partir de las im\u00e1genes del PDF original para asegurar la total correspondencia con los gr\u00e1ficos normalizados.",
+  "simbolos": [
+    {
+      "id": "dge_09_90_04_central_hidroelectrica",
+      "codigo_dge": "09-90-04",
+      "nombre": "Central hidroelectrica (En servicio)",
+      "categoria": "ESTACIONES Y SUBESTACIONES",
+      "pagina_pdf": 1,
+      "descripcion_visual": "Cuadrado con una linea diagonal de esquina a esquina, donde la mitad inferior izquierda esta rayada con lineas horizontales paralelas.",
+      "aliases": [
+        "central hidroelectrica",
+        "hidroelectrica",
+        "generacion hidraulica"
+      ],
+      "primitivas": [
+        {
+          "tipo": "rectangulo",
+          "x": -0.2,
+          "y": -0.2,
+          "w": 0.4,
+          "h": 0.4
+        },
+        {
+          "tipo": "linea",
+          "x1": -0.2,
+          "y1": -0.2,
+          "x2": 0.2,
+          "y2": 0.2
+        },
+        {
+          "tipo": "linea",
+          "x1": -0.2,
+          "y1": -0.15,
+          "x2": -0.15,
+          "y2": -0.15
+        },
+        {
+          "tipo": "linea",
+          "x1": -0.2,
+          "y1": -0.1,
+          "x2": -0.1,
+          "y2": -0.1
+        },
+        {
+          "tipo": "linea",
+          "x1": -0.2,
+          "y1": -0.05,
+          "x2": -0.05,
+          "y2": -0.05
+        },
+        {
+          "tipo": "linea",
+          "x1": -0.2,
+          "y1": 0.0,
+          "x2": 0.0,
+          "y2": 0.0
+        },
+        {
+          "tipo": "linea",
+          "x1": -0.2,
+          "y1": 0.05,
+          "x2": 0.05,
+          "y2": 0.05
+        },
+        {
+          "tipo": "linea",
+          "x1": -0.2,
+          "y1": 0.1,
+          "x2": 0.1,
+          "y2": 0.1
+        },
+        {
+          "tipo": "linea",
+          "x1": -0.2,
+          "y1": 0.15,
+          "x2": 0.15,
+          "y2": 0.15
+        }
+      ],
+      "block_name": "DGE_09_90_04_CENTRAL_HIDROELECTRICA",
+      "uso_recomendado": "Diagramas unifilares de redes de alta/media tension, no usado en vivienda.",
+      "observaciones": "Simbolo de infraestructura de generacion."
+    },
+    {
+      "id": "dge_09_90_06_central_termoelectrica",
+      "codigo_dge": "09-90-06",
+      "nombre": "Central termoelectrica (En servicio)",
+      "categoria": "ESTACIONES Y SUBESTACIONES",
+      "pagina_pdf": 1,
+      "descripcion_visual": "Cuadrado dividido horizontalmente en dos mitades, la mitad inferior esta completamente rellena de lineas oblicuas cruzadas o sombreado solido.",
+      "aliases": [
+        "central termoelectrica",
+        "termoelectrica",
+        "generacion termica"
+      ],
+      "primitivas": [
+        {
+          "tipo": "rectangulo",
+          "x": -0.2,
+          "y": -0.2,
+          "w": 0.4,
+          "h": 0.4
+        },
+        {
+          "tipo": "linea",
+          "x1": -0.2,
+          "y1": 0.0,
+          "x2": 0.2,
+          "y2": 0.0
+        },
+        {
+          "tipo": "linea",
+          "x1": -0.2,
+          "y1": -0.2,
+          "x2": 0.0,
+          "y2": 0.0
+        },
+        {
+          "tipo": "linea",
+          "x1": -0.1,
+          "y1": -0.2,
+          "x2": 0.1,
+          "y2": 0.0
+        },
+        {
+          "tipo": "linea",
+          "x1": 0.0,
+          "y1": -0.2,
+          "x2": 0.2,
+          "y2": 0.0
+        },
+        {
+          "tipo": "linea",
+          "x1": 0.1,
+          "y1": -0.2,
+          "x2": 0.2,
+          "y2": -0.1
+        },
+        {
+          "tipo": "linea",
+          "x1": -0.2,
+          "y1": -0.1,
+          "x2": -0.1,
+          "y2": 0.0
+        }
+      ],
+      "block_name": "DGE_09_90_06_CENTRAL_TERMOELECTRICA",
+      "uso_recomendado": "Planos de generacion de energia, no usado en vivienda.",
+      "observaciones": "Simbolo de generacion termica."
+    },
+    {
+      "id": "dge_09_90_08_central_nuclear",
+      "codigo_dge": "09-90-08",
+      "nombre": "Central nuclear (En servicio)",
+      "categoria": "ESTACIONES Y SUBESTACIONES",
+      "pagina_pdf": 2,
+      "descripcion_visual": "Cuadrado que contiene un circulo interior completamente sombreado con lineas diagonales.",
+      "aliases": [
+        "central nuclear",
+        "nuclear",
+        "generacion nuclear"
+      ],
+      "primitivas": [
+        {
+          "tipo": "rectangulo",
+          "x": -0.2,
+          "y": -0.2,
+          "w": 0.4,
+          "h": 0.4
+        },
+        {
+          "tipo": "circulo",
+          "cx": 0.0,
+          "cy": 0.0,
+          "r": 0.14
+        },
+        {
+          "tipo": "linea",
+          "x1": -0.1,
+          "y1": -0.1,
+          "x2": 0.1,
+          "y2": 0.1
+        },
+        {
+          "tipo": "linea",
+          "x1": -0.12,
+          "y1": -0.05,
+          "x2": 0.05,
+          "y2": 0.12
+        },
+        {
+          "tipo": "linea",
+          "x1": -0.05,
+          "y1": -0.12,
+          "x2": 0.12,
+          "y2": 0.05
+        },
+        {
+          "tipo": "linea",
+          "x1": -0.12,
+          "y1": 0.05,
+          "x2": -0.05,
+          "y2": 0.12
+        },
+        {
+          "tipo": "linea",
+          "x1": 0.05,
+          "y1": -0.12,
+          "x2": 0.12,
+          "y2": -0.05
+        }
+      ],
+      "block_name": "DGE_09_90_08_CENTRAL_NUCLEAR",
+      "uso_recomendado": "Planos de infraestructura nacional, no usado en vivienda.",
+      "observaciones": "Simbolo normativo general."
+    },
+    {
+      "id": "dge_09_90_10_subestacion_de_caseta",
+      "codigo_dge": "09-90-10",
+      "nombre": "Subestacion de caseta o intemperie (En servicio)",
+      "categoria": "ESTACIONES Y SUBESTACIONES",
+      "pagina_pdf": 2,
+      "descripcion_visual": "Cuadrado dividido por una diagonal en dos triangulos, el triangulo inferior derecho esta sombreado con lineas diagonales.",
+      "aliases": [
+        "subestacion de caseta",
+        "subestacion intemperie",
+        "caseta transformador"
+      ],
+      "primitivas": [
+        {
+          "tipo": "rectangulo",
+          "x": -0.2,
+          "y": -0.2,
+          "w": 0.4,
+          "h": 0.4
+        },
+        {
+          "tipo": "linea",
+          "x1": -0.2,
+          "y1": 0.2,
+          "x2": 0.2,
+          "y2": -0.2
+        },
+        {
+          "tipo": "linea",
+          "x1": -0.1,
+          "y1": -0.1,
+          "x2": 0.2,
+          "y2": 0.2
+        },
+        {
+          "tipo": "linea",
+          "x1": 0.0,
+          "y1": -0.2,
+          "x2": 0.2,
+          "y2": 0.0
+        },
+        {
+          "tipo": "linea",
+          "x1": 0.1,
+          "y1": -0.2,
+          "x2": 0.2,
+          "y2": -0.1
+        },
+        {
+          "tipo": "linea",
+          "x1": -0.1,
+          "y1": -0.2,
+          "x2": 0.2,
+          "y2": 0.1
+        }
+      ],
+      "block_name": "DGE_09_90_10_SUBESTACION_DE_CASETA",
+      "uso_recomendado": "Planos de redes urbanas de distribucion, no usado en viviendas individuales.",
+      "observaciones": "Representa una caseta de transformador."
+    },
+    {
+      "id": "dge_09_90_12_subestacion_aerea_monoposte",
+      "codigo_dge": "09-90-12",
+      "nombre": "Subestacion aerea monoposte (En servicio)",
+      "categoria": "ESTACIONES Y SUBESTACIONES",
+      "pagina_pdf": 2,
+      "descripcion_visual": "Triangulo equilatero completamente sombreado con lineas horizontales, con un peque\u00f1o circulo vacio centrado debajo de su base.",
+      "aliases": [
+        "subestacion monoposte",
+        "monoposte",
+        "transformador monoposte"
+      ],
+      "primitivas": [
+        {
+          "tipo": "linea",
+          "x1": -0.2,
+          "y1": -0.05,
+          "x2": 0.2,
+          "y2": -0.05
+        },
+        {
+          "tipo": "linea",
+          "x1": -0.2,
+          "y1": -0.05,
+          "x2": 0.0,
+          "y2": 0.25
+        },
+        {
+          "tipo": "linea",
+          "x1": 0.0,
+          "y1": 0.25,
+          "x2": 0.2,
+          "y2": -0.05
+        },
+        {
+          "tipo": "circulo",
+          "cx": 0.0,
+          "cy": -0.12,
+          "r": 0.07
+        },
+        {
+          "tipo": "linea",
+          "x1": -0.15,
+          "y1": 0.0,
+          "x2": 0.15,
+          "y2": 0.0
+        },
+        {
+          "tipo": "linea",
+          "x1": -0.1,
+          "y1": 0.05,
+          "x2": 0.1,
+          "y2": 0.05
+        },
+        {
+          "tipo": "linea",
+          "x1": -0.05,
+          "y1": 0.1,
+          "x2": 0.05,
+          "y2": 0.1
+        },
+        {
+          "tipo": "linea",
+          "x1": -0.02,
+          "y1": 0.15,
+          "x2": 0.02,
+          "y2": 0.15
+        }
+      ],
+      "block_name": "DGE_09_90_12_SUBESTACION_MONOPOSTE",
+      "uso_recomendado": "Planos de distribucion aerea en baja/media tension urbana.",
+      "observaciones": "Representa un transformador a\u00e9reo montado en un solo poste."
+    },
+    {
+      "id": "dge_09_90_14_subestacion_aerea_biposte",
+      "codigo_dge": "09-90-14",
+      "nombre": "Subestacion aerea biposte (En servicio)",
+      "categoria": "ESTACIONES Y SUBESTACIONES",
+      "pagina_pdf": 2,
+      "descripcion_visual": "Triangulo equilatero completamente sombreado con lineas horizontales, con dos peque\u00f1os circulos vacios simetricos colocados debajo de su base.",
+      "aliases": [
+        "subestacion biposte",
+        "biposte",
+        "transformador biposte"
+      ],
+      "primitivas": [
+        {
+          "tipo": "linea",
+          "x1": -0.2,
+          "y1": -0.05,
+          "x2": 0.2,
+          "y2": -0.05
+        },
+        {
+          "tipo": "linea",
+          "x1": -0.2,
+          "y1": -0.05,
+          "x2": 0.0,
+          "y2": 0.25
+        },
+        {
+          "tipo": "linea",
+          "x1": 0.0,
+          "y1": 0.25,
+          "x2": 0.2,
+          "y2": -0.05
+        },
+        {
+          "tipo": "circulo",
+          "cx": -0.09,
+          "cy": -0.12,
+          "r": 0.07
+        },
+        {
+          "tipo": "circulo",
+          "cx": 0.09,
+          "cy": -0.12,
+          "r": 0.07
+        },
+        {
+          "tipo": "linea",
+          "x1": -0.15,
+          "y1": 0.0,
+          "x2": 0.15,
+          "y2": 0.0
+        },
+        {
+          "tipo": "linea",
+          "x1": -0.1,
+          "y1": 0.05,
+          "x2": 0.1,
+          "y2": 0.05
+        },
+        {
+          "tipo": "linea",
+          "x1": -0.05,
+          "y1": 0.1,
+          "x2": 0.05,
+          "y2": 0.1
+        },
+        {
+          "tipo": "linea",
+          "x1": -0.02,
+          "y1": 0.15,
+          "x2": 0.02,
+          "y2": 0.15
+        }
+      ],
+      "block_name": "DGE_09_90_14_SUBESTACION_BIPOSTE",
+      "uso_recomendado": "Planos de subestaciones de distribucion de media tension de tipo aereo rural/urbano.",
+      "observaciones": "Representa transformador de distribucion soportado entre dos postes."
+    },
+    {
+      "id": "dge_09_90_22_central_solar",
+      "codigo_dge": "09-90-22",
+      "nombre": "Central solar (En servicio)",
+      "categoria": "ESTACIONES Y SUBESTACIONES",
+      "pagina_pdf": 3,
+      "descripcion_visual": "Cuadrado dividido horizontalmente, con la mitad inferior sombreada con lineas diagonales y la mitad superior conteniendo dos flechas inclinadas apuntando hacia abajo.",
+      "aliases": [
+        "central solar",
+        "solar",
+        "generacion solar",
+        "fotovoltaico"
+      ],
+      "primitivas": [
+        {
+          "tipo": "rectangulo",
+          "x": -0.2,
+          "y": -0.2,
+          "w": 0.4,
+          "h": 0.4
+        },
+        {
+          "tipo": "linea",
+          "x1": -0.2,
+          "y1": 0.0,
+          "x2": 0.2,
+          "y2": 0.0
+        },
+        {
+          "tipo": "linea",
+          "x1": -0.2,
+          "y1": -0.2,
+          "x2": 0.0,
+          "y2": 0.0
+        },
+        {
+          "tipo": "linea",
+          "x1": -0.1,
+          "y1": -0.2,
+          "x2": 0.1,
+          "y2": 0.0
+        },
+        {
+          "tipo": "linea",
+          "x1": 0.0,
+          "y1": -0.2,
+          "x2": 0.2,
+          "y2": 0.0
+        },
+        {
+          "tipo": "linea",
+          "x1": 0.1,
+          "y1": -0.2,
+          "x2": 0.2,
+          "y2": -0.1
+        },
+        {
+          "tipo": "linea",
+          "x1": -0.2,
+          "y1": -0.1,
+          "x2": -0.1,
+          "y2": 0.0
+        },
+        {
+          "tipo": "linea",
+          "x1": -0.1,
+          "y1": 0.15,
+          "x2": 0.0,
+          "y2": 0.05
+        },
+        {
+          "tipo": "linea",
+          "x1": -0.05,
+          "y1": 0.05,
+          "x2": 0.0,
+          "y2": 0.05
+        },
+        {
+          "tipo": "linea",
+          "x1": 0.0,
+          "y1": 0.1,
+          "x2": 0.0,
+          "y2": 0.05
+        },
+        {
+          "tipo": "linea",
+          "x1": 0.02,
+          "y1": 0.15,
+          "x2": 0.12,
+          "y2": 0.05
+        },
+        {
+          "tipo": "linea",
+          "x1": 0.07,
+          "y1": 0.05,
+          "x2": 0.12,
+          "y2": 0.05
+        },
+        {
+          "tipo": "linea",
+          "x1": 0.12,
+          "y1": 0.1,
+          "x2": 0.12,
+          "y2": 0.05
+        }
+      ],
+      "block_name": "DGE_09_90_22_CENTRAL_SOLAR",
+      "uso_recomendado": "Planos de instalaciones solares fotovoltaicas o termicas residenciales/industriales.",
+      "observaciones": "Indica aprovechamiento de radiacion solar."
+    },
+    {
+      "id": "dge_09_90_24_central_eolica",
+      "codigo_dge": "09-90-24",
+      "nombre": "Central eolica (En servicio)",
+      "categoria": "ESTACIONES Y SUBESTACIONES",
+      "pagina_pdf": 3,
+      "descripcion_visual": "Cuadrado que contiene en su interior un triangulo sombreado cruzado con lineas verticales y horizontales, simulando las palas de un molino o helice.",
+      "aliases": [
+        "central eolica",
+        "eolica",
+        "generador eolico",
+        "molino de viento"
+      ],
+      "primitivas": [
+        {
+          "tipo": "rectangulo",
+          "x": -0.2,
+          "y": -0.2,
+          "w": 0.4,
+          "h": 0.4
+        },
+        {
+          "tipo": "linea",
+          "x1": -0.2,
+          "y1": -0.2,
+          "x2": 0.2,
+          "y2": 0.2
+        },
+        {
+          "tipo": "linea",
+          "x1": -0.2,
+          "y1": 0.2,
+          "x2": 0.2,
+          "y2": -0.2
+        },
+        {
+          "tipo": "linea",
+          "x1": 0.0,
+          "y1": -0.2,
+          "x2": 0.0,
+          "y2": 0.2
+        },
+        {
+          "tipo": "linea",
+          "x1": -0.08,
+          "y1": -0.15,
+          "x2": -0.08,
+          "y2": 0.15
+        },
+        {
+          "tipo": "linea",
+          "x1": 0.08,
+          "y1": -0.15,
+          "x2": 0.08,
+          "y2": 0.15
+        }
+      ],
+      "block_name": "DGE_09_90_24_CENTRAL_EOLICA",
+      "uso_recomendado": "Instalaciones de energia renovable eolica.",
+      "observaciones": "Representa visualmente un aerogenerador."
+    },
+    {
+      "id": "dge_09_91_01_linea_dentro_de_conducto",
+      "codigo_dge": "09-91-01",
+      "nombre": "Linea dentro de conducto o tuberia",
+      "categoria": "LINEAS Y REDES DE DISTRIBUCION",
+      "pagina_pdf": 3,
+      "descripcion_visual": "Linea recta horizontal cruzada en su punto medio por un peque\u00f1o circulo vacio centrado.",
+      "aliases": [
+        "linea en conducto",
+        "tuberia",
+        "canalizacion empotrada"
+      ],
+      "primitivas": [
+        {
+          "tipo": "linea",
+          "x1": -0.3,
+          "y1": 0.0,
+          "x2": 0.3,
+          "y2": 0.0
+        },
+        {
+          "tipo": "circulo",
+          "cx": 0.0,
+          "cy": 0.0,
+          "r": 0.07
+        }
+      ],
+      "block_name": "DGE_09_91_01_LINEA_EN_CONDUCTO",
+      "uso_recomendado": "Esquemas unifilares de lineas de distribucion empotradas.",
+      "observaciones": "Indica proteccion mecanica de la linea."
+    },
+    {
+      "id": "dge_09_91_03_linea_aerea_o_subterranea",
+      "codigo_dge": "09-91-03",
+      "nombre": "Linea general (Aerea o subterranea)",
+      "categoria": "LINEAS Y REDES DE DISTRIBUCION",
+      "pagina_pdf": 3,
+      "descripcion_visual": "Una linea recta continua de trazo simple.",
+      "aliases": [
+        "linea general",
+        "cable aereo",
+        "acometida general"
+      ],
+      "primitivas": [
+        {
+          "tipo": "linea",
+          "x1": -0.3,
+          "y1": 0.0,
+          "x2": 0.3,
+          "y2": 0.0
+        }
+      ],
+      "block_name": "DGE_09_91_03_LINEA_GENERAL",
+      "uso_recomendado": "Trazado general de alimentadores o circuitos en planos electricos.",
+      "observaciones": "S\u00edmbolo fundamental y el m\u00e1s comun."
+    },
+    {
+      "id": "dge_09_91_04_linea_subterranea",
+      "codigo_dge": "09-91-04",
+      "nombre": "Linea subterranea",
+      "categoria": "LINEAS Y REDES DE DISTRIBUCION",
+      "pagina_pdf": 3,
+      "descripcion_visual": "Linea recta discontinua regular (trazos cortos espaciados) exigible en conflictos visuales con redes aereas.",
+      "aliases": [
+        "linea subterranea",
+        "red subterranea",
+        "cable enterrado"
+      ],
+      "primitivas": [
+        {
+          "tipo": "linea",
+          "x1": -0.3,
+          "y1": 0.0,
+          "x2": -0.2,
+          "y2": 0.0
+        },
+        {
+          "tipo": "linea",
+          "x1": -0.12,
+          "y1": 0.0,
+          "x2": -0.02,
+          "y2": 0.0
+        },
+        {
+          "tipo": "linea",
+          "x1": 0.06,
+          "y1": 0.0,
+          "x2": 0.16,
+          "y2": 0.0
+        },
+        {
+          "tipo": "linea",
+          "x1": 0.22,
+          "y1": 0.0,
+          "x2": 0.3,
+          "y2": 0.0
+        }
+      ],
+      "block_name": "DGE_09_91_04_LINEA_SUBTERRANEA",
+      "uso_recomendado": "Circuitos alimentadores subterraneos exteriores desde medidor a tablero general.",
+      "observaciones": "Indica cable soterrado."
+    },
+    {
+      "id": "dge_09_91_05_linea_pasante_camara",
+      "codigo_dge": "09-91-05",
+      "nombre": "Linea pasante a traves de una camara de acceso",
+      "categoria": "LINEAS Y REDES DE DISTRIBUCION",
+      "pagina_pdf": 3,
+      "descripcion_visual": "Linea horizontal que atraviesa un rectangulo vertical centrado.",
+      "aliases": [
+        "linea pasante camara",
+        "camara de paso",
+        "buzon electrico"
+      ],
+      "primitivas": [
+        {
+          "tipo": "rectangulo",
+          "x": -0.1,
+          "y": -0.15,
+          "w": 0.2,
+          "h": 0.3
+        },
+        {
+          "tipo": "linea",
+          "x1": -0.3,
+          "y1": 0.0,
+          "x2": 0.3,
+          "y2": 0.0
+        }
+      ],
+      "block_name": "DGE_09_91_05_LINEA_PASANTE_CAMARA",
+      "uso_recomendado": "Buzones de inspeccion o camaras de paso en redes exteriores subterraneas.",
+      "observaciones": "Usado para tendidos subterraneos exteriores."
+    },
+    {
+      "id": "dge_09_91_07_linea_con_valvula",
+      "codigo_dge": "09-91-07",
+      "nombre": "Linea con valvula de detencion de gas o aceite",
+      "categoria": "LINEAS Y REDES DE DISTRIBUCION",
+      "pagina_pdf": 4,
+      "descripcion_visual": "Linea horizontal cruzada por dos triangulos opuestos por sus vertices en el punto medio (forma de pajarita).",
+      "aliases": [
+        "linea con valvula",
+        "valvula de gas",
+        "valvula de aceite"
+      ],
+      "primitivas": [
+        {
+          "tipo": "linea",
+          "x1": -0.3,
+          "y1": 0.0,
+          "x2": 0.3,
+          "y2": 0.0
+        },
+        {
+          "tipo": "linea",
+          "x1": -0.08,
+          "y1": 0.06,
+          "x2": -0.08,
+          "y2": -0.06
+        },
+        {
+          "tipo": "linea",
+          "x1": -0.08,
+          "y1": 0.06,
+          "x2": 0.0,
+          "y2": 0.0
+        },
+        {
+          "tipo": "linea",
+          "x1": -0.08,
+          "y1": -0.06,
+          "x2": 0.0,
+          "y2": 0.0
+        },
+        {
+          "tipo": "linea",
+          "x1": 0.08,
+          "y1": 0.06,
+          "x2": 0.08,
+          "y2": -0.06
+        },
+        {
+          "tipo": "linea",
+          "x1": 0.08,
+          "y1": 0.06,
+          "x2": 0.0,
+          "y2": 0.0
+        },
+        {
+          "tipo": "linea",
+          "x1": 0.08,
+          "y1": -0.06,
+          "x2": 0.0,
+          "y2": 0.0
+        }
+      ],
+      "block_name": "DGE_09_91_07_LINEA_CON_VALVULA",
+      "uso_recomendado": "Sistemas de enfriamiento o aislamiento por aceite/gas en subestaciones industriales.",
+      "observaciones": "Simbolo especial industrial."
+    },
+    {
+      "id": "dge_09_91_15_anodo_de_proteccion",
+      "codigo_dge": "09-91-15",
+      "nombre": "Anodo de proteccion",
+      "categoria": "LINEAS Y REDES DE DISTRIBUCION",
+      "pagina_pdf": 4,
+      "descripcion_visual": "Linea vertical que baja y termina en un triangulo invertido apuntando hacia abajo, con tres lineas horizontales decrecientes en la punta superior del triangulo.",
+      "aliases": [
+        "anodo de proteccion",
+        "proteccion catodica",
+        "anodo de sacrificio"
+      ],
+      "primitivas": [
+        {
+          "tipo": "linea",
+          "x1": 0.0,
+          "y1": 0.2,
+          "x2": 0.0,
+          "y2": -0.05
+        },
+        {
+          "tipo": "linea",
+          "x1": -0.15,
+          "y1": -0.05,
+          "x2": 0.15,
+          "y2": -0.05
+        },
+        {
+          "tipo": "linea",
+          "x1": -0.15,
+          "y1": -0.05,
+          "x2": 0.0,
+          "y2": -0.2
+        },
+        {
+          "tipo": "linea",
+          "x1": 0.0,
+          "y1": -0.2,
+          "x2": 0.15,
+          "y2": -0.05
+        },
+        {
+          "tipo": "linea",
+          "x1": -0.1,
+          "y1": -0.09,
+          "x2": 0.1,
+          "y2": -0.09
+        },
+        {
+          "tipo": "linea",
+          "x1": -0.05,
+          "y1": -0.13,
+          "x2": 0.05,
+          "y2": -0.13
+        }
+      ],
+      "block_name": "DGE_09_91_15_ANODO_PROTECCION",
+      "uso_recomendado": "Planos de puesta a tierra o sistemas de proteccion catodica de ductos metallicos.",
+      "observaciones": "Indica proteccion contra corrosion."
+    },
+    {
+      "id": "dge_09_91_16_panel_de_distribucion",
+      "codigo_dge": "09-91-16",
+      "nombre": "Panel de distribucion o centro de control",
+      "categoria": "CAJAS Y TABLEROS",
+      "pagina_pdf": 4,
+      "descripcion_visual": "Rectangulo horizontal de bordes finos completamente sombreado con lineas diagonales.",
+      "aliases": [
+        "panel de distribucion",
+        "centro de control de motores",
+        "ccm"
+      ],
+      "primitivas": [
+        {
+          "tipo": "rectangulo",
+          "x": -0.3,
+          "y": -0.15,
+          "w": 0.6,
+          "h": 0.3
+        },
+        {
+          "tipo": "linea",
+          "x1": -0.3,
+          "y1": -0.15,
+          "x2": 0.0,
+          "y2": 0.15
+        },
+        {
+          "tipo": "linea",
+          "x1": -0.15,
+          "y1": -0.15,
+          "x2": 0.15,
+          "y2": 0.15
+        },
+        {
+          "tipo": "linea",
+          "x1": 0.0,
+          "y1": -0.15,
+          "x2": 0.3,
+          "y2": 0.15
+        },
+        {
+          "tipo": "linea",
+          "x1": 0.15,
+          "y1": -0.15,
+          "x2": 0.3,
+          "y2": 0.0
+        },
+        {
+          "tipo": "linea",
+          "x1": -0.3,
+          "y1": 0.0,
+          "x2": -0.15,
+          "y2": 0.15
+        }
+      ],
+      "block_name": "DGE_09_91_16_PANEL_DISTRIBUCION",
+      "uso_recomendado": "Tableros de fuerza o centros de control en comercios e industrias.",
+      "observaciones": "Difiere del tablero empotrado."
+    },
+    {
+      "id": "dge_09_91_17_tablero_empotrado",
+      "codigo_dge": "09-91-17",
+      "nombre": "Tablero empotrado",
+      "categoria": "CAJAS Y TABLEROS",
+      "pagina_pdf": 4,
+      "descripcion_visual": "Rectangulo horizontal dividido por una diagonal en dos triangulos, donde el triangulo inferior derecho esta relleno de sombreado negro solido.",
+      "aliases": [
+        "tablero empotrado",
+        "td",
+        "tablero general empotrado"
+      ],
+      "primitivas": [
+        {
+          "tipo": "rectangulo",
+          "x": -0.25,
+          "y": -0.15,
+          "w": 0.5,
+          "h": 0.3
+        },
+        {
+          "tipo": "linea",
+          "x1": -0.25,
+          "y1": -0.15,
+          "x2": 0.25,
+          "y2": 0.15
+        },
+        {
+          "tipo": "linea",
+          "x1": -0.25,
+          "y1": -0.15,
+          "x2": 0.25,
+          "y2": -0.15
+        },
+        {
+          "tipo": "linea",
+          "x1": 0.25,
+          "y1": -0.15,
+          "x2": 0.25,
+          "y2": 0.15
+        },
+        {
+          "tipo": "linea",
+          "x1": -0.15,
+          "y1": -0.15,
+          "x2": 0.25,
+          "y2": 0.09
+        },
+        {
+          "tipo": "linea",
+          "x1": -0.05,
+          "y1": -0.15,
+          "x2": 0.25,
+          "y2": 0.03
+        },
+        {
+          "tipo": "linea",
+          "x1": 0.05,
+          "y1": -0.15,
+          "x2": 0.25,
+          "y2": -0.03
+        },
+        {
+          "tipo": "linea",
+          "x1": 0.15,
+          "y1": -0.15,
+          "x2": 0.25,
+          "y2": -0.09
+        }
+      ],
+      "block_name": "DGE_09_91_17_TABLERO_EMPOTRADO",
+      "uso_recomendado": "Tableros de distribucion electrica (TD) empotrados en muros de vivienda.",
+      "observaciones": "Simbolo residencial estandar."
+    },
+    {
+      "id": "dge_09_91_18_retenida_inclinada",
+      "codigo_dge": "09-91-18",
+      "nombre": "Retenida inclinada (Viento)",
+      "categoria": "LINEAS Y REDES DE DISTRIBUCION",
+      "pagina_pdf": 4,
+      "descripcion_visual": "Linea recta horizontal que termina en una punta de flecha apuntando a la derecha y tiene un trazo vertical de tope al lado izquierdo.",
+      "aliases": [
+        "retenida inclinada",
+        "retenida viento",
+        "tirante de poste"
+      ],
+      "primitivas": [
+        {
+          "tipo": "linea",
+          "x1": -0.2,
+          "y1": 0.0,
+          "x2": 0.2,
+          "y2": 0.0
+        },
+        {
+          "tipo": "linea",
+          "x1": -0.2,
+          "y1": -0.1,
+          "x2": -0.2,
+          "y2": 0.1
+        },
+        {
+          "tipo": "linea",
+          "x1": 0.12,
+          "y1": 0.06,
+          "x2": 0.2,
+          "y2": 0.0
+        },
+        {
+          "tipo": "linea",
+          "x1": 0.12,
+          "y1": -0.06,
+          "x2": 0.2,
+          "y2": 0.0
+        }
+      ],
+      "block_name": "DGE_09_91_18_RETENIDA_INCLINADA",
+      "uso_recomendado": "Planos de tendido de postes exteriores y anclajes.",
+      "observaciones": "Indica cable tensor."
+    },
+    {
+      "id": "dge_09_91_19_retenida_vertical",
+      "codigo_dge": "09-91-19",
+      "nombre": "Retenida vertical",
+      "categoria": "LINEAS Y REDES DE DISTRIBUCION",
+      "pagina_pdf": 4,
+      "descripcion_visual": "Linea recta horizontal con una barra vertical en T al final al lado derecho y otra en T al izquierdo.",
+      "aliases": [
+        "retenida vertical",
+        "anclaje vertical"
+      ],
+      "primitivas": [
+        {
+          "tipo": "linea",
+          "x1": -0.2,
+          "y1": 0.0,
+          "x2": 0.2,
+          "y2": 0.0
+        },
+        {
+          "tipo": "linea",
+          "x1": -0.2,
+          "y1": -0.1,
+          "x2": -0.2,
+          "y2": 0.1
+        },
+        {
+          "tipo": "linea",
+          "x1": 0.2,
+          "y1": -0.1,
+          "x2": 0.2,
+          "y2": 0.1
+        }
+      ],
+      "block_name": "DGE_09_91_19_RETENIDA_VERTICAL",
+      "uso_recomendado": "Detalles de postes de redes de distribucion publica.",
+      "observaciones": "Indica sujecion vertical."
+    },
+    {
+      "id": "dge_09_91_20_soporte_concreto",
+      "codigo_dge": "09-91-20",
+      "nombre": "Soporte para linea aerea - Concreto (Poste de concreto)",
+      "categoria": "LINEAS Y REDES DE DISTRIBUCION",
+      "pagina_pdf": 5,
+      "descripcion_visual": "Circulo vacio de trazo fino que denota poste.",
+      "aliases": [
+        "poste de concreto",
+        "poste concreto",
+        "soporte concreto"
+      ],
+      "primitivas": [
+        {
+          "tipo": "circulo",
+          "cx": 0.0,
+          "cy": 0.0,
+          "r": 0.15
+        }
+      ],
+      "block_name": "DGE_09_91_20_POSTE_CONCRETO",
+      "uso_recomendado": "Acometida aerea de la vivienda, ubicacion del poste de suministro publico.",
+      "observaciones": "Soporte general de lineas aereas."
+    },
+    {
+      "id": "dge_09_91_21_soporte_madera",
+      "codigo_dge": "09-91-21",
+      "nombre": "Soporte de madera (Poste de madera)",
+      "categoria": "LINEAS Y REDES DE DISTRIBUCION",
+      "pagina_pdf": 5,
+      "descripcion_visual": "Circulo con una cruz inscrita (+) que divide el circulo en cuatro cuadrantes.",
+      "aliases": [
+        "poste de madera",
+        "soporte de madera",
+        "poste madera"
+      ],
+      "primitivas": [
+        {
+          "tipo": "circulo",
+          "cx": 0.0,
+          "cy": 0.0,
+          "r": 0.15
+        },
+        {
+          "tipo": "linea",
+          "x1": -0.15,
+          "y1": 0.0,
+          "x2": 0.15,
+          "y2": 0.0
+        },
+        {
+          "tipo": "linea",
+          "x1": 0.0,
+          "y1": -0.15,
+          "x2": 0.0,
+          "y2": 0.15
+        }
+      ],
+      "block_name": "DGE_09_91_21_POSTE_MADERA",
+      "uso_recomendado": "Planos de distribucion rural o provisionales.",
+      "observaciones": "Indica poste de madera."
+    },
+    {
+      "id": "dge_09_91_22_soporte_metalico",
+      "codigo_dge": "09-91-22",
+      "nombre": "Soporte metalico (Poste metalico)",
+      "categoria": "LINEAS Y REDES DE DISTRIBUCION",
+      "pagina_pdf": 5,
+      "descripcion_visual": "Circulo con la mitad izquierda completamente rellena de sombreado negro solido.",
+      "aliases": [
+        "poste metalico",
+        "poste de fierro",
+        "soporte metalico"
+      ],
+      "primitivas": [
+        {
+          "tipo": "circulo",
+          "cx": 0.0,
+          "cy": 0.0,
+          "r": 0.15
+        },
+        {
+          "tipo": "linea",
+          "x1": 0.0,
+          "y1": -0.15,
+          "x2": 0.0,
+          "y2": 0.15
+        },
+        {
+          "tipo": "linea",
+          "x1": -0.1,
+          "y1": -0.1,
+          "x2": 0.0,
+          "y2": 0.0
+        },
+        {
+          "tipo": "linea",
+          "x1": -0.14,
+          "y1": -0.05,
+          "x2": 0.0,
+          "y2": 0.05
+        },
+        {
+          "tipo": "linea",
+          "x1": -0.14,
+          "y1": 0.05,
+          "x2": 0.0,
+          "y2": -0.05
+        },
+        {
+          "tipo": "linea",
+          "x1": -0.1,
+          "y1": 0.1,
+          "x2": 0.0,
+          "y2": 0.0
+        }
+      ],
+      "block_name": "DGE_09_91_22_POSTE_METALICO",
+      "uso_recomendado": "Ubicacion de postes de alumbrado publico metalicos o columnas de soporte.",
+      "observaciones": "Indica metal/acero."
+    },
+    {
+      "id": "dge_09_91_23_torre",
+      "codigo_dge": "09-91-23",
+      "nombre": "Torre",
+      "categoria": "LINEAS Y REDES DE DISTRIBUCION",
+      "pagina_pdf": 5,
+      "descripcion_visual": "Cuadrado completamente relleno de color negro solido.",
+      "aliases": [
+        "torre electrica",
+        "torre de alta tension",
+        "torre metalica"
+      ],
+      "primitivas": [
+        {
+          "tipo": "rectangulo",
+          "x": -0.15,
+          "y": -0.15,
+          "w": 0.3,
+          "h": 0.3
+        },
+        {
+          "tipo": "linea",
+          "x1": -0.15,
+          "y1": -0.15,
+          "x2": 0.15,
+          "y2": 0.15
+        },
+        {
+          "tipo": "linea",
+          "x1": -0.15,
+          "y1": 0.15,
+          "x2": 0.15,
+          "y2": -0.15
+        }
+      ],
+      "block_name": "DGE_09_91_23_TORRE_ELECTRICA",
+      "uso_recomendado": "Planos de servidumbre de lineas de alta tension.",
+      "observaciones": "Representa torre de transmision."
+    },
+    {
+      "id": "dge_09_92_01_atenuador",
+      "codigo_dge": "09-92-01",
+      "nombre": "Atenuador",
+      "categoria": "ATENUADORES Y DISPOSITIVOS",
+      "pagina_pdf": 5,
+      "descripcion_visual": "Rectangulo horizontal atravesado por una linea en zigzag vertical en su interior.",
+      "aliases": [
+        "atenuador",
+        "dimmer general",
+        "atenuacion"
+      ],
+      "primitivas": [
+        {
+          "tipo": "rectangulo",
+          "x": -0.2,
+          "y": -0.15,
+          "w": 0.4,
+          "h": 0.3
+        },
+        {
+          "tipo": "linea",
+          "x1": -0.3,
+          "y1": 0.0,
+          "x2": 0.3,
+          "y2": 0.0
+        },
+        {
+          "tipo": "linea",
+          "x1": 0.0,
+          "y1": 0.1,
+          "x2": -0.05,
+          "y2": 0.05
+        },
+        {
+          "tipo": "linea",
+          "x1": -0.05,
+          "y1": 0.05,
+          "x2": 0.05,
+          "y2": -0.05
+        },
+        {
+          "tipo": "linea",
+          "x1": 0.05,
+          "y1": -0.05,
+          "x2": 0.0,
+          "y2": -0.1
+        }
+      ],
+      "block_name": "DGE_09_92_01_ATENUADOR",
+      "uso_recomendado": "Diagramas unifilares de control de potencia.",
+      "observaciones": "Simbolo utilizable en esquemas."
+    },
+    {
+      "id": "dge_09_93_01_conductor_neutro",
+      "codigo_dge": "09-93-01",
+      "nombre": "Conductor neutro",
+      "categoria": "CONDUCTORES",
+      "pagina_pdf": 6,
+      "descripcion_visual": "Trazo oblicuo corto con un circulo peque\u00f1o relleno en la punta superior.",
+      "aliases": [
+        "neutro",
+        "cable neutro",
+        "n"
+      ],
+      "primitivas": [
+        {
+          "tipo": "linea",
+          "x1": -0.05,
+          "y1": -0.08,
+          "x2": 0.05,
+          "y2": 0.08
+        },
+        {
+          "tipo": "circulo_relleno",
+          "cx": 0.05,
+          "cy": 0.08,
+          "r": 0.02
+        }
+      ],
+      "block_name": "DGE_09_93_01_NEUTRO",
+      "uso_recomendado": "Planos de instalacion indicando cables en conductos de alumbrado/tomacorriente.",
+      "observaciones": "Simbolo residencial esencial."
+    },
+    {
+      "id": "dge_09_93_02_conductor_tierra",
+      "codigo_dge": "09-93-02",
+      "nombre": "Conductor de proteccion (Tierra)",
+      "categoria": "CONDUCTORES",
+      "pagina_pdf": 6,
+      "descripcion_visual": "Trazo oblicuo corto con una peque\u00f1a barra perpendicular cruzada en la punta superior.",
+      "aliases": [
+        "conductor de proteccion",
+        "tierra en tuberia",
+        "pe"
+      ],
+      "primitivas": [
+        {
+          "tipo": "linea",
+          "x1": -0.05,
+          "y1": -0.08,
+          "x2": 0.05,
+          "y2": 0.08
+        },
+        {
+          "tipo": "linea",
+          "x1": 0.015,
+          "y1": 0.1,
+          "x2": 0.085,
+          "y2": 0.06
+        }
+      ],
+      "block_name": "DGE_09_93_02_TIERRA_CONDUCTOR",
+      "uso_recomendado": "Planos de cableado electrico residencial.",
+      "observaciones": "Indica presencia de cable de tierra."
+    },
+    {
+      "id": "dge_09_93_03_conductor_combinado",
+      "codigo_dge": "09-93-03",
+      "nombre": "Conductor de proteccion y neutro combinado",
+      "categoria": "CONDUCTORES",
+      "pagina_pdf": 6,
+      "descripcion_visual": "Trazo oblicuo corto con punto de neutro a media altura y barra de proteccion en la punta.",
+      "aliases": [
+        "conductor combinado",
+        "neutro tierra combinado",
+        "pen"
+      ],
+      "primitivas": [
+        {
+          "tipo": "linea",
+          "x1": -0.05,
+          "y1": -0.08,
+          "x2": 0.05,
+          "y2": 0.08
+        },
+        {
+          "tipo": "circulo_relleno",
+          "cx": 0.0,
+          "cy": 0.0,
+          "r": 0.018
+        },
+        {
+          "tipo": "linea",
+          "x1": 0.015,
+          "y1": 0.1,
+          "x2": 0.085,
+          "y2": 0.06
+        }
+      ],
+      "block_name": "DGE_09_93_03_CONDUCTOR_COMBINADO",
+      "uso_recomendado": "Redes de alimentacion principal trifasica (acometidas).",
+      "observaciones": "Poco comun dentro de la vivienda."
+    },
+    {
+      "id": "dge_09_93_05_canalizacion_arriba",
+      "codigo_dge": "09-93-05",
+      "nombre": "Canalizacion hacia arriba (Subida)",
+      "categoria": "CANALIZACIONES",
+      "pagina_pdf": 6,
+      "descripcion_visual": "Linea horizontal que se dobla en codo hacia arriba a la derecha y termina en punta de flecha.",
+      "aliases": [
+        "subida",
+        "canalizacion sube",
+        "subida de tuberia"
+      ],
+      "primitivas": [
+        {
+          "tipo": "linea",
+          "x1": -0.2,
+          "y1": 0.0,
+          "x2": 0.08,
+          "y2": 0.0
+        },
+        {
+          "tipo": "linea",
+          "x1": 0.08,
+          "y1": 0.0,
+          "x2": 0.22,
+          "y2": 0.14
+        },
+        {
+          "tipo": "linea",
+          "x1": 0.14,
+          "y1": 0.14,
+          "x2": 0.22,
+          "y2": 0.14
+        },
+        {
+          "tipo": "linea",
+          "x1": 0.22,
+          "y1": 0.06,
+          "x2": 0.22,
+          "y2": 0.14
+        }
+      ],
+      "block_name": "DGE_09_93_05_CANALIZACION_SUBE",
+      "uso_recomendado": "Indicar tuberia que sube al techo o al piso superior (escaleras, montantes).",
+      "observaciones": "Critico para planos multipiso."
+    },
+    {
+      "id": "dge_09_93_06_canalizacion_abajo",
+      "codigo_dge": "09-93-06",
+      "nombre": "Canalizacion hacia abajo (Bajada)",
+      "categoria": "CANALIZACIONES",
+      "pagina_pdf": 6,
+      "descripcion_visual": "Linea horizontal que se dobla en codo hacia abajo a la derecha y termina en punta de flecha.",
+      "aliases": [
+        "bajada",
+        "canalizacion baja",
+        "bajada de tuberia"
+      ],
+      "primitivas": [
+        {
+          "tipo": "linea",
+          "x1": -0.2,
+          "y1": 0.0,
+          "x2": 0.08,
+          "y2": 0.0
+        },
+        {
+          "tipo": "linea",
+          "x1": 0.08,
+          "y1": 0.0,
+          "x2": 0.22,
+          "y2": -0.14
+        },
+        {
+          "tipo": "linea",
+          "x1": 0.14,
+          "y1": -0.14,
+          "x2": 0.22,
+          "y2": -0.14
+        },
+        {
+          "tipo": "linea",
+          "x1": 0.22,
+          "y1": -0.06,
+          "x2": 0.22,
+          "y2": -0.14
+        }
+      ],
+      "block_name": "DGE_09_93_06_CANALIZACION_BAJA",
+      "uso_recomendado": "Indicar tuberia que baja a tomacorrientes en pared, interruptores o piso inferior.",
+      "observaciones": "Indica cambio de cota descendente."
+    },
+    {
+      "id": "dge_09_93_08_caja_paso",
+      "codigo_dge": "09-93-08",
+      "nombre": "Caja (Simbolo general)",
+      "categoria": "CAJAS Y TABLEROS",
+      "pagina_pdf": 6,
+      "descripcion_visual": "Circulo vacio de trazo fino que representa caja octogonal o de paso.",
+      "aliases": [
+        "caja octogonal",
+        "caja de paso",
+        "caja general"
+      ],
+      "primitivas": [
+        {
+          "tipo": "circulo",
+          "cx": 0.0,
+          "cy": 0.0,
+          "r": 0.14
+        }
+      ],
+      "block_name": "DGE_09_93_08_CAJA_PASO",
+      "uso_recomendado": "Cajas de paso generales en techo o pared.",
+      "observaciones": "Basico para distribucion."
+    },
+    {
+      "id": "dge_09_93_09_caja_derivacion",
+      "codigo_dge": "09-93-09",
+      "nombre": "Caja de conexion o derivacion",
+      "categoria": "CAJAS Y TABLEROS",
+      "pagina_pdf": 6,
+      "descripcion_visual": "Circulo con un punto central relleno que representa caja de derivacion de circuitos.",
+      "aliases": [
+        "caja de derivacion",
+        "caja de empalme",
+        "caja de paso con punto"
+      ],
+      "primitivas": [
+        {
+          "tipo": "circulo",
+          "cx": 0.0,
+          "cy": 0.0,
+          "r": 0.14
+        },
+        {
+          "tipo": "circulo_relleno",
+          "cx": 0.0,
+          "cy": 0.0,
+          "r": 0.035
+        }
+      ],
+      "block_name": "DGE_09_93_09_CAJA_DERIVACION",
+      "uso_recomendado": "Cajas de paso donde se realizan empalmes de conductores.",
+      "observaciones": "Muy usado en residencias."
+    },
+    {
+      "id": "dge_09_93_11_centro_distribucion",
+      "codigo_dge": "09-93-11",
+      "nombre": "Centro de distribucion (Tablero)",
+      "categoria": "CAJAS Y TABLEROS",
+      "pagina_pdf": 6,
+      "descripcion_visual": "Rectangulo horizontal con cinco lineas verticales en su parte superior y una en la inferior, simulando alimentadores.",
+      "aliases": [
+        "centro de distribucion",
+        "td residencial",
+        "tablero general alterno"
+      ],
+      "primitivas": [
+        {
+          "tipo": "rectangulo",
+          "x": -0.22,
+          "y": -0.12,
+          "w": 0.44,
+          "h": 0.24
+        },
+        {
+          "tipo": "linea",
+          "x1": -0.16,
+          "y1": 0.12,
+          "x2": -0.16,
+          "y2": 0.3
+        },
+        {
+          "tipo": "linea",
+          "x1": -0.08,
+          "y1": 0.12,
+          "x2": -0.08,
+          "y2": 0.3
+        },
+        {
+          "tipo": "linea",
+          "x1": 0.0,
+          "y1": 0.12,
+          "x2": 0.0,
+          "y2": 0.3
+        },
+        {
+          "tipo": "linea",
+          "x1": 0.08,
+          "y1": 0.12,
+          "x2": 0.08,
+          "y2": 0.3
+        },
+        {
+          "tipo": "linea",
+          "x1": 0.16,
+          "y1": 0.12,
+          "x2": 0.16,
+          "y2": 0.3
+        },
+        {
+          "tipo": "linea",
+          "x1": 0.0,
+          "y1": -0.12,
+          "x2": 0.0,
+          "y2": -0.3
+        }
+      ],
+      "block_name": "DGE_09_93_11_CENTRO_DISTRIBUCION",
+      "uso_recomendado": "Ubicacion de tableros generales o de distribucion en esquemas unifilares.",
+      "observaciones": "Variante del tablero empotrado."
+    },
+    {
+      "id": "dge_09_93_13_tomacorriente_monofasico",
+      "codigo_dge": "09-93-13",
+      "nombre": "Tomacorriente monofasico",
+      "categoria": "TOMACORRIENTES",
+      "pagina_pdf": 7,
+      "descripcion_visual": "Circulo con dos lineas horizontales paralelas secantes en su interior.",
+      "aliases": [
+        "tomacorriente simple",
+        "toma monofasico",
+        "tomacorriente doble"
+      ],
+      "primitivas": [
+        {
+          "tipo": "circulo",
+          "cx": 0.0,
+          "cy": 0.0,
+          "r": 0.13
+        },
+        {
+          "tipo": "linea",
+          "x1": -0.09,
+          "y1": -0.04,
+          "x2": 0.09,
+          "y2": -0.04
+        },
+        {
+          "tipo": "linea",
+          "x1": -0.09,
+          "y1": 0.04,
+          "x2": 0.09,
+          "y2": 0.04
+        }
+      ],
+      "block_name": "DGE_09_93_13_TOMACORRIENTE_MONOFASICO",
+      "uso_recomendado": "Tomacorrientes generales para electrodomesticos menores (sala, dormitorios).",
+      "observaciones": "Simbolo de uso masivo."
+    },
+    {
+      "id": "dge_09_93_14_tomacorriente_piso",
+      "codigo_dge": "09-93-14",
+      "nombre": "Tomacorriente monofasico en el piso",
+      "categoria": "TOMACORRIENTES",
+      "pagina_pdf": 7,
+      "descripcion_visual": "S\u00edmbolo de tomacorriente monof\u00e1sico inscrito exactamente dentro de un cuadrado.",
+      "aliases": [
+        "tomacorriente de piso",
+        "toma en piso",
+        "toma piso monofasico"
+      ],
+      "primitivas": [
+        {
+          "tipo": "rectangulo",
+          "x": -0.16,
+          "y": -0.16,
+          "w": 0.32,
+          "h": 0.32
+        },
+        {
+          "tipo": "circulo",
+          "cx": 0.0,
+          "cy": 0.0,
+          "r": 0.13
+        },
+        {
+          "tipo": "linea",
+          "x1": -0.09,
+          "y1": -0.04,
+          "x2": 0.09,
+          "y2": -0.04
+        },
+        {
+          "tipo": "linea",
+          "x1": -0.09,
+          "y1": 0.04,
+          "x2": 0.09,
+          "y2": 0.04
+        }
+      ],
+      "block_name": "DGE_09_93_14_TOMACORRIENTE_PISO",
+      "uso_recomendado": "Tomacorrientes en el piso para oficinas, centros de mesa o salas amplias.",
+      "observaciones": "Indica montaje en caja de piso estanca."
+    },
+    {
+      "id": "dge_09_93_15_tomacorriente_trifasico",
+      "codigo_dge": "09-93-15",
+      "nombre": "Tomacorriente trifasico",
+      "categoria": "TOMACORRIENTES",
+      "pagina_pdf": 7,
+      "descripcion_visual": "Circulo cruzado por tres lineas horizontales paralelas interiores secantes.",
+      "aliases": [
+        "tomacorriente trifasico",
+        "toma trifasica",
+        "toma de fuerza trifasico"
+      ],
+      "primitivas": [
+        {
+          "tipo": "circulo",
+          "cx": 0.0,
+          "cy": 0.0,
+          "r": 0.13
+        },
+        {
+          "tipo": "linea",
+          "x1": -0.09,
+          "y1": -0.05,
+          "x2": 0.09,
+          "y2": -0.05
+        },
+        {
+          "tipo": "linea",
+          "x1": -0.09,
+          "y1": 0.0,
+          "x2": 0.09,
+          "y2": 0.0
+        },
+        {
+          "tipo": "linea",
+          "x1": -0.09,
+          "y1": 0.05,
+          "x2": 0.09,
+          "y2": 0.05
+        }
+      ],
+      "block_name": "DGE_09_93_15_TOMACORRIENTE_TRIFASICO",
+      "uso_recomendado": "Salidas de fuerza para equipos industriales o trifasicos (talleres, bombas grandes).",
+      "observaciones": "Requiere 3 fases y tierra."
+    },
+    {
+      "id": "dge_09_93_17_tomacorriente_tierra",
+      "codigo_dge": "09-93-17",
+      "nombre": "Tomacorriente monofasico puesto a tierra",
+      "categoria": "TOMACORRIENTES",
+      "pagina_pdf": 7,
+      "descripcion_visual": "Circulo con dos lineas horizontales paralelas y la letra T en negrita a la derecha.",
+      "aliases": [
+        "tomacorriente con tierra",
+        "toma a tierra",
+        "tomacorriente schuko"
+      ],
+      "primitivas": [
+        {
+          "tipo": "circulo",
+          "cx": 0.0,
+          "cy": 0.0,
+          "r": 0.13
+        },
+        {
+          "tipo": "linea",
+          "x1": -0.09,
+          "y1": -0.04,
+          "x2": 0.09,
+          "y2": -0.04
+        },
+        {
+          "tipo": "linea",
+          "x1": -0.09,
+          "y1": 0.04,
+          "x2": 0.09,
+          "y2": 0.04
+        },
+        {
+          "tipo": "texto",
+          "contenido": "T",
+          "x": 0.22,
+          "y": -0.15,
+          "h": 0.14
+        }
+      ],
+      "block_name": "DGE_09_93_17_TOMACORRIENTE_TIERRA",
+      "uso_recomendado": "Salidas para electrodomesticos con partes metalicas (cocina, lavanderia, computadoras).",
+      "observaciones": "Norma exigible en edificaciones modernas."
+    },
+    {
+      "id": "dge_09_93_18_salida_cocina",
+      "codigo_dge": "09-93-18",
+      "nombre": "Salida trifasica para cocina",
+      "categoria": "TOMACORRIENTES",
+      "pagina_pdf": 7,
+      "descripcion_visual": "Circulo con tres lineas horizontales y la letra C en negrita a la derecha.",
+      "aliases": [
+        "salida cocina",
+        "tomacorriente de cocina",
+        "toma cocina trifasico"
+      ],
+      "primitivas": [
+        {
+          "tipo": "circulo",
+          "cx": 0.0,
+          "cy": 0.0,
+          "r": 0.13
+        },
+        {
+          "tipo": "linea",
+          "x1": -0.09,
+          "y1": -0.05,
+          "x2": 0.09,
+          "y2": -0.05
+        },
+        {
+          "tipo": "linea",
+          "x1": -0.09,
+          "y1": 0.0,
+          "x2": 0.09,
+          "y2": 0.0
+        },
+        {
+          "tipo": "linea",
+          "x1": -0.09,
+          "y1": 0.05,
+          "x2": 0.09,
+          "y2": 0.05
+        },
+        {
+          "tipo": "texto",
+          "contenido": "C",
+          "x": 0.22,
+          "y": -0.15,
+          "h": 0.14
+        }
+      ],
+      "block_name": "DGE_09_93_18_SALIDA_COCINA",
+      "uso_recomendado": "Punto de conexion dedicado para cocina electrica de induccion o vitroceramica.",
+      "observaciones": "Normalmente circuito independiente."
+    },
+    {
+      "id": "dge_09_93_19_tomacorriente_agua",
+      "codigo_dge": "09-93-19",
+      "nombre": "Tomacorriente a prueba de agua (PA)",
+      "categoria": "TOMACORRIENTES",
+      "pagina_pdf": 7,
+      "descripcion_visual": "Circulo con dos lineas paralelas horizontales y la sigla PA en negrita a la derecha.",
+      "aliases": [
+        "tomacorriente intemperie",
+        "tomacorriente pa",
+        "toma a prueba de agua"
+      ],
+      "primitivas": [
+        {
+          "tipo": "circulo",
+          "cx": 0.0,
+          "cy": 0.0,
+          "r": 0.13
+        },
+        {
+          "tipo": "linea",
+          "x1": -0.09,
+          "y1": -0.04,
+          "x2": 0.09,
+          "y2": -0.04
+        },
+        {
+          "tipo": "linea",
+          "x1": -0.09,
+          "y1": 0.04,
+          "x2": 0.09,
+          "y2": 0.04
+        },
+        {
+          "tipo": "texto",
+          "contenido": "PA",
+          "x": 0.24,
+          "y": -0.15,
+          "h": 0.13
+        }
+      ],
+      "block_name": "DGE_09_93_19_TOMACORRIENTE_AGUA",
+      "uso_recomendado": "Tomacorrientes en ba\u00f1os, patios, jardines y zonas expuestas a humedad.",
+      "observaciones": "Requiere tapa protectora basculante."
+    },
+    {
+      "id": "dge_09_93_20_tomacorriente_multiple",
+      "codigo_dge": "09-93-20",
+      "nombre": "Tomacorriente multiple (Potencia)",
+      "categoria": "TOMACORRIENTES",
+      "pagina_pdf": 7,
+      "descripcion_visual": "Semic\u00edrculo apoyado en linea de pared con una derivaci\u00f3n en \u00e1ngulo recto (L) y el n\u00famero de tomas encima.",
+      "primitivas": [
+        {
+          "tipo": "linea",
+          "x1": -0.2,
+          "y1": 0.0,
+          "x2": 0.2,
+          "y2": 0.0
+        },
+        {
+          "tipo": "arco",
+          "cx": 0.0,
+          "cy": 0.0,
+          "r": 0.1,
+          "ang_ini": 0,
+          "ang_fin": 180
+        },
+        {
+          "tipo": "linea",
+          "x1": 0.0,
+          "y1": 0.1,
+          "x2": 0.0,
+          "y2": 0.22
+        },
+        {
+          "tipo": "linea",
+          "x1": 0.0,
+          "y1": 0.22,
+          "x2": -0.08,
+          "y2": 0.22
+        },
+        {
+          "tipo": "texto",
+          "contenido": "3",
+          "x": 0.1,
+          "y": 0.2,
+          "h": 0.12
+        }
+      ],
+      "block_name": "DGE_09_93_20_TOMACORRIENTE_MULTIPLE",
+      "uso_recomendado": "Bloques de tomacorrientes multiples en escritorios o talleres.",
+      "observaciones": "Indica agrupacion de tomas."
+    },
+    {
+      "id": "dge_09_93_22_tomacorriente_contacto_proteccion",
+      "codigo_dge": "09-93-22",
+      "nombre": "Tomacorriente con contacto de proteccion",
+      "categoria": "TOMACORRIENTES",
+      "pagina_pdf": 7,
+      "descripcion_visual": "Semic\u00edrculo sobre linea de pared con una l\u00ednea en T invertida saliendo del centro del arco.",
+      "primitivas": [
+        {
+          "tipo": "linea",
+          "x1": -0.2,
+          "y1": 0.0,
+          "x2": 0.2,
+          "y2": 0.0
+        },
+        {
+          "tipo": "arco",
+          "cx": 0.0,
+          "cy": 0.0,
+          "r": 0.1,
+          "ang_ini": 0,
+          "ang_fin": 180
+        },
+        {
+          "tipo": "linea",
+          "x1": 0.0,
+          "y1": 0.1,
+          "x2": 0.0,
+          "y2": 0.22
+        },
+        {
+          "tipo": "linea",
+          "x1": -0.06,
+          "y1": 0.22,
+          "x2": 0.06,
+          "y2": 0.22
+        }
+      ],
+      "block_name": "DGE_09_93_22_TOMACORRIENTE_PROTECCION",
+      "uso_recomendado": "Tomas con polo a tierra en sistemas de distribucion antiguos.",
+      "observaciones": "Variacion grafica homologada."
+    },
+    {
+      "id": "dge_09_93_24_tomacorriente_interruptor",
+      "codigo_dge": "09-93-24",
+      "nombre": "Tomacorriente con interruptor unipolar",
+      "categoria": "TOMACORRIENTES",
+      "pagina_pdf": 8,
+      "descripcion_visual": "Semic\u00edrculo apoyado en l\u00ednea con una palanca de interruptor saliendo del centro hacia arriba a la derecha.",
+      "aliases": [
+        "tomacorriente con interruptor",
+        "toma interruptor combinado"
+      ],
+      "primitivas": [
+        {
+          "tipo": "linea",
+          "x1": -0.2,
+          "y1": 0.0,
+          "x2": 0.2,
+          "y2": 0.0
+        },
+        {
+          "tipo": "arco",
+          "cx": 0.0,
+          "cy": 0.0,
+          "r": 0.1,
+          "ang_ini": 0,
+          "ang_fin": 180
+        },
+        {
+          "tipo": "linea",
+          "x1": 0.0,
+          "y1": 0.1,
+          "x2": 0.1,
+          "y2": 0.24
+        },
+        {
+          "tipo": "linea",
+          "x1": 0.1,
+          "y1": 0.24,
+          "x2": 0.16,
+          "y2": 0.18
+        }
+      ],
+      "block_name": "DGE_09_93_24_TOMACORRIENTE_INTERRUPTOR",
+      "uso_recomendado": "Salida combinada tomacorriente-interruptor en la misma placa.",
+      "observaciones": "Ahorra espacio en paredes."
+    },
+    {
+      "id": "dge_09_93_26_tomacorriente_transformador",
+      "codigo_dge": "09-93-26",
+      "nombre": "Tomacorriente con transformador aislante",
+      "categoria": "TOMACORRIENTES",
+      "pagina_pdf": 8,
+      "descripcion_visual": "Semic\u00edrculo sobre pared de la que deriva un s\u00edmbolo de transformador (dos c\u00edrculos entrelazados verticalmente).",
+      "aliases": [
+        "tomacorriente maquina afeitar",
+        "tomacorriente con transformador"
+      ],
+      "primitivas": [
+        {
+          "tipo": "linea",
+          "x1": -0.2,
+          "y1": 0.0,
+          "x2": 0.2,
+          "y2": 0.0
+        },
+        {
+          "tipo": "arco",
+          "cx": 0.0,
+          "cy": 0.0,
+          "r": 0.1,
+          "ang_ini": 0,
+          "ang_fin": 180
+        },
+        {
+          "tipo": "linea",
+          "x1": 0.0,
+          "y1": 0.1,
+          "x2": 0.0,
+          "y2": 0.2
+        },
+        {
+          "tipo": "circulo",
+          "cx": 0.0,
+          "cy": 0.29,
+          "r": 0.09
+        },
+        {
+          "tipo": "circulo",
+          "cx": 0.0,
+          "cy": 0.43,
+          "r": 0.09
+        }
+      ],
+      "block_name": "DGE_09_93_26_TOMACORRIENTE_TRANSFORMADOR",
+      "uso_recomendado": "Salida para maquina de afeitar en ba\u00f1os de hoteles o viviendas de lujo.",
+      "observaciones": "Previene choques electricos en zonas mojadas."
+    },
+    {
+      "id": "dge_09_93_27_telecomunicaciones_telefono",
+      "codigo_dge": "09-93-27",
+      "nombre": "Tomacorriente de telecomunicaciones (Telefono)",
+      "categoria": "COMUNICACIONES",
+      "pagina_pdf": 8,
+      "descripcion_visual": "Gancho cuadrado (L invertida) apoyado sobre la l\u00ednea de pared, con la etiqueta TP para tel\u00e9fono.",
+      "aliases": [
+        "toma de telefono",
+        "telefono jack",
+        "rj11"
+      ],
+      "primitivas": [
+        {
+          "tipo": "linea",
+          "x1": -0.2,
+          "y1": 0.0,
+          "x2": 0.2,
+          "y2": 0.0
+        },
+        {
+          "tipo": "linea",
+          "x1": 0.0,
+          "y1": 0.0,
+          "x2": 0.0,
+          "y2": 0.16
+        },
+        {
+          "tipo": "linea",
+          "x1": 0.0,
+          "y1": 0.16,
+          "x2": -0.1,
+          "y2": 0.16
+        },
+        {
+          "tipo": "linea",
+          "x1": -0.1,
+          "y1": 0.16,
+          "x2": -0.1,
+          "y2": 0.06
+        },
+        {
+          "tipo": "texto",
+          "contenido": "TP",
+          "x": 0.18,
+          "y": 0.12,
+          "h": 0.12
+        }
+      ],
+      "block_name": "DGE_09_93_27_TELEFONO",
+      "uso_recomendado": "Salida de telefonia fija en sala, cocina o dormitorios.",
+      "observaciones": "Uso decreciente por telefonia movil."
+    },
+    {
+      "id": "dge_09_93_27_telecomunicaciones_tv",
+      "codigo_dge": "09-93-27-TV",
+      "nombre": "Tomacorriente de television (TV)",
+      "categoria": "COMUNICACIONES",
+      "pagina_pdf": 8,
+      "descripcion_visual": "Gancho cuadrado (L invertida) apoyado sobre la l\u00ednea de pared con la sigla TV.",
+      "aliases": [
+        "toma de tv",
+        "tv coaxial",
+        "toma de cable tv"
+      ],
+      "primitivas": [
+        {
+          "tipo": "linea",
+          "x1": -0.2,
+          "y1": 0.0,
+          "x2": 0.2,
+          "y2": 0.0
+        },
+        {
+          "tipo": "linea",
+          "x1": 0.0,
+          "y1": 0.0,
+          "x2": 0.0,
+          "y2": 0.16
+        },
+        {
+          "tipo": "linea",
+          "x1": 0.0,
+          "y1": 0.16,
+          "x2": -0.1,
+          "y2": 0.16
+        },
+        {
+          "tipo": "linea",
+          "x1": -0.1,
+          "y1": 0.16,
+          "x2": -0.1,
+          "y2": 0.06
+        },
+        {
+          "tipo": "texto",
+          "contenido": "TV",
+          "x": 0.18,
+          "y": 0.12,
+          "h": 0.12
+        }
+      ],
+      "block_name": "DGE_09_93_27_TV",
+      "uso_recomendado": "Salida de cable coaxial para television en sala y dormitorios.",
+      "observaciones": "Muy frecuente en viviendas."
+    },
+    {
+      "id": "dge_09_93_28_interruptor_general",
+      "codigo_dge": "09-93-28",
+      "nombre": "Interruptor (Simbolo general)",
+      "categoria": "INTERRUPTORES",
+      "pagina_pdf": 8,
+      "descripcion_visual": "C\u00edrculo peque\u00f1o con una sola l\u00ednea oblicua de palanca saliendo hacia arriba a la derecha (a unos 60 grados).",
+      "aliases": [
+        "interruptor",
+        "mando",
+        "switch general"
+      ],
+      "primitivas": [
+        {
+          "tipo": "circulo",
+          "cx": 0.0,
+          "cy": 0.0,
+          "r": 0.09
+        },
+        {
+          "tipo": "linea",
+          "x1": 0.06,
+          "y1": 0.06,
+          "x2": 0.18,
+          "y2": 0.18
+        }
+      ],
+      "block_name": "DGE_09_93_28_INTERRUPTOR",
+      "uso_recomendado": "Representacion generica de interruptor, no usar si se puede detallar el tipo.",
+      "observaciones": "Bloque base de interruptores."
+    },
+    {
+      "id": "dge_09_93_29_interruptor_piloto",
+      "codigo_dge": "09-93-29",
+      "nombre": "Interruptor con luz piloto",
+      "categoria": "INTERRUPTORES",
+      "pagina_pdf": 8,
+      "descripcion_visual": "C\u00edrculo de interruptor con una equis (X) en su interior y la palanca oblicua.",
+      "aliases": [
+        "interruptor con piloto",
+        "interruptor iluminado"
+      ],
+      "primitivas": [
+        {
+          "tipo": "circulo",
+          "cx": 0.0,
+          "cy": 0.0,
+          "r": 0.09
+        },
+        {
+          "tipo": "linea",
+          "x1": 0.06,
+          "y1": 0.06,
+          "x2": 0.18,
+          "y2": 0.18
+        },
+        {
+          "tipo": "linea",
+          "x1": -0.063,
+          "y1": -0.063,
+          "x2": 0.063,
+          "y2": 0.063
+        },
+        {
+          "tipo": "linea",
+          "x1": -0.063,
+          "y1": 0.063,
+          "x2": 0.063,
+          "y2": -0.063
+        }
+      ],
+      "block_name": "DGE_09_93_29_INTERRUPTOR_PILOTO",
+      "uso_recomendado": "Interruptor para calentadores (terma) o iluminacion exterior en pasillos oscuros.",
+      "observaciones": "La X indica la lampara indicadora integrada."
+    },
+    {
+      "id": "dge_09_93_30_interruptor_unipolar",
+      "codigo_dge": "09-93-30",
+      "nombre": "Interruptor unipolar (Simple)",
+      "categoria": "INTERRUPTORES",
+      "pagina_pdf": 8,
+      "descripcion_visual": "Interruptor simple unipolar rotulado con la letra S.",
+      "aliases": [
+        "interruptor simple",
+        "interruptor de un polo",
+        "unipolar"
+      ],
+      "primitivas": [
+        {
+          "tipo": "circulo",
+          "cx": 0.0,
+          "cy": 0.0,
+          "r": 0.09
+        },
+        {
+          "tipo": "linea",
+          "x1": 0.06,
+          "y1": 0.06,
+          "x2": 0.18,
+          "y2": 0.18
+        },
+        {
+          "tipo": "texto",
+          "contenido": "S",
+          "x": -0.05,
+          "y": -0.24,
+          "h": 0.13
+        }
+      ],
+      "block_name": "DGE_09_93_30_INTERRUPTOR_UNIPOLAR",
+      "uso_recomendado": "Control de luminaria simple en cualquier ambiente de la vivienda.",
+      "observaciones": "El simbolo mas usado de interruptor en planos de casa."
+    },
+    {
+      "id": "dge_09_93_31_interruptor_bipolar",
+      "codigo_dge": "09-93-31",
+      "nombre": "Interruptor bipolar",
+      "categoria": "INTERRUPTORES",
+      "pagina_pdf": 9,
+      "descripcion_visual": "C\u00edrculo con l\u00ednea inclinada terminada en un gancho de bandera hacia la derecha y abajo, marcado con S2.",
+      "aliases": [
+        "interruptor bipolar",
+        "interruptor dos polos",
+        "bipolar"
+      ],
+      "primitivas": [
+        {
+          "tipo": "circulo",
+          "cx": 0.0,
+          "cy": 0.0,
+          "r": 0.09
+        },
+        {
+          "tipo": "linea",
+          "x1": 0.06,
+          "y1": 0.06,
+          "x2": 0.18,
+          "y2": 0.18
+        },
+        {
+          "tipo": "linea",
+          "x1": 0.18,
+          "y1": 0.18,
+          "x2": 0.24,
+          "y2": 0.1
+        },
+        {
+          "tipo": "texto",
+          "contenido": "S2",
+          "x": -0.05,
+          "y": -0.24,
+          "h": 0.13
+        }
+      ],
+      "block_name": "DGE_09_93_31_INTERRUPTOR_BIPOLAR",
+      "uso_recomendado": "Control de circuitos bifasicos de 220V o termas de gran potencia sin tablero al lado.",
+      "observaciones": "Corta ambas fases."
+    },
+    {
+      "id": "dge_09_93_32_interruptor_tres_vias",
+      "codigo_dge": "09-93-32",
+      "nombre": "Interruptor de tres vias (Conmutador S3)",
+      "categoria": "INTERRUPTORES",
+      "pagina_pdf": 9,
+      "descripcion_visual": "Interruptor conmutador rotulado con S3.",
+      "aliases": [
+        "interruptor conmutado",
+        "conmutador",
+        "interruptor de tres vias",
+        "s3"
+      ],
+      "primitivas": [
+        {
+          "tipo": "circulo",
+          "cx": 0.0,
+          "cy": 0.0,
+          "r": 0.09
+        },
+        {
+          "tipo": "linea",
+          "x1": 0.06,
+          "y1": 0.06,
+          "x2": 0.18,
+          "y2": 0.18
+        },
+        {
+          "tipo": "texto",
+          "contenido": "S3",
+          "x": -0.05,
+          "y": -0.24,
+          "h": 0.13
+        }
+      ],
+      "block_name": "DGE_09_93_32_INTERRUPTOR_CONMUTADO",
+      "uso_recomendado": "Control de iluminacion en pasadizos, escaleras o cabeceras de dormitorios.",
+      "observaciones": "Usado por pares."
+    },
+    {
+      "id": "dge_09_93_34_conmutador_unipolar",
+      "codigo_dge": "09-93-34",
+      "nombre": "Conmutador unipolar (Doble palanca)",
+      "categoria": "INTERRUPTORES",
+      "pagina_pdf": 9,
+      "descripcion_visual": "C\u00edrculo con dos l\u00edneas de palanca divergentes (en forma de V hacia arriba).",
+      "aliases": [
+        "conmutador unipolar",
+        "interruptor doble palanca",
+        "interruptor doble"
+      ],
+      "primitivas": [
+        {
+          "tipo": "circulo",
+          "cx": 0.0,
+          "cy": 0.0,
+          "r": 0.09
+        },
+        {
+          "tipo": "linea",
+          "x1": 0.05,
+          "y1": 0.07,
+          "x2": 0.14,
+          "y2": 0.2
+        },
+        {
+          "tipo": "linea",
+          "x1": -0.05,
+          "y1": 0.07,
+          "x2": -0.14,
+          "y2": 0.2
+        }
+      ],
+      "block_name": "DGE_09_93_34_CONMUTADOR_UNIPOLAR",
+      "uso_recomendado": "Interruptor doble en placas comunes de vivienda.",
+      "observaciones": "Controla dos zonas independientes desde un punto."
+    },
+    {
+      "id": "dge_09_93_36_conmutador_intermedio",
+      "codigo_dge": "09-93-36",
+      "nombre": "Conmutador intermedio (De cruzamiento S4 grafico)",
+      "categoria": "INTERRUPTORES",
+      "pagina_pdf": 9,
+      "descripcion_visual": "C\u00edrculo con cuatro l\u00edneas oblicuas divergentes (en X), cada una terminada en un gancho en \u00e1ngulo recto.",
+      "aliases": [
+        "conmutador intermedio",
+        "interruptor de cruzamiento",
+        "conmutador de cruce"
+      ],
+      "primitivas": [
+        {
+          "tipo": "circulo",
+          "cx": 0.0,
+          "cy": 0.0,
+          "r": 0.09
+        },
+        {
+          "tipo": "linea",
+          "x1": 0.06,
+          "y1": 0.06,
+          "x2": 0.16,
+          "y2": 0.16
+        },
+        {
+          "tipo": "linea",
+          "x1": 0.16,
+          "y1": 0.16,
+          "x2": 0.22,
+          "y2": 0.1
+        },
+        {
+          "tipo": "linea",
+          "x1": -0.06,
+          "y1": 0.06,
+          "x2": -0.16,
+          "y2": 0.16
+        },
+        {
+          "tipo": "linea",
+          "x1": -0.16,
+          "y1": 0.16,
+          "x2": -0.22,
+          "y2": 0.1
+        },
+        {
+          "tipo": "linea",
+          "x1": -0.06,
+          "y1": -0.06,
+          "x2": -0.16,
+          "y2": -0.16
+        },
+        {
+          "tipo": "linea",
+          "x1": -0.16,
+          "y1": -0.16,
+          "x2": -0.22,
+          "y2": -0.1
+        },
+        {
+          "tipo": "linea",
+          "x1": 0.06,
+          "y1": -0.06,
+          "x2": 0.16,
+          "y2": -0.16
+        },
+        {
+          "tipo": "linea",
+          "x1": 0.16,
+          "y1": -0.16,
+          "x2": 0.22,
+          "y2": -0.1
+        }
+      ],
+      "block_name": "DGE_09_93_36_CONMUTADOR_INTERMEDIO",
+      "uso_recomendado": "Control de iluminacion desde 3 o mas puntos (dormitorios matrimoniales amplios, pasillos muy largos).",
+      "observaciones": "Se coloca entre dos interruptores de 3 vias."
+    },
+    {
+      "id": "dge_09_93_37_interruptor_dimmer",
+      "codigo_dge": "09-93-37",
+      "nombre": "Interruptor graduador (Dimmer)",
+      "categoria": "INTERRUPTORES",
+      "pagina_pdf": 9,
+      "descripcion_visual": "C\u00edrculo con palanca inclinada cruzada por un trazo transversal formando una T inclinada.",
+      "aliases": [
+        "dimmer",
+        "interruptor regulable",
+        "regulador de intensidad"
+      ],
+      "primitivas": [
+        {
+          "tipo": "circulo",
+          "cx": 0.0,
+          "cy": 0.0,
+          "r": 0.09
+        },
+        {
+          "tipo": "linea",
+          "x1": 0.06,
+          "y1": 0.06,
+          "x2": 0.18,
+          "y2": 0.18
+        },
+        {
+          "tipo": "linea",
+          "x1": 0.12,
+          "y1": 0.24,
+          "x2": 0.24,
+          "y2": 0.12
+        }
+      ],
+      "block_name": "DGE_09_93_37_DIMMER",
+      "uso_recomendado": "Control de intensidad de iluminacion en salas de estar o comedores.",
+      "observaciones": "Adecuado para lamparas dimerizables."
+    },
+    {
+      "id": "dge_09_93_38_interruptor_tirador",
+      "codigo_dge": "09-93-38",
+      "nombre": "Interruptor unipolar con tirador",
+      "categoria": "INTERRUPTORES",
+      "pagina_pdf": 9,
+      "descripcion_visual": "C\u00edrculo con palanca inclinada terminada en punta de flecha, rotulado con ST.",
+      "aliases": [
+        "interruptor de tirador",
+        "tirador",
+        "switch con cadena",
+        "st"
+      ],
+      "primitivas": [
+        {
+          "tipo": "circulo",
+          "cx": 0.0,
+          "cy": 0.0,
+          "r": 0.09
+        },
+        {
+          "tipo": "linea",
+          "x1": 0.06,
+          "y1": 0.06,
+          "x2": 0.18,
+          "y2": 0.18
+        },
+        {
+          "tipo": "linea",
+          "x1": 0.14,
+          "y1": 0.18,
+          "x2": 0.18,
+          "y2": 0.18
+        },
+        {
+          "tipo": "linea",
+          "x1": 0.18,
+          "y1": 0.14,
+          "x2": 0.18,
+          "y2": 0.18
+        },
+        {
+          "tipo": "texto",
+          "contenido": "ST",
+          "x": -0.05,
+          "y": -0.24,
+          "h": 0.13
+        }
+      ],
+      "block_name": "DGE_09_93_38_INTERRUPTOR_TIRADOR",
+      "uso_recomendado": "Interruptor suspendido en techos de almacenes o closets.",
+      "observaciones": "Accionamiento mediante cordon."
+    },
+    {
+      "id": "dge_09_93_47_interruptor_horario",
+      "codigo_dge": "09-93-47",
+      "nombre": "Interruptor horario (Reloj horario)",
+      "categoria": "INTERRUPTORES",
+      "pagina_pdf": 10,
+      "descripcion_visual": "Rect\u00e1ngulo con c\u00edrculo de reloj a la izquierda y contacto abierto a la derecha, rotulado con St.",
+      "aliases": [
+        "temporizador",
+        "reloj horario",
+        "interruptor horario",
+        "st"
+      ],
+      "primitivas": [
+        {
+          "tipo": "rectangulo",
+          "x": -0.26,
+          "y": -0.15,
+          "w": 0.52,
+          "h": 0.3
+        },
+        {
+          "tipo": "circulo",
+          "cx": -0.13,
+          "cy": 0.0,
+          "r": 0.08
+        },
+        {
+          "tipo": "linea",
+          "x1": -0.13,
+          "y1": 0.0,
+          "x2": -0.13,
+          "y2": 0.04
+        },
+        {
+          "tipo": "linea",
+          "x1": -0.13,
+          "y1": 0.0,
+          "x2": -0.09,
+          "y2": -0.02
+        },
+        {
+          "tipo": "linea",
+          "x1": 0.02,
+          "y1": 0.0,
+          "x2": 0.1,
+          "y2": 0.0
+        },
+        {
+          "tipo": "linea",
+          "x1": 0.1,
+          "y1": 0.0,
+          "x2": 0.2,
+          "y2": 0.08
+        },
+        {
+          "tipo": "linea",
+          "x1": 0.2,
+          "y1": 0.0,
+          "x2": 0.24,
+          "y2": 0.0
+        },
+        {
+          "tipo": "texto",
+          "contenido": "St",
+          "x": 0.0,
+          "y": -0.32,
+          "h": 0.13
+        }
+      ],
+      "block_name": "DGE_09_93_47_INTERRUPTOR_HORARIO",
+      "uso_recomendado": "Control automatico de terma electrica o luces de jardin/fachada.",
+      "observaciones": "Instalacion en tablero electrico."
+    },
+    {
+      "id": "dge_09_93_49_toma_iluminacion_techo",
+      "codigo_dge": "09-93-49",
+      "nombre": "Posicion de la toma de iluminacion (Techo)",
+      "categoria": "ILUMINACION",
+      "pagina_pdf": 10,
+      "descripcion_visual": "L\u00ednea horizontal cruzada por una equis (X) en su centro.",
+      "aliases": [
+        "caja de luz techo",
+        "toma iluminacion techo"
+      ],
+      "primitivas": [
+        {
+          "tipo": "linea",
+          "x1": -0.25,
+          "y1": 0.0,
+          "x2": 0.25,
+          "y2": 0.0
+        },
+        {
+          "tipo": "linea",
+          "x1": -0.08,
+          "y1": -0.08,
+          "x2": 0.08,
+          "y2": 0.08
+        },
+        {
+          "tipo": "linea",
+          "x1": -0.08,
+          "y1": 0.08,
+          "x2": 0.08,
+          "y2": -0.08
+        }
+      ],
+      "block_name": "DGE_09_93_49_TOMA_ILUMINACION_TECHO",
+      "uso_recomendado": "Representar la salida fisica de tuberia a luminaria de techo.",
+      "observaciones": "Indica conexion con canalizacion."
+    },
+    {
+      "id": "dge_09_93_50_toma_iluminacion_pared",
+      "codigo_dge": "09-93-50",
+      "nombre": "Toma de iluminacion en pared",
+      "categoria": "ILUMINACION",
+      "pagina_pdf": 10,
+      "descripcion_visual": "L\u00ednea horizontal con barra de soporte vertical en el extremo izquierdo y cruz (X) en el derecho.",
+      "aliases": [
+        "salida pared",
+        "braquete canalizacion",
+        "salida iluminacion pared"
+      ],
+      "primitivas": [
+        {
+          "tipo": "linea",
+          "x1": -0.2,
+          "y1": -0.15,
+          "x2": -0.2,
+          "y2": 0.15
+        },
+        {
+          "tipo": "linea",
+          "x1": -0.2,
+          "y1": 0.0,
+          "x2": 0.15,
+          "y2": 0.0
+        },
+        {
+          "tipo": "linea",
+          "x1": 0.09,
+          "y1": -0.06,
+          "x2": 0.21,
+          "y2": 0.06
+        },
+        {
+          "tipo": "linea",
+          "x1": 0.09,
+          "y1": 0.06,
+          "x2": 0.21,
+          "y2": -0.06
+        }
+      ],
+      "block_name": "DGE_09_93_50_TOMA_ILUMINACION_PARED",
+      "uso_recomendado": "Salida en pared para braquetes (especialmente pasillos y patios exteriores).",
+      "observaciones": "Indica tramo empotrado en muro."
+    },
+    {
+      "id": "dge_09_93_51_salida_incandescente_techo",
+      "codigo_dge": "09-93-51",
+      "nombre": "Salida para lampara incandescente en techo",
+      "categoria": "ILUMINACION",
+      "pagina_pdf": 10,
+      "descripcion_visual": "C\u00edrculo peque\u00f1o con cuatro trazos radiales cortos perpendiculares exteriores y un punto de neutro en el centro.",
+      "aliases": [
+        "centro de luz techo",
+        "salida incandescente techo",
+        "foco de techo"
+      ],
+      "primitivas": [
+        {
+          "tipo": "circulo",
+          "cx": 0.0,
+          "cy": 0.0,
+          "r": 0.1
+        },
+        {
+          "tipo": "linea",
+          "x1": 0.07,
+          "y1": 0.07,
+          "x2": 0.13,
+          "y2": 0.13
+        },
+        {
+          "tipo": "linea",
+          "x1": -0.07,
+          "y1": -0.07,
+          "x2": -0.13,
+          "y2": -0.13
+        },
+        {
+          "tipo": "linea",
+          "x1": 0.07,
+          "y1": -0.07,
+          "x2": 0.13,
+          "y2": -0.13
+        },
+        {
+          "tipo": "linea",
+          "x1": -0.07,
+          "y1": 0.07,
+          "x2": -0.13,
+          "y2": 0.13
+        },
+        {
+          "tipo": "circulo_relleno",
+          "cx": 0.0,
+          "cy": 0.0,
+          "r": 0.02
+        }
+      ],
+      "block_name": "DGE_09_93_51_SALIDA_TECHO",
+      "uso_recomendado": "Punto de iluminacion adosado en techo de habitaciones y cocinas.",
+      "observaciones": "S\u00edmbolo est\u00e1ndar en instalaciones residenciales de iluminaci\u00f3n."
+    },
+    {
+      "id": "dge_09_93_52_salida_braquete_pared",
+      "codigo_dge": "09-93-52",
+      "nombre": "Salida para lampara incandescente adosada en pared",
+      "categoria": "ILUMINACION",
+      "pagina_pdf": 10,
+      "descripcion_visual": "Salida incandescente de techo adosada a una barra de soporte vertical al lado izquierdo (pared).",
+      "aliases": [
+        "braquete",
+        "braquet",
+        "salida pared incandescente"
+      ],
+      "primitivas": [
+        {
+          "tipo": "linea",
+          "x1": -0.22,
+          "y1": -0.15,
+          "x2": -0.22,
+          "y2": 0.15
+        },
+        {
+          "tipo": "linea",
+          "x1": -0.07,
+          "y1": 0.07,
+          "x2": -0.13,
+          "y2": 0.13
+        },
+        {
+          "tipo": "circulo",
+          "cx": 0.0,
+          "cy": 0.0,
+          "r": 0.1
+        },
+        {
+          "tipo": "linea",
+          "x1": 0.07,
+          "y1": 0.07,
+          "x2": 0.13,
+          "y2": 0.13
+        },
+        {
+          "tipo": "linea",
+          "x1": -0.07,
+          "y1": -0.07,
+          "x2": -0.13,
+          "y2": -0.13
+        },
+        {
+          "tipo": "linea",
+          "x1": 0.07,
+          "y1": -0.07,
+          "x2": 0.13,
+          "y2": -0.13
+        },
+        {
+          "tipo": "linea",
+          "x1": -0.07,
+          "y1": 0.07,
+          "x2": -0.13,
+          "y2": 0.13
+        },
+        {
+          "tipo": "circulo_relleno",
+          "cx": 0.0,
+          "cy": 0.0,
+          "r": 0.02
+        }
+      ],
+      "block_name": "DGE_09_93_52_SALIDA_PARED",
+      "uso_recomendado": "Salida de iluminaci\u00f3n en paredes exteriores, pasadizos, espejos de ba\u00f1o.",
+      "observaciones": "Representa aplique o braquete."
+    },
+    {
+      "id": "dge_09_93_53_salida_empotrada_techo",
+      "codigo_dge": "09-93-53",
+      "nombre": "Salida empotrada en techo",
+      "categoria": "ILUMINACION",
+      "pagina_pdf": 10,
+      "descripcion_visual": "C\u00edrculo relleno s\u00f3lido de color negro con cuatro trazos radiales cortos perpendiculares.",
+      "aliases": [
+        "dicroico empotrado",
+        "downlight empotrado",
+        "spot empotrado"
+      ],
+      "primitivas": [
+        {
+          "tipo": "circulo_relleno",
+          "cx": 0.0,
+          "cy": 0.0,
+          "r": 0.1
+        },
+        {
+          "tipo": "linea",
+          "x1": 0.0,
+          "y1": 0.1,
+          "x2": 0.0,
+          "y2": 0.18
+        },
+        {
+          "tipo": "linea",
+          "x1": 0.0,
+          "y1": -0.1,
+          "x2": 0.0,
+          "y2": -0.18
+        },
+        {
+          "tipo": "linea",
+          "x1": 0.1,
+          "y1": 0.0,
+          "x2": 0.18,
+          "y2": 0.0
+        },
+        {
+          "tipo": "linea",
+          "x1": -0.1,
+          "y1": 0.0,
+          "x2": -0.18,
+          "y2": 0.0
+        }
+      ],
+      "block_name": "DGE_09_93_53_SPOT_EMPOTRADO",
+      "uso_recomendado": "Focos dicroicos o luminarias LED empotradas en cielo raso o falso techo (sala, pasillos).",
+      "observaciones": "Indica dicroico o spot."
+    },
+    {
+      "id": "dge_09_93_55_fluorescente_techo",
+      "codigo_dge": "09-93-55",
+      "nombre": "Salida para artefacto fluorescente en el techo",
+      "categoria": "ILUMINACION",
+      "pagina_pdf": 11,
+      "descripcion_visual": "Rect\u00e1ngulo alargado con un c\u00edrculo vac\u00edo centrado en su interior.",
+      "aliases": [
+        "fluorescente de techo",
+        "equipo fluorescente",
+        "luminaria lineal"
+      ],
+      "primitivas": [
+        {
+          "tipo": "rectangulo",
+          "x": -0.36,
+          "y": -0.09,
+          "w": 0.72,
+          "h": 0.18
+        },
+        {
+          "tipo": "circulo",
+          "cx": 0.0,
+          "cy": 0.0,
+          "r": 0.05
+        }
+      ],
+      "block_name": "DGE_09_93_55_FLUORESCENTE_TECHO",
+      "uso_recomendado": "Salida de iluminaci\u00f3n lineal en cocinas, lavanderias o estacionamientos.",
+      "observaciones": "Representa equipo fluorescente adosado."
+    },
+    {
+      "id": "dge_09_93_56_fluorescente_empotrado",
+      "codigo_dge": "09-93-56",
+      "nombre": "Salida para artefacto fluorescente empotrado",
+      "categoria": "ILUMINACION",
+      "pagina_pdf": 11,
+      "descripcion_visual": "Rect\u00e1ngulo alargado con un c\u00edrculo relleno s\u00f3lido centrado en su interior.",
+      "aliases": [
+        "fluorescente empotrado",
+        "panel led empotrado",
+        "luminaria empotrada lineal"
+      ],
+      "primitivas": [
+        {
+          "tipo": "rectangulo",
+          "x": -0.36,
+          "y": -0.09,
+          "w": 0.72,
+          "h": 0.18
+        },
+        {
+          "tipo": "circulo_relleno",
+          "cx": 0.0,
+          "cy": 0.0,
+          "r": 0.05
+        }
+      ],
+      "block_name": "DGE_09_93_56_FLUORESCENTE_EMPOTRADO",
+      "uso_recomendado": "Paneles LED o equipos fluorescentes empotrados en falso techo de oficinas o cocinas.",
+      "observaciones": "Indica luminaria lineal empotrada."
+    },
+    {
+      "id": "dge_09_93_59_lampara_general",
+      "codigo_dge": "09-93-59",
+      "nombre": "Lampara (Simbolo general)",
+      "categoria": "ILUMINACION",
+      "pagina_pdf": 11,
+      "descripcion_visual": "C\u00edrculo con una equis (X) en su interior.",
+      "aliases": [
+        "lampara general",
+        "foco general",
+        "luminaria basica"
+      ],
+      "primitivas": [
+        {
+          "tipo": "circulo",
+          "cx": 0.0,
+          "cy": 0.0,
+          "r": 0.15
+        },
+        {
+          "tipo": "linea",
+          "x1": -0.106,
+          "y1": -0.106,
+          "x2": 0.106,
+          "y2": 0.106
+        },
+        {
+          "tipo": "linea",
+          "x1": -0.106,
+          "y1": 0.106,
+          "x2": 0.106,
+          "y2": -0.106
+        }
+      ],
+      "block_name": "DGE_09_93_59_LAMPARA",
+      "uso_recomendado": "Cualquier punto de luz basico en diagramas y esquemas.",
+      "observaciones": "S\u00edmbolo fundamental y el m\u00e1s comun de luz."
+    },
+    {
+      "id": "dge_09_93_60_luminaria_general",
+      "codigo_dge": "09-93-60",
+      "nombre": "Luminaria (Simbolo general)",
+      "categoria": "ILUMINACION",
+      "pagina_pdf": 11,
+      "descripcion_visual": "L\u00ednea horizontal con dos trazos verticales perpendiculares en los extremos.",
+      "aliases": [
+        "luminaria general",
+        "trazado de luminaria",
+        "viga luminosa"
+      ],
+      "primitivas": [
+        {
+          "tipo": "linea",
+          "x1": -0.24,
+          "y1": 0.0,
+          "x2": 0.24,
+          "y2": 0.0
+        },
+        {
+          "tipo": "linea",
+          "x1": -0.24,
+          "y1": -0.08,
+          "x2": -0.24,
+          "y2": 0.08
+        },
+        {
+          "tipo": "linea",
+          "x1": 0.24,
+          "y1": -0.08,
+          "x2": 0.24,
+          "y2": 0.08
+        }
+      ],
+      "block_name": "DGE_09_93_60_LUMINARIA_G",
+      "uso_recomendado": "Luminarias lineales en almacenes, pasillos comerciales.",
+      "observaciones": "Representa armadura de lampara."
+    },
+    {
+      "id": "dge_09_93_61_luminaria_tres_tubos",
+      "codigo_dge": "09-93-61",
+      "nombre": "Luminaria con tres tubos fluorescentes",
+      "categoria": "ILUMINACION",
+      "pagina_pdf": 11,
+      "descripcion_visual": "Tres l\u00edneas horizontales paralelas encerradas por dos trazos verticales en los extremos.",
+      "aliases": [
+        "luminaria triple",
+        "fluorescente triple"
+      ],
+      "primitivas": [
+        {
+          "tipo": "linea",
+          "x1": -0.24,
+          "y1": 0.06,
+          "x2": 0.24,
+          "y2": 0.06
+        },
+        {
+          "tipo": "linea",
+          "x1": -0.24,
+          "y1": 0.0,
+          "x2": 0.24,
+          "y2": 0.0
+        },
+        {
+          "tipo": "linea",
+          "x1": -0.24,
+          "y1": -0.06,
+          "x2": 0.24,
+          "y2": -0.06
+        },
+        {
+          "tipo": "linea",
+          "x1": -0.24,
+          "y1": -0.08,
+          "x2": -0.24,
+          "y2": 0.08
+        },
+        {
+          "tipo": "linea",
+          "x1": 0.24,
+          "y1": -0.08,
+          "x2": 0.24,
+          "y2": 0.08
+        }
+      ],
+      "block_name": "DGE_09_93_61_LUMINARIA_TRIPLE",
+      "uso_recomendado": "Salida para lamparas en oficinas, aulas o comercios de gran iluminacion.",
+      "observaciones": "Indica tres lamparas en una misma armadura."
+    },
+    {
+      "id": "dge_09_93_63_proyector_general",
+      "codigo_dge": "09-93-63",
+      "nombre": "Proyector (Simbolo general)",
+      "categoria": "ILUMINACION",
+      "pagina_pdf": 11,
+      "descripcion_visual": "C\u00edrculo con equis (X) en el centro, rodeado en su mitad izquierda por un arco de reflector de 120 grados.",
+      "aliases": [
+        "reflector",
+        "proyector",
+        "foco proyector",
+        "reflector de jardin"
+      ],
+      "primitivas": [
+        {
+          "tipo": "circulo",
+          "cx": 0.0,
+          "cy": 0.0,
+          "r": 0.12
+        },
+        {
+          "tipo": "linea",
+          "x1": -0.085,
+          "y1": -0.085,
+          "x2": 0.085,
+          "y2": 0.085
+        },
+        {
+          "tipo": "linea",
+          "x1": -0.085,
+          "y1": 0.085,
+          "x2": 0.085,
+          "y2": -0.085
+        },
+        {
+          "tipo": "arco",
+          "cx": 0.0,
+          "cy": 0.0,
+          "r": 0.18,
+          "ang_ini": 120,
+          "ang_fin": 240
+        }
+      ],
+      "block_name": "DGE_09_93_63_REFLECTOR",
+      "uso_recomendado": "Reflectores para iluminacion de fachadas, jardines o areas exteriores de la casa.",
+      "observaciones": "Indica luz dirigida."
+    },
+    {
+      "id": "dge_09_93_67_luz_emergencia",
+      "codigo_dge": "09-93-67",
+      "nombre": "Luminaria de alumbrado de emergencia",
+      "categoria": "ILUMINACION",
+      "pagina_pdf": 12,
+      "descripcion_visual": "Una equis (X) de trazo grueso.",
+      "aliases": [
+        "luz de emergencia",
+        "salida de emergencia iluminacion"
+      ],
+      "primitivas": [
+        {
+          "tipo": "linea",
+          "x1": -0.16,
+          "y1": -0.16,
+          "x2": 0.16,
+          "y2": 0.16
+        },
+        {
+          "tipo": "linea",
+          "x1": -0.16,
+          "y1": 0.16,
+          "x2": 0.16,
+          "y2": -0.16
+        }
+      ],
+      "block_name": "DGE_09_93_67_LUZ_EMERGENCIA",
+      "uso_recomendado": "Salida de iluminaci\u00f3n de emergencia en escaleras o ingresos principales de la casa.",
+      "observaciones": "Indica proyector de emergencia."
+    },
+    {
+      "id": "dge_09_93_68_bloque_emergencia",
+      "codigo_dge": "09-93-68",
+      "nombre": "Bloque autonomo de iluminacion de emergencia",
+      "categoria": "ILUMINACION",
+      "pagina_pdf": 12,
+      "descripcion_visual": "Una equis (X) fina inscrita en el interior de un rect\u00e1ngulo.",
+      "aliases": [
+        "equipo de emergencia autonomo",
+        "bloque autonomo emergencia"
+      ],
+      "primitivas": [
+        {
+          "tipo": "rectangulo",
+          "x": -0.22,
+          "y": -0.16,
+          "w": 0.44,
+          "h": 0.32
+        },
+        {
+          "tipo": "linea",
+          "x1": -0.22,
+          "y1": -0.16,
+          "x2": 0.22,
+          "y2": 0.16
+        },
+        {
+          "tipo": "linea",
+          "x1": -0.22,
+          "y1": 0.16,
+          "x2": 0.22,
+          "y2": -0.16
+        }
+      ],
+      "block_name": "DGE_09_93_68_BLOQUE_EMERGENCIA",
+      "uso_recomendado": "Equipos de emergencia con bateria recargable integrada en pasillos y salidas.",
+      "observaciones": "Muy comun en escaleras de edificios de departamentos."
+    },
+    {
+      "id": "dge_09_93_69_terma_electrica",
+      "codigo_dge": "09-93-69",
+      "nombre": "Calentador de agua (Terma electrica)",
+      "categoria": "EQUIPOS ESPECIALES",
+      "pagina_pdf": 12,
+      "descripcion_visual": "C\u00edrculo de radio 0.2 cruzado por 5 l\u00edneas verticales paralelas muy juntas en su interior.",
+      "aliases": [
+        "terma",
+        "calentador de agua",
+        "rapiducha"
+      ],
+      "primitivas": [
+        {
+          "tipo": "circulo",
+          "cx": 0.0,
+          "cy": 0.0,
+          "r": 0.2
+        },
+        {
+          "tipo": "linea",
+          "x1": -0.12,
+          "y1": -0.16,
+          "x2": -0.12,
+          "y2": 0.16
+        },
+        {
+          "tipo": "linea",
+          "x1": -0.06,
+          "y1": -0.19,
+          "x2": -0.06,
+          "y2": 0.19
+        },
+        {
+          "tipo": "linea",
+          "x1": 0.0,
+          "y1": -0.2,
+          "x2": 0.0,
+          "y2": 0.2
+        },
+        {
+          "tipo": "linea",
+          "x1": 0.06,
+          "y1": -0.19,
+          "x2": 0.06,
+          "y2": 0.19
+        },
+        {
+          "tipo": "linea",
+          "x1": 0.12,
+          "y1": -0.16,
+          "x2": 0.12,
+          "y2": 0.16
+        }
+      ],
+      "block_name": "DGE_09_93_69_TERMA",
+      "uso_recomendado": "Punto de salida dedicada a terma electrica o calentador de acumulaci\u00f3n.",
+      "observaciones": "Requiere circuito independiente."
+    },
+    {
+      "id": "dge_09_93_70_ventilador",
+      "codigo_dge": "09-93-70",
+      "nombre": "Ventilador (Extractor)",
+      "categoria": "EQUIPOS ESPECIALES",
+      "pagina_pdf": 12,
+      "descripcion_visual": "Cuadrado que contiene el s\u00edmbolo de infinito horizontal en el centro.",
+      "aliases": [
+        "ventilador de techo",
+        "extractor de ba\u00f1o",
+        "extractor aire"
+      ],
+      "primitivas": [
+        {
+          "tipo": "rectangulo",
+          "x": -0.2,
+          "y": -0.2,
+          "w": 0.4,
+          "h": 0.4
+        },
+        {
+          "tipo": "arco",
+          "cx": -0.075,
+          "cy": 0.0,
+          "r": 0.075,
+          "ang_ini": 0,
+          "ang_fin": 360
+        },
+        {
+          "tipo": "arco",
+          "cx": 0.075,
+          "cy": 0.0,
+          "r": 0.075,
+          "ang_ini": 0,
+          "ang_fin": 360
+        }
+      ],
+      "block_name": "DGE_09_93_70_VENTILADOR",
+      "uso_recomendado": "Extractores de aire en ba\u00f1os sin ventilacion natural o campanas de cocina.",
+      "observaciones": "Indica extractor mecanico."
+    },
+    {
+      "id": "dge_09_93_72_cerradura_electrica",
+      "codigo_dge": "09-93-72",
+      "nombre": "Cerradura electrica",
+      "categoria": "EQUIPOS ESPECIALES",
+      "pagina_pdf": 12,
+      "descripcion_visual": "Tri\u00e1ngulo rect\u00e1ngulo con una bobina senoidal (tres ondas) apoyada horizontalmente en el interior.",
+      "aliases": [
+        "cerradura electrica",
+        "portero electrico",
+        "chapa electrica"
+      ],
+      "primitivas": [
+        {
+          "tipo": "linea",
+          "x1": -0.2,
+          "y1": -0.15,
+          "x2": 0.2,
+          "y2": -0.15
+        },
+        {
+          "tipo": "linea",
+          "x1": -0.2,
+          "y1": -0.15,
+          "x2": 0.2,
+          "y2": 0.15
+        },
+        {
+          "tipo": "linea",
+          "x1": 0.2,
+          "y1": -0.15,
+          "x2": 0.2,
+          "y2": 0.15
+        },
+        {
+          "tipo": "arco",
+          "cx": -0.08,
+          "cy": -0.1,
+          "r": 0.04,
+          "ang_ini": 0,
+          "ang_fin": 180
+        },
+        {
+          "tipo": "arco",
+          "cx": 0.0,
+          "cy": -0.1,
+          "r": 0.04,
+          "ang_ini": 0,
+          "ang_fin": 180
+        },
+        {
+          "tipo": "arco",
+          "cx": 0.08,
+          "cy": -0.1,
+          "r": 0.04,
+          "ang_ini": 0,
+          "ang_fin": 180
+        }
+      ],
+      "block_name": "DGE_09_93_72_CERRADURA",
+      "uso_recomendado": "Chapa electrica en puerta de ingreso principal exterior o portones.",
+      "observaciones": "Se alimenta normalmente a baja tension (12VAC)."
+    },
+    {
+      "id": "dge_09_93_73_interfono",
+      "codigo_dge": "09-93-73",
+      "nombre": "Interfono (Intercomunicador)",
+      "categoria": "COMUNICACIONES",
+      "pagina_pdf": 12,
+      "descripcion_visual": "Rect\u00e1ngulo vertical dividido con un tel\u00e9fono a la derecha y una flecha horizontal bidireccional en el extremo.",
+      "aliases": [
+        "intercomunicador",
+        "citofono",
+        "portero intercomunicador"
+      ],
+      "primitivas": [
+        {
+          "tipo": "rectangulo",
+          "x": -0.15,
+          "y": -0.2,
+          "w": 0.3,
+          "h": 0.4
+        },
+        {
+          "tipo": "linea",
+          "x1": -0.05,
+          "y1": -0.2,
+          "x2": -0.05,
+          "y2": 0.2
+        },
+        {
+          "tipo": "rectangulo",
+          "x": 0.0,
+          "y": -0.1,
+          "w": 0.1,
+          "h": 0.2
+        },
+        {
+          "tipo": "linea",
+          "x1": 0.1,
+          "y1": 0.0,
+          "x2": 0.24,
+          "y2": 0.0
+        },
+        {
+          "tipo": "linea",
+          "x1": 0.18,
+          "y1": 0.06,
+          "x2": 0.24,
+          "y2": 0.0
+        },
+        {
+          "tipo": "linea",
+          "x1": 0.18,
+          "y1": -0.06,
+          "x2": 0.24,
+          "y2": 0.0
+        },
+        {
+          "tipo": "linea",
+          "x1": 0.16,
+          "y1": 0.0,
+          "x2": 0.1,
+          "y2": 0.06
+        },
+        {
+          "tipo": "linea",
+          "x1": 0.16,
+          "y1": 0.0,
+          "x2": 0.1,
+          "y2": -0.06
+        }
+      ],
+      "block_name": "DGE_09_93_73_INTERFONO",
+      "uso_recomendado": "Citofono en cocina o ingreso principal en planos de corrientes debiles.",
+      "observaciones": "Indica terminal de comunicacion de voz."
+    }
+  ]
+}

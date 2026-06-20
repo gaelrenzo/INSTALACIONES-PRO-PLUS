@@ -1,0 +1,39 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish]{babel}
+\usepackage{geometry,booktabs,longtable,array,xcolor,hyperref,amsmath}
+\geometry{margin=1.7cm}
+\hypersetup{colorlinks=true,urlcolor=blue}
+
+\title{Metrados y Presupuesto Consolidado de Instalaciones Eléctricas\\Vivienda Unifamiliar de 2 Pisos - Proyecto Aquiles}
+\author{Aquiles Taylor Ramos Yapo\\Universidad Nacional del Altiplano -- Ingeniería Mecánica Eléctrica}
+\date{08 de junio de 2026}
+
+\begin{document}
+\maketitle
+
+\section{INTRODUCCIÓN Y METODOLOGÍA}
+El presente documento técnico detalla los metrados de materiales eléctricos y el presupuesto consolidado para el proyecto de instalaciones eléctricas interiores de la vivienda unifamiliar de dos pisos de propiedad de \textbf{Aquiles Taylor Ramos Yapo}, ubicada en el distrito de San Miguel, provincia de San Román y departamento de Puno.
+
+Para la elaboración del metrado, se han contabilizado y validado las partidas directamente desde los planos eléctricos CAD vigentes (v7 para el primer piso y v6 para el segundo piso). Se han considerado todos los componentes necesarios para una instalación segura y reglamentaria bajo el Código Nacional de Electricidad (CNE - Utilización), tales como cables de alimentación de $16\text{ mm}^2$, conductores de derivados de $2.5\text{ mm}^2$ (alumbrado y tomacorrientes), canalizaciones de PVC SAP pesadas, cajas de fierro galvanizado, protecciones termomagnéticas y diferenciales de $30\text{ mA}$, y el sistema de puesta a tierra (SPAT).
+
+\section{RESUMEN DE COTIZACIÓN MULTI-PROVEEDOR}
+Para obtener un presupuesto real y eficiente de adquisición de materiales, se utilizó una herramienta de cotización multi-proveedor que compara precios en tiempo real en las principales tiendas locales (Promart, Sodimac y Maestro). El sistema incorpora una capa de conversión a unidades comerciales reales (por ejemplo, convirtiendo los metros de cable de diseño a rollos de 100 m, y los tubos a unidades de 3 m), calculando el subtotal en base a empaques cerrados y considerando los sobrantes.
+
+Los resultados generales del análisis son:
+\begin{itemize}
+  \item \textbf{Costo total recomendado mixto (Compra Real):} S/ 3,968.02.
+  \item \textbf{Costo neto equivalente (Valores de diseño):} S/ 3,892.40.
+  \item \textbf{Número de partidas de metrado cotizadas:} 68 partidas consolidables.
+  \item \textbf{Distribución recomendada del pedido para optimizar costos:}
+    \begin{itemize}
+      \item \textbf{Sodimac / Maestro:} S/ 2,169.42 (incluye cables en rollos de 100 m, tomacorrientes y protecciones generales).
+      \item \textbf{Promart:} S/ 1,798.60 (incluye tuberías de PVC, interruptores, cajas de derivación y accesorios de montaje).
+    \end{itemize}
+\end{itemize}
+
+\clearpage
+\input{presupuesto_final_aquiles.tex}
+
+\end{document}

@@ -1,0 +1,29 @@
+schema_version: 1
+id: renzo
+proyecto: "Instalaciones electricas interiores - vivienda unifamiliar de 3 pisos"
+propietario: "Renzo Gabriel Mamani Galindo"
+estado: "expediente en desarrollo sujeto a revision tecnica"
+
+ubicacion:
+  distrito: "Capachica"
+  provincia: "Puno"
+  departamento: "Puno"
+  direccion: "Jr. Lima S/N"
+
+entradas:
+  configuracion: datos/parametros-proyecto.yaml
+  modelo_electrico: diseno-electrico/datos/modelo-electrico.json
+  layouts:
+    - arquitectura/datos/piso-1.json
+    - arquitectura/datos/piso-2.json
+    - arquitectura/datos/piso-3.json
+
+automatizacion:
+  pipeline_habilitado: true
+  script_nativo: scripts/construir_expediente.py
+  requiere_revision_humana: true
+
+entregables:
+  directorio: entregables
+  expediente: entregables/expediente.pdf
+  planos: entregables/planos
