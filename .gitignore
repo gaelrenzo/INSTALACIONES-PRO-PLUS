@@ -55,6 +55,17 @@ Thumbs.db
 .claude/
 .codex/
 
+# Frontend
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+
+# Backend
+backend/.env
+
+# Supabase
+supabase/.env
+
 # Electra Core
 *.ifc
 *.dxf
