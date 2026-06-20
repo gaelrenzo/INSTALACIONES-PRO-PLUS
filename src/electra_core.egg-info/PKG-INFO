@@ -1,0 +1,19 @@
+Metadata-Version: 2.4
+Name: electra_core
+Version: 0.1.0
+Summary: Plataforma automatizada de ingeniería eléctrica y BIM
+Author: Principal Architect
+Requires-Python: >=3.10
+Requires-Dist: pydantic>=2.0
+Requires-Dist: ezdxf>=1.4.0
+Requires-Dist: weasyprint>=60.0
+Requires-Dist: jinja2>=3.1
+Requires-Dist: pandas
+Requires-Dist: pandapower>=2.13
+Requires-Dist: pyyaml
+Provides-Extra: dev
+Requires-Dist: pytest>=7.4; extra == "dev"
+Requires-Dist: ruff>=0.1; extra == "dev"
+Requires-Dist: mypy; extra == "dev"
+Provides-Extra: bim
+Requires-Dist: ifcopenshell; extra == "bim"

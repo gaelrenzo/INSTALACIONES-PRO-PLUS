@@ -1,12 +1,14 @@
-# Expediente LaTeX
+# Expediente tecnico — Proyecto Renzo
 
-`main.tex` es la raiz del documento. Los capitulos y tablas auxiliares se
-mantienen dentro de esta carpeta para evitar mezclarlos con datos o planos.
+Fuentes editables del documento tecnico.
 
-No ejecutar `pdflatex` directamente en la carpeta del proyecto. Usar:
+| Subcarpeta | Contenido |
+|------------|-----------|
+| `capitulos/` | Capitulos del documento tecnico |
+| `partidas/` | Partidas del presupuesto |
+
+Construir expediente:
 
 ```bash
-python3 herramientas/pipeline_automatizado.py --proyecto renzo
+python3 proyectos/renzo/scripts/construir_expediente.py
 ```
-
-El PDF temporal se genera en `build/renzo/expediente/main.pdf`.

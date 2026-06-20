@@ -1,8 +1,15 @@
-# Arquitectura
+# Arquitectura — Proyecto Renzo
 
-`datos/` contiene los tres layouts JSON vigentes. Son la interpretacion
-estructurada de las imagenes guardadas en `../fuentes/croquis/`.
+Datos canonicos de la interpretacion arquitectonica.
 
-Las revisiones historicas estan en `../archivo/revisiones/arquitectura/`. Una
-nueva revision aprobada debe documentarse en `revisiones/` sin crear archivos
-con sufijos ambiguos como `nuevo`, `final` o `v4`.
+| Subcarpeta | Contenido |
+|------------|-----------|
+| `datos/` | JSON con ambientes por piso (piso-1, piso-2, piso-3) |
+| `revisiones/` | Notas de revision |
+
+## Archivos de datos
+
+- `piso-1.json`: geometria del primer piso
+- `piso-2.json`: geometria del segundo piso
+- `piso-3.json`: geometria del tercer piso
+- `interpretacion-planos.md`: notas sobre la interpretacion de los planos fuente

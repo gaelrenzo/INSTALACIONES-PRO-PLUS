@@ -1,9 +1,12 @@
-# Archivo historico
+# Archivo — Proyecto Renzo
 
-Material conservado para trazabilidad pero excluido del flujo activo:
-iteraciones antiguas, revisiones asociadas, resultados previos de cotizacion
-fragmentos LaTeX ya no incluidos y scripts de migracion de una sola vez.
+Material historico fuera del flujo activo. No usar como entrada para producir resultados vigentes.
 
-Ningun script vigente debe leer datos desde esta carpeta, salvo una utilidad
-historica ejecutada explicitamente. La seleccion de entradas se realiza solo
-desde `../proyecto.yaml`.
+| Subcarpeta | Contenido |
+|------------|-----------|
+| `cotizaciones/` | Resultados de cotizaciones anteriores |
+| `iteraciones/` | Versiones previas de arquitectura y diseno electrico |
+| `reportes-bom/` | Reportes de lista de materiales generados previamente |
+| `revisiones/` | Revisiones anteriores de arquitectura y diseno electrico |
+| `scripts-migracion/` | Scripts usados durante la migracion/organizacion del repositorio |
+| `fragmentos-latex/` | Fragmentos LaTeX de metrados y presupuesto |

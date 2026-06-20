@@ -1,0 +1,20 @@
+{
+  "proyecto": "Fixture instalaciones electricas",
+  "propietario": "Persona de prueba",
+  "materiales": [
+    {
+      "item": "Cable TW THW 2.5 mm2 - C1",
+      "unidad": "m",
+      "cantidad": 10,
+      "precio_unit_soles": 1.2,
+      "uso": "Alumbrado"
+    },
+    {
+      "item": "ITM 2P-10A - C1",
+      "unidad": "und",
+      "cantidad": 1,
+      "precio_unit_soles": 45,
+      "uso": "Proteccion"
+    }
+  ]
+}

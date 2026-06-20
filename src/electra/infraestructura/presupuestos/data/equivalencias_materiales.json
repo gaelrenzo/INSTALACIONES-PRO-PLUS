@@ -1,0 +1,17 @@
+{
+  "frases": {
+    "itm": "interruptor termomagnetico",
+    "termomagnetico": "interruptor termomagnetico",
+    "diferencial": "interruptor diferencial",
+    "tw thw": "thw",
+    "caja rectangular octogonal": "caja electrica rectangular octogonal",
+    "cinta de aislar": "cinta aislante"
+  },
+  "sinonimos": {
+    "cable": ["conductor", "alambre"],
+    "tubo": ["tuberia", "ducto", "canalizacion"],
+    "tablero": ["gabinete", "centro de carga"],
+    "interruptor diferencial": ["rccb", "id"],
+    "interruptor termomagnetico": ["itm", "mcb", "llave termica"]
+  }
+}

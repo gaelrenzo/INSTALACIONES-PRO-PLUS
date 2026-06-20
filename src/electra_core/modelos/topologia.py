@@ -1,46 +1,10 @@
 from __future__ import annotations
 
-from enum import Enum
 from typing import Optional
 
 from pydantic import BaseModel, Field, model_validator
 
-
-class TipoCircuito(str, Enum):
-    ALUMBRADO = "alumbrado"
-    TOMACORRIENTE = "tomacorriente"
-    ELECTROBOMBA = "electrobomba"
-    CALENTADOR = "calentador"
-    COCINA = "cocina"
-    LAVADORA = "lavadora"
-    SECADORA = "secadora"
-    HIDROMASAJE = "hidromasaje"
-    AIRE_ACONDICIONADO = "aire_acondicionado"
-    RESERVA = "reserva"
-    OTRO = "otro"
-
-
-class TipoConductor(str, Enum):
-    TW = "TW"
-    THW = "THW"
-    THHN = "THHN"
-    THWN = "THWN"
-    XHHW = "XHHW"
-    PVC = "PVC"
-    XLPE = "XLPE"
-
-
-class TipoNormativa(str, Enum):
-    CNE = "CNE"
-    NEC = "NEC"
-    IEC = "IEC"
-
-
-class Fase(str, Enum):
-    A = "A"
-    B = "B"
-    C = "C"
-    TRIFASICO = "ABC"
+from electra.dominio.shared.enums import Fase, TipoCircuito, TipoConductor, TipoNormativa
 
 
 class Cable(BaseModel):

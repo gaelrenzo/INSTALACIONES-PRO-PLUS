@@ -1,17 +1,24 @@
-"""Conectores de proveedores para el cotizador multi-proveedor."""
+"""Conectores de proveedores — wrapper legacy.
 
-from .promart import PromartProveedor
-from .sodimac import SodimacProveedor
-from .maestro import MaestroProveedor
-from .mercadolibre import MercadoLibreProveedor
-from .ventas_peru import VentasPeruProveedor
+DEPRECATED: Usa electra.infraestructura.presupuestos.proveedores en su lugar.
+"""
 
+from __future__ import annotations
 
-PROVEEDORES_DISPONIBLES = {
-    "promart": PromartProveedor,
-    "sodimac": SodimacProveedor,
-    "maestro": MaestroProveedor,
-    "mercadolibre": MercadoLibreProveedor,
-    "ventas_peru": VentasPeruProveedor,
-}
+import warnings
+
+warnings.warn(
+    "herramientas/cotizacion/proveedores esta obsoleto. "
+    "Usa electra.infraestructura.presupuestos.proveedores",
+    DeprecationWarning, stacklevel=2,
+)
+
+from electra.infraestructura.presupuestos.proveedores import (  # noqa: F401
+    PROVEEDORES_DISPONIBLES,
+    MaestroProveedor,
+    MercadoLibreProveedor,
+    PromartProveedor,
+    SodimacProveedor,
+    VentasPeruProveedor,
+)
 

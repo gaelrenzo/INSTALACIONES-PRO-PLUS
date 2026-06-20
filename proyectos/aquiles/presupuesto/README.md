@@ -1,13 +1,18 @@
-# Entrega final de metrados y presupuesto - Aquiles
+# Presupuesto — Proyecto Aquiles
 
-Esta carpeta contiene la entrega academica lista para revision e impresion.
+Lista de materiales, cotizaciones y comparativa de precios.
 
-- Total recomendado mixto: **S/ 3,968.02**.
-- Los precios `verificado_tienda` tienen evidencia web.
-- Los precios `estimado_*` son referencias academicas y deben confirmarse antes de comprar.
+| Subcarpeta | Contenido |
+|------------|-----------|
+| `datos/` | Metrados adicionales, precios verificados |
+| `evidencias/` | Capturas de precios, manifestacion de gastos |
+| `por_tienda/` | Cotizaciones individuales: Promart, Sodimac, MercadoLibre |
+| `informe-final/` | Reporte final de presupuesto |
 
-## Totales completos por proveedor
+## Archivos principales
 
-- Promart: S/ 4,703.63.
-- Sodimac/Maestro: S/ 5,399.08.
-- Mercado Libre Peru: S/ 4,704.86.
+- `bom_final_aquiles.json`: lista de materiales definitiva (formato BOM)
+- `presupuesto_final_aquiles.json`: presupuesto completo
+- `metrados_finales.md`: resumen de metrados
+- `comparativa_precios.md`: comparacion entre proveedores
+- `resumen_cotizacion.md`: resumen ejecutivo de cotizacion

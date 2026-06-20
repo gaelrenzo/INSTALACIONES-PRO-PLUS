@@ -1,10 +1,12 @@
+"""Re-export — legacy GeneradorDXF kept for backward compat."""
+
 from __future__ import annotations
 
 import ezdxf
 from ezdxf.math import Vec2
 
 from electra_core.interfaces.puertos import ExportadorCAD
-from electra_core.modelos.topologia import RedElectrica, Tablero
+from electra_core.modelos.topologia import RedElectrica
 
 
 class GeneradorDXF(ExportadorCAD):
@@ -32,3 +34,9 @@ class GeneradorDXF(ExportadorCAD):
                 )
         doc.saveas(ruta)
         return ruta
+
+
+from electra.infraestructura.cad.dxf_generator import (  # noqa: E402, F401
+    generate_dxf,
+    generate_pdf_from_dxf,
+)

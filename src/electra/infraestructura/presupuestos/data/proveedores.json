@@ -1,0 +1,39 @@
+{
+  "promart": {
+    "nombre": "Promart",
+    "activo": true,
+    "proveedor_final": true,
+    "prioridad": 0.82
+  },
+  "sodimac": {
+    "nombre": "Sodimac",
+    "activo": true,
+    "proveedor_final": true,
+    "prioridad": 0.84
+  },
+  "maestro": {
+    "nombre": "Maestro",
+    "activo": true,
+    "proveedor_final": true,
+    "prioridad": 0.78
+  },
+  "mercadolibre": {
+    "nombre": "Mercado Libre",
+    "activo": true,
+    "proveedor_final": true,
+    "prioridad": 0.68
+  },
+  "ventas_peru": {
+    "nombre": "Ventas Peru",
+    "activo": false,
+    "proveedor_final": true,
+    "prioridad": 0.55
+  },
+  "google_shopping": {
+    "nombre": "Google Shopping",
+    "activo": false,
+    "proveedor_final": false,
+    "prioridad": 0.20,
+    "uso": "Solo descubrimiento/fallback; no debe ganar cotizaciones finales"
+  }
+}

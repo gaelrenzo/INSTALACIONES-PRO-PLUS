@@ -1,9 +1,11 @@
-# Entregables aprobados
+# Entregables — Proyecto Renzo
 
-Esta carpeta contiene unicamente archivos revisados para compartir. El
-pipeline no escribe aqui automaticamente.
+Archivos aprobados para compartir. Solo contienen resultados revisados.
 
-- `expediente.pdf`: documento tecnico publicado.
-- `planos/`: planos aprobados en formatos de intercambio y consulta.
-- `calculos/`: hojas de calculo publicadas.
-- `presupuesto/`: metrados, presupuesto y cotizacion comparativa.
+| Subcarpeta | Contenido |
+|------------|-----------|
+| `calculos/` | Resultados de calculos aprobados |
+| `planos/` | Planos finales en DXF, PDF, PNG, SVG |
+| `presupuesto/` | Presupuesto final aprobado |
+
+Ningun script debe escribir directamente aqui. Los resultados se generan en `build/` y se copian tras revision.

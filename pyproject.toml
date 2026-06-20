@@ -1,6 +1,6 @@
 [build-system]
 requires = ["setuptools>=68.0"]
-build-backend = "setuptools.backends._legacy:_Backend"
+build-backend = "setuptools.build_meta"
 
 [project]
 name = "electra_core"
@@ -22,9 +22,12 @@ requires-python = ">=3.10"
 dev = ["pytest>=7.4", "ruff>=0.1", "mypy"]
 bim = ["ifcopenshell"]
 
+[project.scripts]
+electra = "electra.aplicacion.cli.__main__:main"
+
 [tool.setuptools.packages.find]
 where = ["src"]
-include = ["electra_core*"]
+include = ["electra*", "electra_core*"]
 
 [tool.ruff]
 line-length = 100

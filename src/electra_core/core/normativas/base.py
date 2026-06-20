@@ -1,16 +1,3 @@
-from __future__ import annotations
+"""Re-export — migrated to electra.dominio.calculos."""
 
-from abc import ABC, abstractmethod
-
-from electra_core.modelos.topologia import RedElectrica, Tablero, Circuito
-
-
-class EstrategiaNormativa(ABC):
-    @abstractmethod
-    def validar_caida_tension(self, circuito: Circuito) -> list[str]: ...
-
-    @abstractmethod
-    def validar_tablero(self, tablero: Tablero) -> list[str]: ...
-
-    @abstractmethod
-    def validar_red(self, red: RedElectrica) -> list[str]: ...
+from electra.dominio.calculos.puertos import EstrategiaNormativa  # noqa: F401

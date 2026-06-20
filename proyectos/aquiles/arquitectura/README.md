@@ -1,7 +1,18 @@
-# Arquitectura de Aquiles
+# Arquitectura — Proyecto Aquiles
 
-- `datos/piso-1.json` y `datos/piso-2.json`: layouts canónicos.
-- `planos/`: DXF y PDF aprobados como base de trabajo.
-- `revisiones/`: observaciones humanas de cada piso.
+Datos canonicos de la interpretacion arquitectonica del croquis.
 
-Los cambios deben empezar en los datos estructurados, regenerar el plano y comparar visualmente contra el croquis de `../fuentes/croquis/`.
+| Subcarpeta | Contenido |
+|------------|-----------|
+| `datos/` | JSON con ambientes, muros, puertas, ventanas por piso |
+| `planos/` | DXF/PDF del plano arquitectonico |
+| `revisiones/` | Notas de revision de la interpretacion |
+
+## Archivos de datos
+
+- `piso-1.json`: geometria del primer piso
+- `piso-2.json`: geometria del segundo piso
+
+## Interpretacion
+
+Ver `interpretacion-croquis.md` para el detalle de como se extrajeron los datos del croquis original.

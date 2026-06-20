@@ -1,15 +1,15 @@
-# Diseño eléctrico de Aquiles
+# Diseno electrico — Proyecto Aquiles
 
-- `datos/piso-1.json` y `datos/piso-2.json`: elementos, rutas y leyenda.
-- `datos/simbolos.json`: correspondencias usadas en el proyecto.
-- `planos/`: DXF y PDF canónicos por piso.
-- `revisiones/`: controles técnicos y visuales.
+Datos canonicos del diseno electrico y planos con simbologia.
 
-Ejemplo de regeneración:
+| Subcarpeta | Contenido |
+|------------|-----------|
+| `datos/` | JSON con luminarias, tomacorrientes, interruptores, circuitos por piso |
+| `planos/` | DXF/PDF del plano electrico (arquitectura + simbologia) |
+| `revisiones/` | Notas de revision del diseno electrico |
 
-```bash
-python3 herramientas/cad/scripts/electrical_overlay.py \
-  --base proyectos/aquiles/arquitectura/planos/piso-1.dxf \
-  --electrical proyectos/aquiles/diseno-electrico/datos/piso-1.json \
-  --output build/aquiles/piso-1-electrico.dxf
-```
+## Archivos de datos
+
+- `piso-1.json`: puntos electricos del primer piso
+- `piso-2.json`: puntos electricos del segundo piso
+- `simbolos.json`: configuracion de simbologia usada

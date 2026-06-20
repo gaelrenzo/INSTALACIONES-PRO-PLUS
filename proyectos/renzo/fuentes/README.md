@@ -1,8 +1,9 @@
-# Fuentes
+# Fuentes — Proyecto Renzo
 
-Archivos recibidos o capturados del proyecto. No deben ser modificados para
-ajustarlos a una interpretacion posterior.
+Evidencia original del proyecto. NO modificar ni sobrescribir.
 
-- `croquis/`: imagen general y plantas por piso.
-- `catastro/`: plano DWG y capturas catastrales.
-- `ubicacion/`: evidencia grafica de ubicacion.
+| Subcarpeta | Contenido |
+|------------|-----------|
+| `croquis/` | Croquis originales escaneados/fotografiados |
+| `ubicacion/` | Informacion de ubicacion del predio |
+| `catastro/` | Datos catastrales |
