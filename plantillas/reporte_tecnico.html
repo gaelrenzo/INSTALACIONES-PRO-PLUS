@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>{{ red.nombre_proyecto }} — Memoria Técnica</title>
+<style>
+  @page { size: A4; margin: 2cm; }
+  body { font-family: 'Helvetica', 'Arial', sans-serif; font-size: 11pt; color: #1a1a1a; line-height: 1.5; }
+  h1 { font-size: 18pt; color: #003366; border-bottom: 2px solid #003366; padding-bottom: 4px; }
+  h2 { font-size: 14pt; color: #003366; margin-top: 24px; }
+  table { width: 100%; border-collapse: collapse; margin: 12px 0; }
+  th, td { border: 1px solid #999; padding: 6px 8px; text-align: left; }
+  th { background: #003366; color: white; font-weight: bold; }
+  .page-break { page-break-before: always; }
+</style>
+</head>
+<body>
+<h1>{{ red.nombre_proyecto }}</h1>
+<p><strong>Normativa:</strong> {{ red.normativa.value }} | <strong>Demanda Total:</strong> {{ "%.1f"|format(red.demanda_total_w) }} W</p>
+
+<h2>Tableros y Circuitos</h2>
+{% for tablero in red.tableros %}
+<h3>{{ tablero.nombre }}</h3>
+<table>
+  <tr><th>Circuito</th><th>Tipo</th><th>Cargas</th><th>Potencia (W)</th></tr>
+  {% for circuito in tablero.circuitos %}
+  <tr>
+    <td>{{ circuito.nombre }}</td>
+    <td>{{ circuito.tipo.value }}</td>
+    <td>{{ circuito.cargas|length }}</td>
+    <td>{{ "%.0f"|format(circuito.cargas|sum(attribute='potencia_w')) }}</td>
+  </tr>
+  {% endfor %}
+</table>
+{% endfor %}
+
+<h2>Resumen de Materiales</h2>
+<table>
+  <tr><th>Material</th><th>Cantidad</th></tr>
+  {% for tablero in red.tableros %}
+  {% for circuito in tablero.circuitos %}
+  <tr>
+    <td>Cable {{ "%.0f"|format(circuito.cable.seccion_mm2) }} mm²</td>
+    <td>{{ "%.1f"|format(circuito.largo_metros * 3) }} m</td>
+  </tr>
+  {% endfor %}
+  {% endfor %}
+</table>
+</body>
+</html>

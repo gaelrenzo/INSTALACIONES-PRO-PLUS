@@ -54,3 +54,8 @@ Thumbs.db
 .gemini/
 .claude/
 .codex/
+
+# Electra Core
+*.ifc
+*.dxf
+*_reporte.pdf

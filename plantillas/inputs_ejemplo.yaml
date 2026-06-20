@@ -1,0 +1,31 @@
+nombre_proyecto: "Vivienda Unifamiliar - Ejemplo"
+normativa: "CNE"
+tension_acometida_v: 380
+factor_simultaneidad: 0.7
+tableros:
+  - nombre: "TG"
+    tension_v: 220
+    circuitos:
+      - nombre: "C1"
+        tipo: "alumbrado"
+        largo_metros: 30
+        cable:
+          seccion_mm2: 2.5
+          tipo: "THW"
+        cargas:
+          - nombre: "Sala"
+            potencia_w: 200
+            tipo: "alumbrado"
+          - nombre: "Cocina"
+            potencia_w: 300
+            tipo: "alumbrado"
+      - nombre: "C2"
+        tipo: "tomacorriente"
+        largo_metros: 25
+        cable:
+          seccion_mm2: 4.0
+          tipo: "THW"
+        cargas:
+          - nombre: "Cocina"
+            potencia_w: 1500
+            tipo: "tomacorriente"
