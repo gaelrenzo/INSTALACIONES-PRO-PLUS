@@ -1,0 +1,5 @@
+[project]
+name = "electra"
+version = "2.0.0"
+description = "Motor de ingeniería eléctrica automatizada"
+dependencies = ["httpx", "beautifulsoup4", "lxml"]

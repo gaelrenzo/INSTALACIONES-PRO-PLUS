@@ -9,3 +9,12 @@ openpyxl>=3.1
 rapidfuzz>=3.0
 python-dateutil>=2.8
 pytest>=8.0
+
+# Backend (FastAPI)
+fastapi>=0.115
+uvicorn>=0.34
+supabase>=2.6
+pydantic>=2.10
+python-multipart>=0.0.18
+python-dotenv>=1.0
+psycopg2-binary>=2.9

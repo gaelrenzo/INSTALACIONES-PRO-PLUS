@@ -1,0 +1,5 @@
+[project]
+name = "electra-backend"
+version = "2.0.0"
+description = "API REST de Electra"
+dependencies = ["fastapi", "uvicorn", "supabase", "pydantic", "python-dotenv"]
